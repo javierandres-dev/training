@@ -1,7 +1,7 @@
 # 0x02
 :open_file_folder: training/projects/0x02
 
-###### :copyright: [Juan Pablo De la torre Valdez]()
+###### :copyright: [Juan Pablo De la torre Valdez](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/9084406#content)
 
 ## Objetives
 ###### Carrito de compras
