@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <h1 id="mr-javascript">I'm Mr. JavaScript</h1>
+    <a href="#" id="buttonLink">Hey JavaScript, how ya feeling?</a>
+    <script>
+        var buttonLink = document.getElementById('buttonLink');
+        buttonLink.addEventListener('click', sayFeeling);
+
+        function sayFeeling() {
+
+            //alert("I'm so gooood!");
+            var name = document.getElementById('mr-javascript');
+            //console.log(name);
+            name.innerHTML = "Not good bah!";
+        }
+        // console.log(buttonLink);
+    </script>
+</body>
+
+</html>

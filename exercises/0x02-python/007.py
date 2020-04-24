@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+print("----")
+print("Realiza un programa que reciba una cantidad de minutos y muestre por pantalla a cuantas horas y minutos corresponde.")
+print("---")
+c=int(input("ingrese la cantidad de minutos: "))
+print("--")
+h=int(c/60)
+m=c-(h*60)
+print("{} minutos son {} horas y {} minutos.".format(c,h,m))
+print("-")
