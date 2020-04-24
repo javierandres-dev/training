@@ -6,7 +6,7 @@
 Do courses to train.
 
 ## Directories
-* [x] 0x00 - JavaScript :copyright: One Month
+* [x] 0x00 - JavaScript - One Month
 
 ## Developer
 Javier Andrés Garzón Patarroyo
