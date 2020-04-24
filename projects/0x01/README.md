@@ -1,7 +1,7 @@
 # 0x01
 :open_file_folder: training/projects/0x01
 
-###### :copyright: [Juan Pablo De la torre Valdez]()
+###### :copyright: [Juan Pablo De la torre Valdez](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/9084422#content)
 
 ## Objetives
 ###### Local Storage desde un Textarea
