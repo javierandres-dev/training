@@ -9,8 +9,9 @@ Do projects to train.
 
 ## Directories
 * [x] 0x00 - CRUD
-* [x] 0x01 - Local Storage desde un Textarea
+* [x] 0x01 - Local Storage desde un textarea
 * [x] 0x02 - Carrito de compras
+* [x] 0x03 - Simular envío de emails
 
 ## Developer
 Javier Andrés Garzón Patarroyo

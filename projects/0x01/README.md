@@ -4,7 +4,7 @@
 ###### :copyright: [Juan Pablo De la torre Valdez](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/9084422#content)
 
 ## Objetives
-###### Local Storage desde un Textarea
+###### Local Storage desde un textarea
 * El usuario podrá crear, eliminar, ver sus tweets en un listado.
 * Los tweets se almacenarán en Local Storage.
 * El usuario podrá agragar una cantidad ilimitada de tweets
