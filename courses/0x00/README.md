@@ -26,10 +26,55 @@
   - https://www.sublimetext.com/
   - https://www.google.com/chrome/browser
 
+## Terms and concepts
+* Events
+* Comments
+* Print
+* Variables
+* Concatenation
+* Datatypes
+* Functions
+* Conditionals
+* Arrays
+* Debugging
+* alert()
+* prompt()
+* document.write()
+* console.log()
+* new Array()
+* Math.floor(Math.random())
+* DOM Manipulation
+* innerHTM
+* getElementById()
+* getElementsByClassName()
+* addEventListener()
+* querySelector()
+* querySelectorAll()
+* Loops
+  - for
+* setTimeout()
+* createElement()
+* appendChild()
+* keyCode
+* AJAX
+* JSON.parse
+* forEach
+* API Documentation
+
+## Tasks
+* [x] homework_week_1_oprah
+
 ## Stack
 * [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
+###### Tools
+* Console browser
+* reset.css
+* normalize.css
+
+###### Date (YY/MM/DD)
+I'm still working on it.
 
 ## Developer
 Javier Andrés Garzón Patarroyo
