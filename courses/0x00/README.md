@@ -1,7 +1,8 @@
 # JavaScript
 :open_file_folder: training/courses/0x00
 
-###### :copyright: [One Month](https://onemonth.com/courses/javascript/curriculum)
+###### :copyright: [One Month](https://onemonth.com/users/auth/github)
+[Link](https://onemonth.com/courses/javascript/curriculum)
 
 ## Learning Objectives
 ###### General
