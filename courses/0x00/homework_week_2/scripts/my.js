@@ -2,7 +2,7 @@
  * Variables
  */
 const btnPower = document.getElementById("btnPower");
-const content = document.getElementById("content");
+const show = document.getElementById("show");
 const myImg = document.getElementById("myImg");
 const led = document.getElementById("led");
 /*
@@ -16,9 +16,35 @@ function eventListeners() {
 /*
  * Functions
  */
+function candidates(apiResponse) {
+    let imageUrls = apiResponse.data;
+    let participants = imageUrls.length;
+    let selection = [];
+    for (i = 0; i < 5; i++) {
+        let participant = Math.floor(Math.random() * participants);
+        selection.push(imageUrls[participant]);
+    }
+    let cast = [];
+    for (i = 0; i < 5; i++) {
+        cast.push(selection[i].images.fixed_height.url);
+    }
+    toShow(cast);
+}
+
+function toShow(cast) {
+    let i = 0;
+    setInterval(function () {
+        if (i === cast.length) {
+            i = 0;
+        }
+        myImg.src = cast[i];
+        i++;
+    }, 3000);
+}
+
 function power() {
     //content.style.display = "block";
-    content.classList.toggle("show");
+    show.style.display = "block";
     led.style.backgroundColor = "limegreen";
 }
 /*
@@ -31,25 +57,7 @@ GiphyAJAXCall.open('GET', apiUrl);
 GiphyAJAXCall.send();
 GiphyAJAXCall.addEventListener('load', function (e) {
     let apiData = e.target.response;
-    candidates(apiData);
-});
-
-function candidates(apiData) {
     // JSON -> Deserialize
-    let response = JSON.parse(apiData);
-    let imageUrls = response.data;
-    let participants = imageUrls.length;
-    let selection = [];
-    for (i = 0; i < 5; i++) {
-        let participant = Math.floor(Math.random() * participants);
-        selection.push(imageUrls[participant]);
-    }
-    cast(selection);
-}
-
-function cast(selection) {
-    for (i = 0; i < 5; i++) {
-        let my_src = selection[i].images.fixed_height.url
-        myImg.src = my_src;
-    }
-}
+    let apiResponse = JSON.parse(apiData);
+    candidates(apiResponse);
+});
