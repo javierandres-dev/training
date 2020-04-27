@@ -63,7 +63,8 @@
 * API Documentation
 
 ## Tasks
-* [x] homework_week_1_oprah
+* [x] homework_week_1
+* [x] homework_week_2
 
 ## Stack
 * [x] HTML
