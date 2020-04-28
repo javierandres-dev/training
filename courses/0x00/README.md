@@ -26,6 +26,9 @@
 * Tools
   - https://www.sublimetext.com/
   - https://www.google.com/chrome/browser
+* API's
+  - http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC
+  - tv.giphy.com/v1/gifs/tv?api_key=CW27AW0nlp5u0&tag=giphytv
 
 ## Terms and concepts
 * Events
