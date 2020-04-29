@@ -1,8 +1,9 @@
 # JavaScript
 :open_file_folder: training/courses/0x00
 
-###### :copyright: [One Month](https://onemonth.com/users/auth/github)
-[Link](https://onemonth.com/courses/javascript/curriculum)
+###### :copyright: [One Month](https://onemonth.com)
+[Course](https://onemonth.com/courses/javascript/curriculum)
+[Access](https://onemonth.com/users/auth/github)
 
 ## Learning Objectives
 ###### General
@@ -12,23 +13,26 @@
 * How to use Google Charts to make your own lightweight API. 
 
 ## Resources
-* Notable APIs that you can build with after learning some basic JavaScript
-  - https://darksky.net/dev/
-  - https://developers.soundcloud.com/docs/api/guide
-  - https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart
-  - https://stripe.com/docs/custom-form
-  - https://help.optimizely.com/Set_Up_Optimizely/Implement_the_Optimizely_snippet
-* Extra: What is A/B testing?
-  - https://www.optimizely.com/ab-testing/
-  - https://signalvnoise.com/posts/2991-behind-the-scenes-ab-testing-part-3-final
-* Values, Types, and Operators
-  - http://eloquentjavascript.net/01_values.html
-* Tools
-  - https://www.sublimetext.com/
-  - https://www.google.com/chrome/browser
-* API's
-  - http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC
-  - tv.giphy.com/v1/gifs/tv?api_key=CW27AW0nlp5u0&tag=giphytv
+* [Dark Sky API](https://darksky.net/dev/)
+* [SoundCloud API](https://developers.soundcloud.com/docs/api/guide)
+* [https://stripe.com/docs/custom-form](https://stripe.com/docs/custom-form)
+* [Implement the snippet for Optimizely Classic](https://help.optimizely.com/Set_Up_Optimizely/Implement_the_Optimizely_snippet)
+* [A/B Testing](https://www.optimizely.com/ab-testing/)
+* [A/B testing part](https://signalvnoise.com/posts/2991-behind-the-scenes-ab-testing-part-3-final)
+* [Values, Types, and Operators](http://eloquentjavascript.net/01_values.html)
+* [Sublime Text](https://www.sublimetext.com/)
+* [Chrome](https://www.google.com/chrome/browser)
+* [API GIPHY](http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC)
+* [API GIPHY](tv.giphy.com/v1/gifs/tv?api_key=CW27AW0nlp5u0&tag=giphytv)
+* [SoundCloud for Developers](https://developers.soundcloud.com/)
+* [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+* [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
+* [Essential JavaScript Namespacing Patterns](https://addyosmani.com/blog/essential-js-namespacing/)
+* [Capitalization convention for JavaScript objects](https://stackoverflow.com/questions/1540763/capitalization-convention-for-javascript-objects)
+* [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml#Wrapper_objects_for_primitive_types)
+* [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+* [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+* [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 ## Terms and concepts
 * Events
@@ -41,29 +45,23 @@
 * Conditionals
 * Arrays
 * Debugging
-* alert()
-* prompt()
-* document.write()
-* console.log()
-* new Array()
-* Math.floor(Math.random())
 * DOM Manipulation
-* innerHTM
-* getElementById()
-* getElementsByClassName()
-* addEventListener()
-* querySelector()
-* querySelectorAll()
 * Loops
   - for
-* setTimeout()
-* createElement()
-* appendChild()
-* keyCode
 * AJAX
-* JSON.parse
-* forEach
+* JSON
 * API Documentation
+* Rest
+* Objects
+* Promise
+* Basic Functions
+  - function declaration
+* Anonymous Functions
+  - function expression
+* Encapsulation
+* Inheritance
+* Namespacing
+* LocalStorage
 
 ## Tasks
 * [x] homework_week_1
@@ -77,6 +75,7 @@
 * Console browser
 * reset.css
 * normalize.css
+* API's
 
 ###### Date (YY/MM/DD)
 I'm still working on it.
