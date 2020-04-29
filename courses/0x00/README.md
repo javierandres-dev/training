@@ -2,8 +2,8 @@
 :open_file_folder: training/courses/0x00
 
 ###### :copyright: [One Month](https://onemonth.com)
-[Course](https://onemonth.com/courses/javascript/curriculum)
-[Access](https://onemonth.com/users/auth/github)
+- [Course](https://onemonth.com/courses/javascript/curriculum)
+- [Access](https://onemonth.com/users/auth/github)
 
 ## Learning Objectives
 ###### General
@@ -23,7 +23,7 @@
 * [Sublime Text](https://www.sublimetext.com/)
 * [Chrome](https://www.google.com/chrome/browser)
 * [API GIPHY](http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC)
-* [API GIPHY](tv.giphy.com/v1/gifs/tv?api_key=CW27AW0nlp5u0&tag=giphytv)
+* [Other API GIPHY](tv.giphy.com/v1/gifs/tv?api_key=CW27AW0nlp5u0&tag=giphytv)
 * [SoundCloud for Developers](https://developers.soundcloud.com/)
 * [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 * [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
