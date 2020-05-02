@@ -33,6 +33,7 @@
 * [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 * [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 * [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+* [lorempixel](http://lorempixel.com/)
 
 ## Terms and concepts
 * Events
@@ -46,8 +47,7 @@
 * Arrays
 * Debugging
 * DOM Manipulation
-* Loops
-  - for
+* Loop ```for```
 * AJAX
 * JSON
 * API Documentation
@@ -62,6 +62,7 @@
 * Inheritance
 * Namespacing
 * LocalStorage
+* Loop ```forEach```
 
 ## Tasks
 * [x] homework_week_1
