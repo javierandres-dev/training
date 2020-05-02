@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor de Medios con JavaScript</title>
+	<link rel="stylesheet" href="./reproductor.css">
+	<script src="./reproductor.js"></script>
+</head>
+<body>
+	<section id="reproductor">
+		<video id="medio" width="720" height="400">
+			<source src="./Video.mp4">
+		</video>
+		<nav>
+			<div id="botones">
+				<input type="button" id="reproducir" value=">">
+				<input type="button" id="silenciar" value="silencio">
+			</div>
+			<div id="barra">
+				<div id="progreso"></div>
+			</div>
+			<div id="control">
+				<input type="range" id="volumen" min="0" max="1" step="0.1" value="0.6">
+			</div>
+			<div class="recuperar"></div>
+		</nav>
+	</section>
+</body>
+</html>

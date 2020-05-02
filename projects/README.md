@@ -12,6 +12,7 @@ Do projects to train.
 * [x] 0x01 - Local Storage desde un textarea
 * [x] 0x02 - Carrito de compras
 * [x] 0x03 - Simular envío de emails
+* [ ] 0x04 - Crear un reproductor de medios con JavaScript
 
 ## Developer
 Javier Andrés Garzón Patarroyo
