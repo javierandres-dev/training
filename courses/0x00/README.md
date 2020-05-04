@@ -34,6 +34,10 @@
 * [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
 * [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 * [lorempixel](http://lorempixel.com/)
+* [Embed the Audio Widget using the API](https://developers.soundcloud.com/docs/api/sdks#embedding)
+* [Node.firstChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild)
+* [Node.insertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+* [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 ## Terms and concepts
 * Events
