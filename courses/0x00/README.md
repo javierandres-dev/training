@@ -71,6 +71,7 @@
 ## Tasks
 * [x] homework_week_1
 * [x] homework_week_2
+* [x] homework_week_3
 
 ## Stack
 * [x] HTML
