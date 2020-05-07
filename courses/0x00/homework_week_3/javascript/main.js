@@ -83,7 +83,6 @@ SoundCloudAPI.renderTracks = function (tracks) {
         card.appendChild(button);
         var searchResults = document.querySelector('.js-search-results');
         searchResults.appendChild(card);
-        var card = document.createElement("div");
         card.classList.add("card");
         var searchResults = document.querySelector(".js-search-results");
         searchResults.appendChild(card);
