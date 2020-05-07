@@ -69,6 +69,9 @@
 * Namespacing
 * LocalStorage
 * Loop ```forEach```
+* ```push```, ```pop```, ```shift```, ```reverse```
+* ```map```
+* ```forEach``` vs ```map```
 
 ## Tasks
 * [x] homework_week_1
