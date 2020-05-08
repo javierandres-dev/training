@@ -39,7 +39,15 @@
 * [Node.insertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
 * [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 * [INEQUALITY AND NEW YORK’S SUBWAY](https://projects.newyorker.com/story/subway/)
-* 
+* [Google Charts](https://developers.google.com/chart/)
+* [jsfiddle](https://jsfiddle.net/)
+* [CodePen](http://codepen.io/)
+* [css-tricks](https://css-tricks.com/)
+* [STUDIO DUNN](http://studiodunn.co.uk/)
+* [One Page Love](https://onepagelove.com/page/2)
+* [itsthisforthat](http://www.itsthisforthat.com/)
+* [Tabletop.js](https://github.com/jsoma/tabletop)
+* [Where Your Taxes Went](https://www.nationalpriorities.org/)
 
 ## Terms and concepts
 * Events
@@ -72,11 +80,14 @@
 * ```push```, ```pop```, ```shift```, ```reverse```
 * ```map```
 * ```forEach``` vs ```map```
+* Google Charts
+* Tabletop.js
 
 ## Tasks
 * [x] homework_week_1
 * [x] homework_week_2
 * [x] homework_week_3
+* [x] homework_week_4
 
 ## Stack
 * [x] HTML
