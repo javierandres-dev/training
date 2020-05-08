@@ -3,7 +3,7 @@
  */
 let strApiUrlTodos = "https://jsonplaceholder.typicode.com/todos/";
 let strApiUrlUsers = "https://jsonplaceholder.typicode.com/users/";
-
+/*
 function getFromApi(searchString, searchNumber) {
     fetch(strApiUrlTodos)
         .then(function (response) {
@@ -18,7 +18,7 @@ function getFromApi(searchString, searchNumber) {
                 .then(function (myJson) {
                     let objUsers = myJson;
                     let myObj = {};
-                    let getNumber = 0;
+                    //let getNumber = 0;
                     for (let i = 0; i < objTodos.length; i++) {
                         let userId = objTodos[i].userId;
                         myObj[userId] = [];
@@ -31,15 +31,16 @@ function getFromApi(searchString, searchNumber) {
                             let id = objUsers[j].id;
                             if (userId === id) {
                                 let getString = objUsers[j].name;
-                                console.log(getString);
+                                //console.log(getString);
                                 //console.log(getNumber);
+                                //alert("Good");
                             }
                         }
                     }
                 });
         });
 }
-getFromApi(strApiUrlTodos, strApiUrlUsers);
+getFromApi(strApiUrlTodos, strApiUrlUsers);*/
 let theData = [
     ['Mushrooms', 3],
     ['Onions', 1],
