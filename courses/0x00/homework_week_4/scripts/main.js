@@ -1,71 +1,63 @@
-function myFunction() {
-    fetch("https://jsonplaceholder.typicode.com/todos/")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (myJson) {
-            let objTodos = myJson;
-            searchTodos(objTodos);
-            //console.log(objTodos);
-        });
-    fetch("https://jsonplaceholder.typicode.com/users/")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (myJson) {
-            let objUsers = myJson;
-            searchUsers(objUsers);
-            //console.log(objUsers);
-        });
-
-    function searchTodos(objTodos) {
+let myObj = [];
+fetch("https://jsonplaceholder.typicode.com/todos/")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (myJson) {
+        let objTodos = myJson;
+        searchTodos(objTodos);
         //console.log(objTodos);
-        let myObjTodos = {};
-        let userId;
-        let task;
-        let count = 0;
-        console.log(count);
-        for (let i = 0; i < objTodos.length; i++) {
-            userId = objTodos[i].userId;
-            task = objTodos[i].completed;
-            while (task === true) {
-                count++;
-            }
-            myObjTodos[userId] = [count];
-        }
-        //console.log(userId);
-        //console.log(task);
-        //console.log(myObjTodos);
-    }
-
-    function searchUsers(objUsers) {
+    });
+fetch("https://jsonplaceholder.typicode.com/users/")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (myJson) {
+        let objUsers = myJson;
+        searchUsers(objUsers);
         //console.log(objUsers);
-        let myObjUsers = {};
-        let id;
-        let name;
-        for (let i = 0; i < objUsers.length; i++) {
-            id = objUsers[i].id;
-            name = objUsers[i].name;
-            myObjUsers[id] = [name];
-        }
-        //console.log(id);
-        //console.log(name);
-        //console.log(myObjUsers);
+    });
+
+function searchTodos(objTodos) {
+    //console.log(objTodos);
+    function General(userId, completed) {
+        this.userId = userId;
+        this.completed = completed;
     }
+    for (let i = 0; i < objTodos.length; i++) {
+        let userId = objTodos[i].userId;
+        let completed = objTodos[i].completed;
+        //console.log(userId);
+        let myGeneral = new General(userId, completed);
+        //console.log(myGeneral);
+        myObj.push(myGeneral);
+    }
+}
+function searchUsers(objUsers) {
+    //console.log(objUsers);
+    function Specific(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    for (let i = 0; i < objUsers.length; i++) {
+        let id = objUsers[i].id;
+        let name = objUsers[i].name;
+        let mySpecific = new Specific(id, name);
+        //console.log(mySpecific);
+        myObj.push(mySpecific);
+    }
+}
+//console.log(myObj);
+function searchMyObj(myObj) {
+    //console.log(typeof(myObj));
     //console.log(myObj);
-}
-myFunction();
-/*
-    
-        //getString = objUsers[i].name;
-        //console.log(getString);
-        //console.log(id);
+    let myArray = myObj;
+    console.log(myArray);
+    for(var i=0; i < myArray.length; i++) {
+        console.log(myArray[i]);
     }
-    //console.log("END -- objUser");
 }
-/*
-                        while (objTodos[i].completed === true) {
-                            if (userId === id) {
+searchMyObj(myObj);
 /*
  * API
  *
