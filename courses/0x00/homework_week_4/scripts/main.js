@@ -1,9 +1,76 @@
+function myFunction() {
+    fetch("https://jsonplaceholder.typicode.com/todos/")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            let objTodos = myJson;
+            searchTodos(objTodos);
+            //console.log(objTodos);
+        });
+    fetch("https://jsonplaceholder.typicode.com/users/")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (myJson) {
+            let objUsers = myJson;
+            searchUsers(objUsers);
+            //console.log(objUsers);
+        });
+
+    function searchTodos(objTodos) {
+        //console.log(objTodos);
+        let myObjTodos = {};
+        let userId;
+        let task;
+        let count = 0;
+        console.log(count);
+        for (let i = 0; i < objTodos.length; i++) {
+            userId = objTodos[i].userId;
+            task = objTodos[i].completed;
+            while (task === true) {
+                count++;
+            }
+            myObjTodos[userId] = [count];
+        }
+        //console.log(userId);
+        //console.log(task);
+        //console.log(myObjTodos);
+    }
+
+    function searchUsers(objUsers) {
+        //console.log(objUsers);
+        let myObjUsers = {};
+        let id;
+        let name;
+        for (let i = 0; i < objUsers.length; i++) {
+            id = objUsers[i].id;
+            name = objUsers[i].name;
+            myObjUsers[id] = [name];
+        }
+        //console.log(id);
+        //console.log(name);
+        //console.log(myObjUsers);
+    }
+    //console.log(myObj);
+}
+myFunction();
+/*
+    
+        //getString = objUsers[i].name;
+        //console.log(getString);
+        //console.log(id);
+    }
+    //console.log("END -- objUser");
+}
+/*
+                        while (objTodos[i].completed === true) {
+                            if (userId === id) {
 /*
  * API
- */
+ *
 let strApiUrlTodos = "https://jsonplaceholder.typicode.com/todos/";
 let strApiUrlUsers = "https://jsonplaceholder.typicode.com/users/";
-/*
 function getFromApi(searchString, searchNumber) {
     fetch(strApiUrlTodos)
         .then(function (response) {
@@ -18,11 +85,11 @@ function getFromApi(searchString, searchNumber) {
                 .then(function (myJson) {
                     let objUsers = myJson;
                     let myObj = {};
-                    //let getNumber = 0;
+                    let getNumber = 0;
                     for (let i = 0; i < objTodos.length; i++) {
                         let userId = objTodos[i].userId;
                         myObj[userId] = [];
-                        //console.log(objTodos[i].completed);
+                        console.log(objTodos[i].completed);
                         console.log(getNumber);
                         while (objTodos[i].completed === true) {
                             getNumber++;
@@ -31,16 +98,15 @@ function getFromApi(searchString, searchNumber) {
                             let id = objUsers[j].id;
                             if (userId === id) {
                                 let getString = objUsers[j].name;
-                                //console.log(getString);
+                                console.log(getString);
                                 //console.log(getNumber);
-                                //alert("Good");
                             }
                         }
                     }
                 });
         });
 }
-getFromApi(strApiUrlTodos, strApiUrlUsers);*/
+getFromApi(strApiUrlTodos, strApiUrlUsers);
 let theData = [
     ['Mushrooms', 3],
     ['Onions', 1],
@@ -52,7 +118,7 @@ let theData = [
 //console.log(typeof(theData));
 /**
  * Google Charts
- */
+ *
 // Load the Visualization API and the corechart package.
 google.charts.load('current', {
     'packages': ['corechart']
@@ -83,4 +149,4 @@ function drawChart() {
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-}
+}*/
