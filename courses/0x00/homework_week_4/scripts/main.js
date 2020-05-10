@@ -72,7 +72,7 @@ function myTestOne() {
                 //console.log(students[i].id);
                 //console.log(students[i].name);
                 myStrings.push(students[i].name);
-                console.log(task);
+                //console.log(task);
                 for (let j = 0; j < tasks.length; j++) {
                     //console.log(tasks[j]);
                     //console.log(tasks[j].userId);
@@ -85,8 +85,13 @@ function myTestOne() {
                             //console.log(tasks[j].completed);
                             task += 1;
                             //console.log(task);
-                            //myNumbers.push(task);
                         }
+                        console.log(task);
+                        //myNumbers.push(task);
+                    }
+                    else {
+                        console.log(students[i].name);
+                        task = 0;
                     }
                 }
             }
