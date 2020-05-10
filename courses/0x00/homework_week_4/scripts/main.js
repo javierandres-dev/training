@@ -9,6 +9,7 @@ const strJsonApiTodos = "https://jsonplaceholder.typicode.com/todos";
 const strJsonApiUsers = "https://jsonplaceholder.typicode.com/users";
 let myStrings = [];
 let myNumbers = [];
+let myTitles = [];
 let myArray = [];
 /**
  * EVENTS
@@ -37,6 +38,7 @@ function myTestOne() {
             //console.log(todos[i]);
             task[i] = {};
             task[i].userId = todos[i].userId;
+            task[i].title = todos[i].title;
             task[i].completed = todos[i].completed;
             tasks.push(task[i]);
         }
@@ -47,7 +49,6 @@ function myTestOne() {
             .then(response => response.json())
             //.then(json => console.log(json))
             .then(json => searchInUsers(json))
-
 
         function searchInUsers(json) {
             //console.log(json);
@@ -65,33 +66,36 @@ function myTestOne() {
             //console.log(students);
             //console.log(students[0]);
             //console.log(students.length);
-            //console.log(task);
-            let task = 0;
-            for (let i = 0; i < students.length; i++) {
-                //console.log(students[i]);
-                //console.log(students[i].id);
-                //console.log(students[i].name);
-                myStrings.push(students[i].name);
-                //console.log(task);
-                for (let j = 0; j < tasks.length; j++) {
-                    //console.log(tasks[j]);
-                    //console.log(tasks[j].userId);
-                    //console.log(tasks[j].completed);
-                    if (students[i].id === tasks[j].userId) {
-                        if (tasks[j].completed === true) {
-                            //console.log(students[i].id);
-                            //console.log(students[i].name);
-                            //console.log(tasks[j].userId);
-                            //console.log(tasks[j].completed);
-                            task += 1;
-                            //console.log(task);
+            let theTitles = new Array();
+            let theTitle = new Object();
+            for (let i = 0; i < tasks.length; i++) {
+                //console.log(tasks[i]);
+                //console.log(tasks[i].userId);
+                //console.log(tasks[i].title);
+                //console.log(tasks[i].completed);
+                for (let j = 0; j < students.length; j++) {
+                    //console.log(students[j]);
+                    //console.log(students[j].id);
+                    //console.log(students[j].name);
+                    if (tasks[i].userId === students[j].id) {
+                        if (tasks[i].completed === true) {
+                            theTitle[i] = {};
+                            theTitle[i].userId = tasks[i].userId;
+                            theTitle[i].title = tasks[i].title;
+                            theTitles.push(theTitle[i]);
                         }
-                        console.log(task);
-                        //myNumbers.push(task);
                     }
-                    else {
-                        console.log(students[i].name);
-                        task = 0;
+                }
+            }
+            myTitles = Array.from(new Set(theTitles));
+            //console.log(myTitles);
+            //console.log(students);
+            //console.log(myTitles.length);
+            //console.log(students.length);
+            for (let i = 0; i < myTitles.length; i++) {
+                for (let j = 0; j < students.length; j++) {
+                    if (myTitles[i].userId === students[j].id) {
+                        console.log(myTitles[i].userId);
                     }
                 }
             }
