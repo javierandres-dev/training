@@ -100,7 +100,7 @@
 * API's
 
 ###### Date (YY/MM/DD)
-I'm still working on it.
+2020/05/11
 
 ## Developer
 Javier Andrés Garzón Patarroyo
