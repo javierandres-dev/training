@@ -1,7 +1,7 @@
 # Flask
 :open_file_folder: training/courses/0x01
 
-###### :copyright: Código Facilito
+###### :copyright: [Código Facilito](https://codigofacilito.com/)
 
 ## Learning Objectives
 ###### General
@@ -59,9 +59,10 @@
 * [ ] 
 
 ## Stack
-* [x] Python
+* [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
+* [x] Python
 ###### Framework
 * [x] Flask
 
