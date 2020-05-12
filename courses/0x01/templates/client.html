@@ -1,0 +1,8 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<p>Desde "templates/client.html", Usando "templates/base/base.html"</p>
+<p>{{ miLista }}</p>
+{% for i in miLista %}
+<p>{{ i }}</p>
+{% endfor %}
+{% endblock %}
