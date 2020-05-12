@@ -42,6 +42,7 @@
 * Archivos estáticos
   - ```/```static, ```{{ url_for('static', filename = '') }}```
 * Macro
+  - ```{{ macro }}```, ```{{ endmacro }}```
 
 ## Resources
 * [Curso](https://www.youtube.com/playlist?list=PLagErt3C7iltAydvN6SgCVKsOH4xQQKsk)
