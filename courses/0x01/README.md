@@ -71,7 +71,7 @@ I'm still working on it.
 
 ## Developer
 Javier Andrés Garzón Patarroyo
-- [GitHub](https://github.com/javierandresgp)
-- [LinkedIn](https://www.linkedin.com/in/javierandresgp/)
+- :octocat: [GitHub](https://github.com/javierandresgp/)
+- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
 
 :man_technologist: :books: :computer: :globe_with_meridians:

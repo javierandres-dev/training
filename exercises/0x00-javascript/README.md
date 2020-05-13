@@ -1,28 +1,12 @@
-# Training
-:open_file_folder: training
+# 0x00-javascript
+:open_file_folder: training/exercises/0x00-javascript
 
-###### :copyright:
-
-## Objective
-###### General
-Courses, projects, exercises, everything to train.
+###### :copyright: [Ejercicio práctico de construcción de objetos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Ejercicio_pr%C3%A1ctico_de_construcci%C3%B3n_de_objetos)
 
 ## Stack
 * [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
-* [x] C
-* [x] PHP
-* [x] PYTHON
-
-## Frameworks
-* [x] FLASK
-* [x] REACT
-
-## Directories
-* [x] courses
-* [x] exercises
-* [x] projects
 
 ## Developer
 Javier Andrés Garzón Patarroyo

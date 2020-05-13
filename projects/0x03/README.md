@@ -23,6 +23,7 @@
 
 ## Developer
 Javier Andrés Garzón Patarroyo
-- [website](https://tecnoayuda.co/)
+- :octocat: [GitHub](https://github.com/javierandresgp/)
+- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
 
 :man_technologist: :books: :computer: :globe_with_meridians:
