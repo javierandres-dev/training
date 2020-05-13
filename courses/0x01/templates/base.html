@@ -2,4 +2,7 @@
 {% block content %}
 <p>Desde "templates/index.html", Usando "templates/base/base.html"</p>
 {{ nombre }}
+<br>
+{% from '_macro.html' import name_funct %}
+{{ name_funct('contenido a mostrar')}}
 {% endblock %}

@@ -1,9 +1,11 @@
 from flask import Flask
 from flask import request
 app = Flask(__name__)# nuevo objeto
+"""
 @app.route('/')# wrap o decorador
 def index():# método
     return 'Hello World! desde params.py'
+"""
 @app.route('/params')
 def params():
     param = request.args.get('params1', 'no contiene este parametro')

@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__)# nuevo objeto
 @app.route('/')# wrap o decorador
 def index():# método
-    return 'Hello World! desde index.py'
+    return 'Hello World!'
 @app.route('/diferente')
 def diferente():
     return 'Contenido diferente'
