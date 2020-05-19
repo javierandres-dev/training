@@ -9,7 +9,6 @@ Crear una REST API usando Flask y MySQL a través de un modulo llamado SQLAlchem
 
 ## Resources
 * [Python Flask & MySQL REST API con SQLAlchemy](https://www.youtube.com/watch?v=MvVqjQqSdM4)
-* [CÓDIGO DEL PROYECTO](https://www.youtube.com/redirect?v=MvVqjQqSdM4&event=video_description&q=https%3A%2F%2Fgithub.com%2FFaztWeb%2Fflask-mysql-restapi-sqlalchemy&redir_token=Ve5Y9NWUhm45hCtbqkTyj6gxv_58MTU4OTg1MDU1MUAxNTg5NzY0MTUx)
 * [Insomnia](https://insomnia.rest/)
 * [Postman](https://www.postman.com/)
 
@@ -18,7 +17,7 @@ Crear una REST API usando Flask y MySQL a través de un modulo llamado SQLAlchem
 Install PIP
 ```
 sudo apt-get install python-pip
-``` or ```
+ or 
 sudo apt-get install python3-pip
 ```
 Install virtualenv
@@ -27,7 +26,7 @@ pip install virtualenv
 ```
 Create a virtual environment
 ```
-virtualenv NOMBRE
+virtualenv A_NAME
 ```
 Install Flask
 ```
