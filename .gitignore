@@ -3,7 +3,8 @@
 *.exe
 *.out
 *.pyc
+venv/
+__pycache__/
 .DS_Store
 .vscode/
-__pycache__/
 .gitattributes/

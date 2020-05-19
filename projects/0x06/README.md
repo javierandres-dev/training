@@ -14,7 +14,7 @@ Crear una REST API usando Flask y MySQL a través de un modulo llamado SQLAlchem
 
 ## Requirements
 ###### Tools
-Install PIP
+Install Pip
 ```
 sudo apt-get install python-pip
  or 
@@ -61,8 +61,7 @@ Browser extension "json viewer"
 2020/05/18
 
 ## Developer
-Javier Andrés Garzón Patarroyo
-- :octocat: [GitHub](https://github.com/javierandresgp/)
-- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
-
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)  
+:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
 :man_technologist: :books: :computer: :globe_with_meridians:
