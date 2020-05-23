@@ -17,8 +17,7 @@
 I'm still working on it.
 
 ## Developer
-Javier Andrés Garzón Patarroyo
-- :octocat: [GitHub](https://github.com/javierandresgp/)
-- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
-
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)  
+:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
 :man_technologist: :books: :computer: :globe_with_meridians:
