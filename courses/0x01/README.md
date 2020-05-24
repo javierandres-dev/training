@@ -16,33 +16,30 @@
 * Servidores de Correos
 * Uso de base de datos
 * Uso de ORM
-###### Specific
-* ```flask```
-* Métodos ```run```, ```def```
-  - ```port```, ```debug```
+###### Topics
+* Métodos
 * Rutas
-  - ```@app.route```
 * Parámetros
-  - ```request```, ```?```, ```=```, ```&```
 * Validar rutas
-  - ```<```parámetro```>```, ```<int:```parámetro```>```
 * Templates
-  - ```render_template```
   - Motor de templates "jinja2"
-  - ```/```templates, ```template_folder```
-* Template tags
+  - Template tags
   - Renderizar variables
-  - ```{{```  ```}}```
   - Condicionales
-  - ```{% if```  ```%}```, ```{% endif %}```
   - Ciclos
-  - ```{% for```  ```%}```, ```{% endfor %}```
   - Herencia Templates
-  - ```{% block %}```, ```{% endblock %}```
 * Archivos estáticos
-  - ```/```static, ```{{ url_for('static', filename = '') }}```
 * Macro
-  - ```{{ macro }}```, ```{{ from``` ```import``` ```}}```, ```{{ endmacro }}```
+* Formularios
+* Datos formularios
+* Validación
+* Validaciones propias
+* CSRF
+* Cookies
+* Sesiones
+* Flask Message
+* Error 404
+* AJAX
 
 ## Resources
 * [Curso](https://www.youtube.com/playlist?list=PLagErt3C7iltAydvN6SgCVKsOH4xQQKsk)
@@ -70,8 +67,7 @@
 I'm still working on it.
 
 ## Developer
-Javier Andrés Garzón Patarroyo
-- :octocat: [GitHub](https://github.com/javierandresgp/)
-- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
-
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)  
+:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
 :man_technologist: :books: :computer: :globe_with_meridians:
