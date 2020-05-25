@@ -40,6 +40,20 @@
 * Flask Message
 * Error 404
 * AJAX
+* Before y After request
+* Global
+* Config
+* Modelo
+* ORM
+* Crear registro
+* Generar contraseña
+* Autenticación
+* Form method override
+* Relaciones
+* Paginación
+* Helpers
+* Servidor de correos
+* Thread Email
 
 ## Resources
 * [Curso](https://www.youtube.com/playlist?list=PLagErt3C7iltAydvN6SgCVKsOH4xQQKsk)
@@ -52,9 +66,6 @@
 * [x] Instalar ipython
 * [x] Instalar Flask
 
-## Tasks
-* [ ] 
-
 ## Stack
 * [x] HTML
 * [x] CSS
@@ -64,7 +75,7 @@
 * [x] Flask
 
 ###### Date (YY/MM/DD)
-I'm still working on it.
+2020/05/24
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

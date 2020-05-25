@@ -10,8 +10,7 @@ Do courses to train.
 * [ ] 0x01 - Flask - Código Facilito
 
 ## Developer
-Javier Andrés Garzón Patarroyo
-- :octocat: [GitHub](https://github.com/javierandresgp/)
-- :link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)
-
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)  
+:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
 :man_technologist: :books: :computer: :globe_with_meridians:
