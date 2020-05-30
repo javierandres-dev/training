@@ -1,4 +1,4 @@
-# exercises
+# Exercises
 :open_file_folder:
 training/exercises/
 

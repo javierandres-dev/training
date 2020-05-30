@@ -1,7 +1,6 @@
 # Training
-:open_file_folder: training
-
-###### :copyright:
+:open_file_folder:
+training/
 
 ## Objective
 ###### General

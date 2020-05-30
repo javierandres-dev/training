@@ -1,10 +1,8 @@
 # Projects
-:open_file_folder: training/projects
-
-###### :copyright:
+:open_file_folder:
+training/projects/
 
 ## Objetive
-###### General
 Do projects to train.
 
 ## Directories
