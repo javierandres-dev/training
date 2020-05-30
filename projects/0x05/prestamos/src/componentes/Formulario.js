@@ -1,8 +1,14 @@
 import React from 'react';
-const Formulario = ({cantidad, guardarCantidad}) => {
+const Formulario = ({cantidad, guardarCantidad, plazo, guardarPlazo}) => {
+    
+    const calcularPrestamo = e => {
+        e.preventDefault();
+        if (cantidad === 0 || plazo === '') {
+            console.log('hey');
+        }
+    }
     return (
-        <form>
-            {cantidad}
+        <form onSubmit={calcularPrestamo}>
           <div className="row">
               <div>
                   <label>Cantidad Prestamo</label>
@@ -15,8 +21,9 @@ const Formulario = ({cantidad, guardarCantidad}) => {
               </div>
               <div>
                   <label>Plazo para Pagar</label>
-                  <select 
+                  <select
                       className="u-full-width"
+                      onChange={ e => guardarPlazo(parseInt(e.target.value)) }
                   >
                       <option value="">Seleccionar</option>
                       <option value="3">3 meses</option>

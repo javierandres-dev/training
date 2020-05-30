@@ -4,6 +4,7 @@ import Formulario from './componentes/Formulario';
 
 function App() {
   const [cantidad, guardarCantidad] = useState(0);
+  const [plazo, guardarPlazo] = useState(0);
   return (
     <Fragment>
       <Header
@@ -13,10 +14,11 @@ function App() {
         <Formulario
           cantidad={cantidad}
           guardarCantidad={guardarCantidad}
+          plazo={plazo}
+          guardarPlazo={guardarPlazo}
         />
       </div>
     </Fragment>
   );
 }
-
 export default App;

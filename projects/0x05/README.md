@@ -6,22 +6,26 @@
 ## Objetives
 ###### Crear un cotizador de prestamos con React
 
+## Requeriments
+* [x] Node.js
+* [x] create-react-app
+
 ## Resources
 * [Node.js](https://nodejs.org/en/)
 * [create-react-app](https://github.com/facebook/create-react-app)
 * [Extension: React Developer Tools by Facebook](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
 * [cdnjs](https://cdnjs.com/)
 * [Framework CSS skeleton](https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css)
+* [normalize](https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css)
+* Extension VSC
+  - ES7 React/Redux/GraphQL/React-Native snippets by dsznajder
+  - Simple React Snippets by Burke Holland
 
 ## Stack
 * [x] HTML
 * [X] CSS
 * [X] JAVASCRIPT
 * [x] JSX
-
-## Tools
-* [x] Node.js
-* [x] create-react-app
 
 ###### Date (YY/MM/DD)
 I'm still working on it.
