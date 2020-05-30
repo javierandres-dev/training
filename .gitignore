@@ -1,10 +1,11 @@
 *~
 *#
+*.ds
 *.exe
 *.out
 *.pyc
-venv/
-__pycache__/
+*.swp
 .DS_Store
 .vscode/
+__pycache__/
 .gitattributes/
