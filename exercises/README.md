@@ -7,8 +7,8 @@ Do exercises to train.
 
 ## Directories
 * [x] 0x00
+* [x] 0x01
 * [x] 0x00-python
-* [x] 0x01-c
 * [x] 0x01-python
 * [x] 0x02-python
 
