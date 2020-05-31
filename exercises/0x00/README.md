@@ -1,11 +1,6 @@
 # 0x00
-:open_file_folder:
-training/exercises/0x00/
-:copyright:
-w3resource.com
-
-## Requeriments
-* GCC
+:open_file_folder: training/exercises/0x00/  
+:copyright: w3resource.com
 
 ## Resources
 [C Basic Declarations and Expressions](https://www.w3resource.com/c-programming-exercises/basic-declarations-and-expressions/index.php)

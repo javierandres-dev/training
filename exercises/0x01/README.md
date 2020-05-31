@@ -1,17 +1,15 @@
 # 0x01
-:open_file_folder:
-training/exercises/0x01/
-:copyright:
-udemy.com
+:open_file_folder: training/exercises/0x01/  
+:copyright: udemy.com
 
 ## Resources
 [Aprende Programación con Diagramas de Flujo](https://www.udemy.com/course-dashboard-redirect/?course_id=675742)
 
 ## Stack
 * [x] C
-  1. Operadores
-  2. Condicionales
-  3. Ciclos
+1. Operadores
+2. Condicionales
+3. Ciclos
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
