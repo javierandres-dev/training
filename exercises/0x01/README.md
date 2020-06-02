@@ -10,6 +10,7 @@
 1. Operadores
 2. Condicionales
 3. Ciclos
+4. Funciones
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
