@@ -11,6 +11,7 @@
 2. Condicionales
 3. Ciclos
 4. Funciones
+5. Vectores
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
