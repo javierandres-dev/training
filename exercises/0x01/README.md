@@ -12,6 +12,7 @@
 3. Ciclos
 4. Funciones
 5. Vectores
+6. Juegos
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
