@@ -1,7 +1,6 @@
-# 0x02-python
-:open_file_folder: training/exercises/0x02-python
-
-###### :copyright: [udemy.com](https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/)
+# 0x03
+:open_file_folder: training/exercises/0x03  
+:copyright: [udemy.com](https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/)
 
 ## Stack
 * [x] Python
