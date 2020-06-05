@@ -9,9 +9,9 @@ Do exercises to train.
 * [x] 0x00
 * [x] 0x01
 * [x] 0x02
-* [x] 0x00-python
-* [x] 0x01-python
-* [x] 0x02-python
+* [x] 0x03
+* [x] 0x04
+* [x] 0x05
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
