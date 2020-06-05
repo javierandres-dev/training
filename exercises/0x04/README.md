@@ -7,10 +7,11 @@
 
 ## Stack
 * [x] Python
-1. Ejercicios de tipos de datos simples
-2. Ejercicios de condicionales
-3. Ejercicios de bucles
-4. Ejercicios de listas y tuplas
+1. Tipos de datos simples
+2. Condicionales
+3. Bucles
+4. Listas y tuplas
+5. Diccionarios
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
