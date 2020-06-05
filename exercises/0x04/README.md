@@ -1,6 +1,9 @@
 # 0x04
 :open_file_folder: training/exercises/0x04  
-:copyright: [aprendeconalf.es](http://aprendeconalf.es/python/ejercicios/)
+:copyright: aprendeconalf.es
+
+## Resources
+* [Ejercicios de Python](http://aprendeconalf.es/python/ejercicios/)
 
 ## Stack
 * [x] Python
