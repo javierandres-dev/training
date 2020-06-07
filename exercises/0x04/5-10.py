@@ -19,44 +19,56 @@ NIF y nombre.
 
 def my_sol():
     clients = {}
-    key_list = ['nombre', 'dirección', 'teléfono',
-              'correo_electrónico', 'preferente']
-    menu = """
-    (1) Añadir cliente
-    (2) Eliminar cliente
-    (3) Mostrar cliente
-    (4) Listar todos los clientes
-    (5) Listar clientes preferentes
-    (6) Terminar.
-    """
     loop = True
     while loop is True:
-        print('Seleccione una opción: {}'.format(menu))
+        menu = """
+        (1) Añadir cliente
+        (2) Eliminar cliente
+        (3) Mostrar cliente
+        (4) Listar todos los clientes
+        (5) Listar clientes preferentes
+        (6) Terminar.
+        """
+        print('-------- Seleccione una opción: {}'.format(menu))
         action = input()
         if action == '1':
+            print('---- Añadir cliente ----')
             nif = input('NIF: ')
-            clients[nif] = {}
-            for key in key_list:
-                value = input(key + ': ')
-                nif[key] = value
+            name = input('Nombre: ')
+            address = input('Dirección: ')
+            phone = input('Teléfono: ')
+            email = input('Correo electrónico: ')
+            preferential = input('¿Es un cliente preferente? (s/n): ')
+            client = {'nombre': name, 'dirección': address,
+                      'teléfono': phone, 'correo electrónico': email,
+                      'preferente': preferential == 's'}
+            clients[nif] = client
         elif action == '2':
+            print('---- Eliminar cliente ----')
             nif = input('NIF: ')
             if nif in clients:
                 clients.pop(nif)
+                print('-- Hecho --')
             else:
                 print('Error: NIF no encontrado.')
         elif action == '3':
+            print('---- Mostrar cliente ----')
             nif = input('NIF: ')
             if nif in clients:
                 client = clients.get(nif)
                 for key, value in client.items():
-                    print(key, ': ', value)
+                    print(key.title(), ': ', value)
             else:
                 print('Error: NIF no encontrado.')
         elif action == '4':
-                print(clients)
+            print('---- Listar todos los clientes ----')
+            for key, value in clients.items():
+                print(key, ': ', value['nombre'])
         elif action == '5':
-            print('Listar solo los clientes preferentes.')
+            print('---- Listar clientes preferentes ----')
+            for key, value in clients.items():
+                if value['preferente']:
+                    print(key, ': ', value['nombre'])
         elif action == '6':
             loop = False
         else:
