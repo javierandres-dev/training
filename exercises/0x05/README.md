@@ -1,5 +1,5 @@
 # 0x05
-:open_file_folder: training/exercises/0x00-python  
+:open_file_folder: training/exercises/0x00  
 :copyright: w3resource.com
 
 ## Resources
