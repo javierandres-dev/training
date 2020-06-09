@@ -12,6 +12,7 @@
 3. Bucles
 4. Listas y tuplas
 5. Diccionarios
+6. Funciones
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
