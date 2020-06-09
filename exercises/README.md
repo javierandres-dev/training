@@ -12,6 +12,7 @@ Do exercises to train.
 * [x] 0x03
 * [x] 0x04
 * [x] 0x05
+* [x] 0x06
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
