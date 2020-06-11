@@ -1,6 +1,5 @@
 # Courses
-:open_file_folder:
-training/courses/
+:open_file_folder: training/courses/
 
 ## Objective
 Do courses to train.
@@ -8,6 +7,7 @@ Do courses to train.
 ## Directories
 * [x] 0x00 - JavaScript - One Month
 * [ ] 0x01 - Flask - Código Facilito
+* [x] 0x02 - Flask - Platzi
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
