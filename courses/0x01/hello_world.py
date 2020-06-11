@@ -7,4 +7,4 @@ def index():# método
 def diferente():
     return 'Contenido diferente'
 if __name__ == '__main__':
-    app.run(debug = True, port = 8000)# se encarga de ejecutar el servidor en el puerto 5000
+    app.run(debug = True, port = 5000)# se encarga de ejecutar el servidor en el puerto 5000
