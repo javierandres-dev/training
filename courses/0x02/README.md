@@ -4,8 +4,6 @@
 
 ## Resources
 * [Curso de Flask](https://platzi.com/clases/flask/)
-* [Flask](https://flask.palletsprojects.com/en/1.1.x/installation/)
-* [Templates](https://flask.palletsprojects.com/en/1.1.x/templating/)
 
 ## Stack
 * [x] Python
@@ -14,6 +12,9 @@
 * Python
 * Pip
 * Flask
+  - Extensiones de Flask
+    - Flask Bootstrap
+    - Flask Testing
 * Virtualenv
   - Create an environment
 
