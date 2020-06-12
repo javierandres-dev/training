@@ -21,6 +21,9 @@ Cotizador de seguro de auto.
 * [x] CSS
 * [x] JAVASCRIPT
 
+###### Date (YY/MM/DD)
+2020/06/12
+
 ## Developer
 Javier Andrés Garzón Patarroyo  
 :octocat: [GitHub](https://github.com/javierandresgp/)  
