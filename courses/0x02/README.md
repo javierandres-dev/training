@@ -13,8 +13,11 @@
 * Pip
 * Flask
   - Extensiones de Flask
-    - Flask Bootstrap
-    - Flask Testing
+    - flask
+    - flask-bootstrap
+    - flask-wtf
+    - flask-testing
+    - blinker
 * Virtualenv
   - Create an environment
 
