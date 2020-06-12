@@ -1,9 +1,9 @@
 # 0x00
-:open_file_folder: training/exercises/0x00/  
-:copyright: w3resource.com
+:open_file_folder: training/exercises/0x00/
 
 ## Resources
-[C Basic Declarations and Expressions](https://www.w3resource.com/c-programming-exercises/basic-declarations-and-expressions/index.php)
+###### :copyright:
+* [Main - Source link](https://www.w3resource.com/c-programming-exercises/basic-declarations-and-expressions/index.php)
 
 ## Stack
 * [x] C

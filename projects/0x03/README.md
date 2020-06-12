@@ -1,22 +1,25 @@
 # 0x03
 :open_file_folder: training/projects/0x03
 
-###### :copyright: [Juan Pablo De la torre Valdez](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/9084442#overview)
-
-## Objetives
-###### Simular envío de emails
+## Project
+Simular envío de emails
 * Si los campos de "Para", "Asunto" y "Mensaje" están vacios, el mail no puede enviarse y los campos deberán mostrarse en rojo.
 * Debe existir un botón para borrar todo el contenido del formulario.
 * Al presionar el botón de enviar, un spinner de carga deberá mostrarse.
 * Después del spinner un gráfico de "Enviado" deberá mostrarse.
 
+## Resources
+###### :copyright:
+* [Main - Source link](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/9084442#overview)
+* [Materialize](https://materializecss.com/)
+
+## Requeriments
+* Materialize
+
 ## Stack
 * [x] HTML
 * [X] CSS
 * [X] JAVASCRIPT
-
-## Framework
-* [Materialize](https://materializecss.com/)
 
 ###### Date (YY/MM/DD)
 2020/04/25

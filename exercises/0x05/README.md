@@ -1,9 +1,9 @@
 # 0x05
-:open_file_folder: training/exercises/0x00  
-:copyright: w3resource.com
+:open_file_folder: training/exercises/0x05/
 
 ## Resources
-* [Ejercicios de Python](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
+###### :copyright:
+* [Main - Source link](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
 
 ## Stack
 * [x] Python

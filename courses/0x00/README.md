@@ -1,18 +1,18 @@
-# JavaScript
-:open_file_folder: training/courses/0x00
+# 0x00
+:open_file_folder: training/courses/0x00/
 
-###### :copyright: [One Month](https://onemonth.com)
-- [Course](https://onemonth.com/courses/javascript/curriculum)
-- [Access](https://onemonth.com/users/auth/github)
-
-## Learning Objectives
-###### General
+## Course
+JavaScript
 * How to make a Happy Hour App & Oprah (!), utilizing ten concepts of javascript like functions, arrays, and conditionals. 
 * How to make a GIF Search Engine, taking advantage of things like APIs and AJAX.
 * How to make a Soundcloud player, refining our knowledge of APIs, and getting into advanced functions and refactoring. 
 * How to use Google Charts to make your own lightweight API. 
 
 ## Resources
+###### :copyright:
+* [Main - Source link](https://onemonth.com/courses/javascript/curriculum)
+* [Secondary - Source link](https://onemonth.com/users/auth/github)
+* [One Month](https://onemonth.com)
 * [Dark Sky API](https://darksky.net/dev/)
 * [SoundCloud API](https://developers.soundcloud.com/docs/api/guide)
 * [https://stripe.com/docs/custom-form](https://stripe.com/docs/custom-form)
@@ -89,15 +89,16 @@
 * [x] homework_week_3
 * [x] homework_week_4
 
-## Stack
-* [x] HTML
-* [x] CSS
-* [x] JAVASCRIPT
 ###### Tools
 * Console browser
 * reset.css
 * normalize.css
 * API's
+
+## Stack
+* [x] HTML
+* [x] CSS
+* [x] JAVASCRIPT
 
 ###### Date (YY/MM/DD)
 2020/05/11

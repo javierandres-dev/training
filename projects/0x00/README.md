@@ -1,14 +1,12 @@
 # 0x00
 :open_file_folder: training/projects/0x00
 
-###### :copyright: [pildorasinformaticas.es](https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+## Project
+Create, Read, Update, Delete
 
-## Objetives
-###### CRUD
-* Create
-* Read
-* Update
-* Delete
+## Resources
+###### :copyright:
+* [Main - Source link](https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
 
 ## Stack
 * [x] Python

@@ -1,10 +1,8 @@
 # Training
-:open_file_folder:
-training/
+:open_file_folder: training/
 
 ## Objective
-###### General
-Courses, projects, exercises, everything to train.
+###### Courses, projects, exercises, everything to train.
 
 ## Directories
 * [x] courses

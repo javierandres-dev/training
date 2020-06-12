@@ -1,9 +1,9 @@
 # 0x03
-:open_file_folder: training/exercises/0x03  
-:copyright: udemy.com
+:open_file_folder: training/exercises/0x03/
 
 ## Resources
-* [Master en Python 3.x.](https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/)
+###### :copyright:
+* [Main - Source link](https://www.udemy.com/course/aprende-el-lenguaje-de-programacion-python3-practicando/)
 
 ## Stack
 * [x] Python

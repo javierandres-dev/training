@@ -1,9 +1,9 @@
 # 0x02
-:open_file_folder: training/exercises/0x02  
-:copyright: mozilla.org
+:open_file_folder: training/exercises/0x02/
 
 ## Resources
-* [Ejercicio práctico de construcción de objetos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Ejercicio_pr%C3%A1ctico_de_construcci%C3%B3n_de_objetos)
+###### :copyright:
+* [Main - Source link](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Ejercicio_pr%C3%A1ctico_de_construcci%C3%B3n_de_objetos)
 
 ## Stack
 * [x] HTML

@@ -1,9 +1,8 @@
 # Exercises
-:open_file_folder:
-training/exercises/
+:open_file_folder: training/exercises/
 
 ## Objetive
-Do exercises to train.
+###### Do exercises to train.
 
 ## Directories
 * [x] 0x00

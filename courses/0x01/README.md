@@ -1,7 +1,20 @@
-# Flask
-:open_file_folder: training/courses/0x01
+# 0x01
+:open_file_folder: training/courses/0x01/
 
-###### :copyright: [Código Facilito](https://codigofacilito.com/)
+## Course
+Flask
+
+## Resources
+###### :copyright:
+* [Main - Source link](https://www.youtube.com/playlist?list=PLagErt3C7iltAydvN6SgCVKsOH4xQQKsk)
+* [Python](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com)
+* [ntroducción al uso de Python en Windows para principiantes](https://docs.microsoft.com/es-es/windows/python/beginners)
+
+## Requirements
+* Python
+* ipython
+* Flask
 
 ## Learning Objectives
 ###### General
@@ -55,24 +68,11 @@
 * Servidor de correos
 * Thread Email
 
-## Resources
-* [Curso](https://www.youtube.com/playlist?list=PLagErt3C7iltAydvN6SgCVKsOH4xQQKsk)
-* [Python](https://www.python.org/)
-* [Flask](https://flask.palletsprojects.com)
-* [ntroducción al uso de Python en Windows para principiantes](https://docs.microsoft.com/es-es/windows/python/beginners)
-
-## Requirements
-* [x] Instalar Python
-* [x] Instalar ipython
-* [x] Instalar Flask
-
 ## Stack
 * [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
 * [x] Python
-###### Framework
-* [x] Flask
 
 ###### Date (YY/MM/DD)
 2020/05/24

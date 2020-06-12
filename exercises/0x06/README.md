@@ -1,9 +1,9 @@
 # 0x06
-:open_file_folder: training/exercises/0x06
-:copyright:
+:open_file_folder: training/exercises/0x06/
 
 ## Resources
-* [Python - Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+###### :copyright:
+* [Main - Source link](https://docs.python.org/3/tutorial/datastructures.html)
 
 ## Stack
 * [x] Python

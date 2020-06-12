@@ -1,9 +1,9 @@
 # 0x01
-:open_file_folder: training/exercises/0x01/  
-:copyright: udemy.com
+:open_file_folder: training/exercises/0x01/
 
 ## Resources
-[Aprende Programación con Diagramas de Flujo](https://www.udemy.com/course-dashboard-redirect/?course_id=675742)
+###### :copyright:
+* [Main - Source link](https://www.udemy.com/course-dashboard-redirect/?course_id=675742)
 
 ## Stack
 * [x] C

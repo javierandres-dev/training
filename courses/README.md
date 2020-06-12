@@ -2,7 +2,7 @@
 :open_file_folder: training/courses/
 
 ## Objective
-Do courses to train.
+###### Do courses to train.
 
 ## Directories
 * [x] 0x00 - JavaScript - One Month

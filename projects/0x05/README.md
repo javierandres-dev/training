@@ -1,16 +1,12 @@
 # 0x05
 :open_file_folder: training/projects/0x05
 
-###### :copyright: [Juan Pablo De la torre Valdez](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/16877582#overview)
-
-## Objetives
-###### Crear un cotizador de prestamos con React
-
-## Requeriments
-* [x] Node.js
-* [x] create-react-app
+## Project
+Crear un cotizador de prestamos con React
 
 ## Resources
+###### :copyright:
+* [Main - Source link](https://www.udemy.com/course/javascript-moderno-guia-definitiva-construye-10-proyectos/learn/lecture/16877582#overview)
 * [Node.js](https://nodejs.org/en/)
 * [create-react-app](https://github.com/facebook/create-react-app)
 * [Extension: React Developer Tools by Facebook](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en-US)
@@ -20,6 +16,10 @@
 * Extension VSC
   - ES7 React/Redux/GraphQL/React-Native snippets by dsznajder
   - Simple React Snippets by Burke Holland
+
+## Requeriments
+* [x] Node.js
+* [x] create-react-app
 
 ## Stack
 * [x] HTML

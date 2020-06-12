@@ -1,6 +1,5 @@
 # Projects
-:open_file_folder:
-training/projects/
+:open_file_folder: training/projects/
 
 ## Objetive
 Do projects to train.
@@ -14,6 +13,7 @@ Do projects to train.
 * [ ] 0x05 Javascript - Crear un cotizador de prestamos con React
 * [x] 0x06 Python - Crear una REST API usando Flask, MySQL, SQLAlchemy
 * [x] 0x07 Python - Aplicación web utilizando Flask, MySQL, operaciones CRUD
+* [x] 0x08 Javascript - Cotizador de seguro de auto
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

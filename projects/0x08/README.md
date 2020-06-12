@@ -10,16 +10,16 @@ Cotizador de seguro de auto.
 
 ## Resources
 ###### :copyright:
-* [Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
+* [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
+
+## Requeriments
+* Text editor
+* Browser
 
 ## Stack
 * [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
-
-## Requeriments
-* Text editor
-* Browser
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

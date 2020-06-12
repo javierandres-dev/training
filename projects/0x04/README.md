@@ -1,14 +1,14 @@
 # 0x04
 :open_file_folder: training/projects/0x04
 
-###### :copyright: [DevCodeWebApp](https://www.udemy.com/course/draft/1929880/learn/lecture/11901002?start=0#overview)
-
-## Objetives
-###### Crear un reproductor de medios con JavaScript
+## Project
+Clase: Api-Media de JavaScript
+* Api-Media es un grupo de propiedades, métodos y evento diseñados para manipular e integrar video y audio en nuestros documentos.
+* Combinando esta Api con Html,Css podemos crear nuestros propios reproductores de video o audio con los controles que queremos.
 
 ## Resources
-###### Clase: Api-Media de JavaScript
-Api-Media es un grupo de propiedades, métodos y evento diseñados para manipular e integrar video y audio en nuestros documentos. Combinando esta Api con Html,Css podemos crear nuestros propios reproductores de video o audio con los controles que queremos.
+###### :copyright:
+* [Main - Source link](https://www.udemy.com/course/draft/1929880/learn/lecture/11901002?start=0#overview)
 
 ## Stack
 * [x] HTML
