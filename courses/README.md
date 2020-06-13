@@ -8,6 +8,7 @@
 * [x] 0x00 - JavaScript - One Month
 * [ ] 0x01 - Flask - Código Facilito
 * [x] 0x02 - Flask - Platzi
+* [ ] 0x03 - ReactJS - HolaMundo
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
