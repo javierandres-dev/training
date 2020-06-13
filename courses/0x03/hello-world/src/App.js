@@ -5,8 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Cabecera miau={'Bienvenido miau'}/>
-      <Cabecera miau={'Bienvenido guau'}/>
+      <Cabecera />
     </div>
   );
 }

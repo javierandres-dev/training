@@ -30,15 +30,36 @@ ReactJS
 * JSX
 * refactor componentes
 * props
+* state
+* Diferencias entre state y pops
+* Componentes en mínima expresión
+* Alternativas para crear y extender componentes
+* css vs style
+* Inline style dinámico
+* Reutilizando componentes con estilos
+* Los campos y manejando los cambios con onChange
+* Validación de formulario
+* Limpiando el formulario
+* API Fetch
+  - Fake Online REST API for Testing and Prototyping
+* Axios
+  - ```yarn add axios```
+* Definición app
+* Arquitectura de la solución
+* Mantenedor de usuarios montando proyecto
+* Mantenedor de usuarios manejando rutas
+###### Curso no está completo :(
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.youtube.com/watch?v=6By0BN4Zfn8&list=PLSnadb41DsdKJQjAz4mVJjpbXbkciJ8sq)
 * [Nodejs](https://nodejs.org)
 * [yarn](https://yarnpkg.com/)
+* [JSONPlaceholder](https://jsonplaceholder.typicode.com)
 
 ## Requeriments
-
+* Nodejs
+* Yarn
 
 ## Stack
 * [x] HTML
