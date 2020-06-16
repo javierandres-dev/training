@@ -8,4 +8,10 @@
 .DS_Store
 .vscode/
 __pycache__/
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+yarn.lock
 .gitattributes/
