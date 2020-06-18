@@ -1,5 +1,5 @@
 # 0x09
-:open_file_folder: training/exercises/0x09
+:open_file_folder: training/exercises/0x09/
 
 ## Project
 Gasto semanal

@@ -1,5 +1,5 @@
 # 0x00
-:open_file_folder: training/projects/0x00
+:open_file_folder: training/projects/0x00/
 
 ## Project
 Create, Read, Update, Delete

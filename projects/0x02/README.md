@@ -1,5 +1,5 @@
 # 0x02
-:open_file_folder: training/projects/0x02
+:open_file_folder: training/projects/0x02/
 
 ## Project
 Carrito de compras

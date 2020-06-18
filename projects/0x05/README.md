@@ -1,5 +1,5 @@
 # 0x05
-:open_file_folder: training/projects/0x05
+:open_file_folder: training/projects/0x05/
 
 ## Project
 Crear un cotizador de prestamos con React

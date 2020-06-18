@@ -1,5 +1,5 @@
 # 0x08
-:open_file_folder: training/exercises/0x08
+:open_file_folder: training/exercises/0x08/
 
 ## Project
 Cotizador de seguro de auto.

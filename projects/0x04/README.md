@@ -1,5 +1,5 @@
 # 0x04
-:open_file_folder: training/projects/0x04
+:open_file_folder: training/projects/0x04/
 
 ## Project
 Clase: Api-Media de JavaScript
