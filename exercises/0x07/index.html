@@ -10,33 +10,25 @@
 
 <body>
     <h1>CRUD - Usuarios</h1>
-    <form>
-        <input type="text" name="" id="id" placeholder="ID" required value="1">
-        <input type="text" name="" id="nombre" placeholder="Nombre" required value="Javier">
-        <input type="text" name="" id="apellido" placeholder="Apellido" required value="Patarroyo">
-        <input type="text" name="" id="telefono" placeholder="Teléfono" required value="100">
-        <button type="submit" id="btnCrearUsuario">Crear usuario</button>
-    </form>
-    <table>
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>NOMBRE</th>
-            <th>APELLIDO</th>
-            <th>EDAD</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button>Editar usuario</button></td>
-            <td><button>Eliminar usuario</button></td>
-        </tr>
-    </tbody>
-    </table>
+    <header>
+        <form id="formOpciones">
+            <fieldset>
+                <legend>Seleccione una opción y confirme la acción</legend>
+                <label for="opcLeerListaUsuarios">Ver lista de usuarios</label>
+                <input type="radio" name="opcion" id="opcLeerListaUsuarios">
+                <label for="opcCrearUsuario">Crear un usuario</label>
+                <input type="radio" name="opcion" id="opcCrearUsuario">
+                <label for="opcEditarUsuario">Editar un usuario</label>
+                <input type="radio" name="opcion" id="opcEditarUsuario">
+                <label for="opcEliminarUsuario">Eliminar un usuario</label>
+                <input type="radio" name="opcion" id="opcEliminarUsuario">
+                <button id="btnConfirmarSeleccion">Confirmar selección</button>
+            </fieldset>
+        </form>
+        <p id="mensajes" class="mensajes"></p>
+    </header>
+    <main id="mostrar"></main>
+    <aside id="auxiliar"></aside>
 </body>
 <script src="script.js"></script>
 
