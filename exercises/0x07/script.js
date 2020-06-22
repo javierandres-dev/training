@@ -2,19 +2,10 @@
  * VARIABLES
  */
 const listaUsuarios = [];
-const usuario = {
-    id: '',
-    nombre: '',
-    apellido: '',
-};
 const formOpciones = document.getElementById('formOpciones');
-const opcLeerListaUsuarios = document.getElementById('opcLeerListaUsuarios').checked;
-const opcCrearUsuario = document.getElementById('opcCrearUsuario').checked;
-const opcEditarUsuario = document.getElementById('opcEditarUsuario').checked;
-const opcEliminarUsuario = document.getElementById('opcEliminarUsuario').checked;
 const btnConfirmarSeleccion = document.getElementById('btnConfirmarSeleccion');
-const mensajes = document.getElementById('mensajes');
-const mostrar = document.getElementById('mostrar');
+const mensajes = document.getElementById('mostrarMensajes');
+const mostrar = document.getElementById('mostrarSeleccion');
 /**
  * CLASES
  */
@@ -24,7 +15,6 @@ const mostrar = document.getElementById('mostrar');
 eventListeners();
 
 function eventListeners() {
-    opcLeerListaUsuarios.addEventListener('che')
     btnConfirmarSeleccion.addEventListener('click', leerSeleccion);
 }
 /**
@@ -39,17 +29,32 @@ function enviarMensaje(mensaje) {
 
 function leerSeleccion(evt) {
     evt.preventDefault();
-    if (opcLeerListaUsuarios === true) {
-        mostrarTablaUsuarios();
-    } else if (opcCrearUsuario === true) {
-        crearUsuario();
-    } else if (opcEditarUsuario === true) {
-        editarUsuario();
-    } else if (opcEliminarUsuario === true) {
-        eliminarUsuario();
-    } else {
+    let opcion;
+    const opciones = document.querySelectorAll('input[name="opcion"]');
+    for (let i = 0; i < opciones.length; i++) {
+        if (opciones[i].checked === true) {
+            opcion = opciones[i].id;
+        }
+    }
+    if (opcion === undefined) {
         enviarMensaje('Primero debe seleccionar una opción, luego confirmar.');
-        return 0;
+    } else {
+        switch (opcion) {
+            case 'verUsuarios':
+                verUsuarios(opcion);
+                break;
+            case 'crearUsuario':
+                mostrarFormUsuario(opcion);
+                break;
+            case 'editarUsuario':
+                mostrarFormUsuario(opcion);
+                break;
+            case 'eliminarUsuario':
+                console.log('eliminarUsuario');
+                break;
+            default:
+                break;
+        }
     }
 }
 
@@ -74,7 +79,7 @@ function mostrarTablaUsuarios() {
     mostrar.appendChild(table);
 }
 
-function mostrarFormUsuario() {
+function mostrarFormUsuario(argv) {
     const form = document.createElement('form');
     const fieldset = document.createElement('fieldset');
     form.appendChild(fieldset);
@@ -93,12 +98,13 @@ function mostrarFormUsuario() {
     fieldset.appendChild(inputApellido);
     const button = document.createElement('button');
     button.setAttribute('type', 'submit');
-    let origen = quienLlama;
-    if (origen === 'opcCrearUsuario') {
+    if (argv === 'crearUsuario') {
         button.setAttribute('id', 'btnCrearUsuario');
+        button.addEventListener('click', crearUsuario);
         button.innerHTML = 'Crear usuario';
-    } else if (origen === 'opcEditarUsuario') {
+    } else if (argv === 'editarUsuario') {
         button.setAttribute('id', 'btnEditarUsuario');
+        button.addEventListener('click', editarUsuario);
         button.innerHTML = 'Editar usuario';
     } else {
         enviarMensaje('¿Quién llama?');
@@ -106,23 +112,21 @@ function mostrarFormUsuario() {
     }
     fieldset.appendChild(button);
     mostrar.appendChild(form);
-    button.addEventListener('click', llamarFuncion(origen));
 }
 
-function crearUsuario() {
+function verUsuarios(argv) {
+    console.log('verUsuarios')
+}
+
+function crearUsuario(evt) {
+    evt.preventDefault();
+    const usuario = {};
     usuario['id'] = document.getElementById('id').value;
     usuario['nombre'] = document.getElementById('nombre').value;
     usuario['apellido'] = document.getElementById('apellido').value;
-    console.log(usuario);
     listaUsuarios.push(usuario);
 }
 
-function editarUsuario() {
-    for (i in usuario) {}
-    listaUsuarios.push(usuario);
-    console.log('editarUsuario')
-}
+function editarUsuario() {}
 
-function eliminarUsuario() {
-    console.log('eliminarUsuario');
-}
+function eliminarUsuario() {}
