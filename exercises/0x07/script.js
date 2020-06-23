@@ -1,11 +1,12 @@
 /**
  * VARIABLES
  */
-const listaUsuarios = [];
+const usuarios = [];
 const formOpciones = document.getElementById('formOpciones');
 const btnConfirmarSeleccion = document.getElementById('btnConfirmarSeleccion');
-const mensajes = document.getElementById('mostrarMensajes');
-const mostrar = document.getElementById('mostrarSeleccion');
+const mostrarMensajes = document.getElementById('mostrarMensajes');
+const mostrarSeleccion = document.getElementById('mostrarSeleccion');
+const mostrarAuxiliar = document.getElementById('mostrarAuxiliar');
 /**
  * CLASES
  */
@@ -21,9 +22,9 @@ function eventListeners() {
  * FUNCIONES
  */
 function enviarMensaje(mensaje) {
-    mensajes.innerHTML = mensaje;
+    mostrarMensajes.innerHTML = mensaje;
     setTimeout(function () {
-        mensajes.innerHTML = '';
+        mostrarMensajes.innerHTML = '';
     }, 3000);
 }
 
@@ -40,17 +41,17 @@ function leerSeleccion(evt) {
         enviarMensaje('Primero debe seleccionar una opción, luego confirmar.');
     } else {
         switch (opcion) {
-            case 'verUsuarios':
-                verUsuarios(opcion);
+            case 'opcVerUsuarios':
+                mostrarUsuarios();
                 break;
-            case 'crearUsuario':
-                mostrarFormUsuario(opcion);
+            case 'opcCrearUsuario':
+                leerDatosUsuario();
                 break;
-            case 'editarUsuario':
-                mostrarFormUsuario(opcion);
+            case 'opcEditarUsuario':
+                leerIdUsuario(opcion);
                 break;
-            case 'eliminarUsuario':
-                console.log('eliminarUsuario');
+            case 'opcEliminarUsuario':
+                leerIdUsuario(opcion);
                 break;
             default:
                 break;
@@ -58,28 +59,7 @@ function leerSeleccion(evt) {
     }
 }
 
-function mostrarTablaUsuarios() {
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    table.appendChild(thead);
-    const caption = document.createElement('caption');
-    const textoCaption = document.createTextNode('Lista de usuarios');
-    caption.appendChild(textoCaption);
-    thead.appendChild(caption);
-    const tr = document.createElement('tr');
-    thead.appendChild(tr);
-    for (i in usuario) {
-        const th = document.createElement('th');
-        const textoTh = document.createTextNode(`${i}`);
-        th.appendChild(textoTh);
-        tr.appendChild(th);
-    }
-    const tbody = document.createElement('tbody');
-    table.appendChild(tbody);
-    mostrar.appendChild(table);
-}
-
-function mostrarFormUsuario(argv) {
+function leerDatosUsuario() {
     const form = document.createElement('form');
     const fieldset = document.createElement('fieldset');
     form.appendChild(fieldset);
@@ -87,46 +67,125 @@ function mostrarFormUsuario(argv) {
     const textoLegend = document.createTextNode('Datos del usuario');
     legend.appendChild(textoLegend);
     fieldset.appendChild(legend);
-    const inputId = document.createElement('input');
-    inputId.setAttribute('id', 'id');
-    fieldset.appendChild(inputId);
+    const inputDocumento = document.createElement('input');
+    inputDocumento.setAttribute('id', 'documento');
+    inputDocumento.setAttribute('placeholder', 'documento');
+    fieldset.appendChild(inputDocumento);
     const inputNombre = document.createElement('input');
     inputNombre.setAttribute('id', 'nombre');
+    inputNombre.setAttribute('placeholder', 'nombre');
     fieldset.appendChild(inputNombre);
     const inputApellido = document.createElement('input');
     inputApellido.setAttribute('id', 'apellido');
+    inputApellido.setAttribute('placeholder', 'apellido');
     fieldset.appendChild(inputApellido);
     const button = document.createElement('button');
     button.setAttribute('type', 'submit');
-    if (argv === 'crearUsuario') {
-        button.setAttribute('id', 'btnCrearUsuario');
-        button.addEventListener('click', crearUsuario);
-        button.innerHTML = 'Crear usuario';
-    } else if (argv === 'editarUsuario') {
-        button.setAttribute('id', 'btnEditarUsuario');
-        button.addEventListener('click', editarUsuario);
-        button.innerHTML = 'Editar usuario';
-    } else {
-        enviarMensaje('¿Quién llama?');
-        return 0;
-    }
+    button.setAttribute('id', 'btnCrearUsuario');
+    button.addEventListener('click', crearUsuario);
+    button.innerHTML = 'Crear usuario';
     fieldset.appendChild(button);
-    mostrar.appendChild(form);
+    mostrarSeleccion.appendChild(form);
 }
 
-function verUsuarios(argv) {
-    console.log('verUsuarios')
+function existenUsuarios() {
+    const sizeUsuarios = usuarios.length;
+    if (sizeUsuarios === 0) {
+        enviarMensaje('No se han creado usuarios.')
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function mostrarUsuarios() {
+    const comprobar = existenUsuarios();
+    if (comprobar === true) {
+        let usuario;
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const caption = document.createElement('caption');
+        const textoCaption = document.createTextNode('Lista de usuarios');
+        caption.appendChild(textoCaption);
+        thead.appendChild(caption);
+        for (let i = 0; i < 1; i++) {
+            const trTh = document.createElement('tr');
+            usuario = usuarios[i];
+            for (let key in usuario) {
+                const th = document.createElement('th');
+                const textoTh = document.createTextNode(key.toUpperCase());
+                th.appendChild(textoTh);
+                trTh.appendChild(th);
+            }
+            thead.appendChild(trTh);
+        }
+        table.appendChild(thead);
+        const tbody = document.createElement('tbody');
+        for (let i = 0; i < usuarios.length; i++) {
+            const tr = document.createElement('tr');
+            usuario = usuarios[i];
+            for (let key in usuario) {
+                const td = document.createElement('td');
+                const textoTd = document.createTextNode(usuario[key]);
+                td.appendChild(textoTd);
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        }
+        table.appendChild(tbody);
+        mostrarSeleccion.appendChild(table);
+    }
 }
 
 function crearUsuario(evt) {
     evt.preventDefault();
     const usuario = {};
-    usuario['id'] = document.getElementById('id').value;
+    usuario['id'] = usuarios.length + 1;
+    usuario['documento'] = document.getElementById('documento').value;
     usuario['nombre'] = document.getElementById('nombre').value;
     usuario['apellido'] = document.getElementById('apellido').value;
-    listaUsuarios.push(usuario);
+    usuarios.push(usuario);
 }
 
-function editarUsuario() {}
+function editarUsuario() {
+    const idUsuario = document.getElementById('idUsuario').value;
+    console.log(idUsuario);
+    console.log('editar usuario');
+}
 
-function eliminarUsuario() {}
+function eliminarUsuario() {
+    const idUsuario = document.getElementById('idUsuario').value;
+    const sizeUsuarios = usuarios.length;
+    for (let i = 0; i < sizeUsuarios; i++) {
+        let usuario = usuarios[i];
+        if (idUsuario == usuario.id) {
+            usuarios.splice(i, 1);
+            enviarMensaje('El usuario con ID: ' + idUsuario + ' ha sido eliminado.');
+        } else {
+            enviarMensaje('Verifique el dato ingresado.');
+        }
+    }
+}
+
+function leerIdUsuario(argv) {
+    const comprobar = existenUsuarios();
+    if (comprobar === true) {
+        const input = document.createElement('input');
+        input.setAttribute('id', 'idUsuario');
+        input.setAttribute('placeholder', 'ID del usuario');
+        mostrarSeleccion.appendChild(input);
+        const button = document.createElement('button');
+        button.setAttribute('type', 'submit');
+        if (argv === 'opcEditarUsuario') {
+            button.setAttribute('id', 'btnEditarUsuario');
+            button.addEventListener('click', editarUsuario);
+            button.innerHTML = 'Editar usuario';
+        }
+        if (argv === 'opcEliminarUsuario') {
+            button.setAttribute('id', 'btnEliminarUsuario');
+            button.addEventListener('click', eliminarUsuario);
+            button.innerHTML = 'Eliminar usuario';
+        }
+        mostrarAuxiliar.appendChild(button);
+    }
+}
