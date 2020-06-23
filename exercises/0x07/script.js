@@ -4,9 +4,8 @@
 const usuarios = [];
 const formOpciones = document.getElementById('formOpciones');
 const btnConfirmarSeleccion = document.getElementById('btnConfirmarSeleccion');
-const mostrarMensajes = document.getElementById('mostrarMensajes');
 const mostrarSeleccion = document.getElementById('mostrarSeleccion');
-const mostrarAuxiliar = document.getElementById('mostrarAuxiliar');
+const mostrarMensajes = document.getElementById('mostrarMensajes');
 /**
  * CLASES
  */
@@ -21,10 +20,12 @@ function eventListeners() {
 /**
  * FUNCIONES
  */
-function enviarMensaje(mensaje) {
+function enviarMensaje(mensaje, color) {
+    mostrarMensajes.classList.add(color);
     mostrarMensajes.innerHTML = mensaje;
     setTimeout(function () {
         mostrarMensajes.innerHTML = '';
+        mostrarMensajes.classList.remove(color);
     }, 3000);
 }
 
@@ -38,14 +39,14 @@ function leerSeleccion(evt) {
         }
     }
     if (opcion === undefined) {
-        enviarMensaje('Primero debe seleccionar una opción, luego confirmar.');
+        enviarMensaje('Primero debe seleccionar una opción, luego confirmar.', 'bg-amarillo');
     } else {
         switch (opcion) {
             case 'opcVerUsuarios':
                 mostrarUsuarios();
                 break;
             case 'opcCrearUsuario':
-                leerDatosUsuario();
+                leerDatosUsuario(opcion);
                 break;
             case 'opcEditarUsuario':
                 leerIdUsuario(opcion);
@@ -59,7 +60,7 @@ function leerSeleccion(evt) {
     }
 }
 
-function leerDatosUsuario() {
+function leerDatosUsuario(argv) {
     const form = document.createElement('form');
     const fieldset = document.createElement('fieldset');
     form.appendChild(fieldset);
@@ -81,9 +82,16 @@ function leerDatosUsuario() {
     fieldset.appendChild(inputApellido);
     const button = document.createElement('button');
     button.setAttribute('type', 'submit');
-    button.setAttribute('id', 'btnCrearUsuario');
-    button.addEventListener('click', crearUsuario);
-    button.innerHTML = 'Crear usuario';
+    if (argv === 'opcCrearUsuario') {
+        button.setAttribute('id', 'btnCrearUsuario');
+        button.addEventListener('click', crearUsuario);
+        button.innerHTML = 'Crear usuario';
+    }
+    if (argv === 'opcEditarUsuario') {
+        button.setAttribute('id', 'btnGuardarCambiosUsuario');
+        button.addEventListener('click', guardarCambiosUsuario);
+        button.innerHTML = 'Guardar cambios usuario';
+    }
     fieldset.appendChild(button);
     mostrarSeleccion.appendChild(form);
 }
@@ -91,7 +99,7 @@ function leerDatosUsuario() {
 function existenUsuarios() {
     const sizeUsuarios = usuarios.length;
     if (sizeUsuarios === 0) {
-        enviarMensaje('No se han creado usuarios.')
+        enviarMensaje('No existen usuarios.', 'bg-amarillo');
         return false;
     } else {
         return true;
@@ -145,12 +153,31 @@ function crearUsuario(evt) {
     usuario['nombre'] = document.getElementById('nombre').value;
     usuario['apellido'] = document.getElementById('apellido').value;
     usuarios.push(usuario);
+    enviarMensaje('Usuario creado.', 'bg-verde');
+}
+function guardarCambiosUsuario(evt){
+    evt.preventDefault();
+    const usuario = {};
+    usuario['id'] = document.getElementById('idUsuario').value;
+    usuario['documento'] = document.getElementById('documento').value;
+    usuario['nombre'] = document.getElementById('nombre').value;
+    usuario['apellido'] = document.getElementById('apellido').value;
+    usuarios.push(usuario);
+    enviarMensaje('Usuario editado, se han guardado los cambios.', 'bg-verde');
 }
 
 function editarUsuario() {
     const idUsuario = document.getElementById('idUsuario').value;
-    console.log(idUsuario);
-    console.log('editar usuario');
+    const sizeUsuarios = usuarios.length;
+    for (let i = 0; i < sizeUsuarios; i++) {
+        let usuario = usuarios[i];
+        if (idUsuario == usuario.id) {
+            let origen = 'opcEditarUsuario';
+            leerDatosUsuario(origen);
+        } else {
+            enviarMensaje('Verifique el dato ingresado.', 'bg-amarillo');
+        }
+    }
 }
 
 function eliminarUsuario() {
@@ -160,9 +187,9 @@ function eliminarUsuario() {
         let usuario = usuarios[i];
         if (idUsuario == usuario.id) {
             usuarios.splice(i, 1);
-            enviarMensaje('El usuario con ID: ' + idUsuario + ' ha sido eliminado.');
+            enviarMensaje('El usuario con ID: ' + idUsuario + ' ha sido eliminado.', 'bg-verde');
         } else {
-            enviarMensaje('Verifique el dato ingresado.');
+            enviarMensaje('Verifique el dato ingresado.', 'bg-amarillo');
         }
     }
 }
@@ -173,19 +200,21 @@ function leerIdUsuario(argv) {
         const input = document.createElement('input');
         input.setAttribute('id', 'idUsuario');
         input.setAttribute('placeholder', 'ID del usuario');
-        mostrarSeleccion.appendChild(input);
         const button = document.createElement('button');
         button.setAttribute('type', 'submit');
+        mostrarSeleccion.appendChild(input);
         if (argv === 'opcEditarUsuario') {
+            enviarMensaje('Vas a editar el usuario.', 'bg-amarillo');
             button.setAttribute('id', 'btnEditarUsuario');
             button.addEventListener('click', editarUsuario);
             button.innerHTML = 'Editar usuario';
         }
         if (argv === 'opcEliminarUsuario') {
+            enviarMensaje('Vas a eliminar el usuario.', 'bg-rojo');
             button.setAttribute('id', 'btnEliminarUsuario');
             button.addEventListener('click', eliminarUsuario);
             button.innerHTML = 'Eliminar usuario';
         }
-        mostrarAuxiliar.appendChild(button);
+        mostrarSeleccion.appendChild(button);
     }
 }
