@@ -15,6 +15,7 @@ Do projects to train.
 * [x] 0x07 Python - Aplicación web utilizando Flask, MySQL, operaciones CRUD
 * [x] 0x08 Javascript - Cotizador de seguro de auto
 * [x] 0x09 Javascript - Gasto semanal
+* [x] 0x10 Javascript - AJAX y XMLHTTPRequest
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
