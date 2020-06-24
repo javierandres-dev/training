@@ -1,19 +1,14 @@
-# Exercises
-:open_file_folder: training/exercises/
+# 0x07
+:open_file_folder: training/exercises/0x07/
 
-## Objetive
-###### Do exercises to train.
+## Resources
+###### :copyright:
+* CRUD a pelo
 
-## Directories
-* [x] 0x00
-* [x] 0x01
-* [x] 0x02
-* [x] 0x03
-* [x] 0x04
-* [x] 0x05
-* [x] 0x06
-* [ ] 0x07
-* [ ] 0x08
+## Stack
+* [x] HTML
+* [x] CSS
+* [x] JAVASCRIPT
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
