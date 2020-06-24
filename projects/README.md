@@ -16,6 +16,7 @@ Do projects to train.
 * [x] 0x08 Javascript - Cotizador de seguro de auto
 * [x] 0x09 Javascript - Gasto semanal
 * [x] 0x10 Javascript - AJAX y XMLHTTPRequest
+* [x] 0x11 - Javascript - Generador de nombres con REST API y AJAX
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
