@@ -13,9 +13,6 @@
 * Insomnia
 
 ## Stack
-* [x] HTML
-* [x] CSS
-* [x] JAVASCRIPT
 * [x] PYTHON
 
 ## Developer
