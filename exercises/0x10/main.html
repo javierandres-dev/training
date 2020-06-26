@@ -16,20 +16,24 @@
         <button type="button" class="btn btn-outline-primary" id="btnGetUsers">leer todos los usuarios</button>
         <button type="button" class="btn btn-outline-primary" id="btnGetUser">Leer usuario específico</button>
         <button type="button" class="btn btn-outline-primary" id="btnPostUser">Crear usuario</button>
+        <button type="button" class="btn btn-outline-primary" id="btnPutUser">Editar usuario</button>
+        <button type="button" class="btn btn-outline-primary" id="btnDeleteUser">Eliminar usuario</button>
     </nav>
-    <header id="askInfo">
-        <section id="askOi" class="d-none">
+    <header id="showMessages"></header>
+    <main id="showResponses"></main>
+    <aside id="askInfo">
+        <section id="askUserId" class="d-none">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">Número de identificación oficial:</span>
+                    <span class="input-group-text">ID del usuario:</span>
                 </div>
-                <input type="text" class="form-control" id="oi">
+                <input type="text" class="form-control" id="userId">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="btnSendOi">Enviar</button>
+                    <button class="btn btn-outline-secondary" type="button" id="btnSendUserId"></button>
                 </div>
             </div>
         </section>
-        <section id="askData" class="d-none">
+        <section id="askUserData" class="d-none">
             <form>
                 <div class="form-group">
                     <label>Número oficial de identificación</label>
@@ -47,13 +51,11 @@
                     <label>Teléfono</label>
                     <input type="text" class="form-control" id="nPhone">
                 </div>
-                <button type="submit" class="btn btn-primary" id="btnSendData">Submit</button>
+                <button type="submit" class="btn btn-primary" id="btnSendUserData"></button>
             </form>
         </section>
-    </header>
-    <main id="showResponses"></main>
-    <aside id="showMessages"></aside>
-    <footer></footer>
+    </aside>
+    <footer class="text-center">&copy;</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">

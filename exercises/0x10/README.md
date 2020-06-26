@@ -15,6 +15,9 @@ CRUD, REST API simple, Front with Back.
 * [x] JAVASCRIPT
 * [x] PYTHON
 
+## Date (MM/DD/YYYY)
+06/26/2020
+
 ## Developer
 Javier Andrés Garzón Patarroyo  
 :octocat: [GitHub](https://github.com/javierandresgp/)  
