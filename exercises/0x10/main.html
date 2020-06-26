@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <title>CRUD, REST API simple</title>
 </head>
@@ -14,20 +13,52 @@
     <h1>CRUD, REST API simple</h1>
     <hr>
     <nav>
-        <button type="button" class="btn btn-outline-primary" id="btnGetUsuarios">Lista de usuarios</button>
+        <button type="button" class="btn btn-outline-primary" id="btnGetUsers">leer todos los usuarios</button>
+        <button type="button" class="btn btn-outline-primary" id="btnGetUser">Leer usuario específico</button>
+        <button type="button" class="btn btn-outline-primary" id="btnPostUser">Crear usuario</button>
     </nav>
-    <header></header>
-    <main id="mostrarRespuestas"></main>
-    <aside id="mostrarMensajes"></aside>
+    <header id="askInfo">
+        <section id="askOi" class="d-none">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Número de identificación oficial:</span>
+                </div>
+                <input type="text" class="form-control" id="oi">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="btnSendOi">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <section id="askData" class="d-none">
+            <form>
+                <div class="form-group">
+                    <label>Número oficial de identificación</label>
+                    <input type="text" class="form-control" id="nOi">
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="nName">
+                </div>
+                <div class="form-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" class="form-control" id="nEmail">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="text" class="form-control" id="nPhone">
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnSendData">Submit</button>
+            </form>
+        </section>
+    </header>
+    <main id="showResponses"></main>
+    <aside id="showMessages"></aside>
     <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
     </script>
     <script src="main.js"></script>
 </body>
