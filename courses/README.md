@@ -9,6 +9,7 @@
 * [ ] 0x01 - Flask - Código Facilito
 * [x] 0x02 - Flask - Platzi
 * [ ] 0x03 - ReactJS - HolaMundo
+* [ ] 0x04 - Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
