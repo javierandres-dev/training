@@ -5,7 +5,10 @@
 Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero
 
 ###### Lessons
-
+* Html
+  - Comments
+  - Tags and properties
+* Css
 
 ###### Curso no está completo :(
 
