@@ -2,7 +2,7 @@
 :open_file_folder: training/courses/0x08/
 
 ## Project
-Create, Read, Update, Delete
+
 
 ## Resources
 ###### :copyright:

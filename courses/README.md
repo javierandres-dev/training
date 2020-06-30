@@ -6,8 +6,8 @@
 
 ## Directories
 * [x] 0x00 JavaScript - One Month - Chris Castiglione
-* [x] 0x01 JavaScript - Udemy - Juan Pablo De la torre Valdez
-* [ ] 0x02 Flask - Youtube - Código Fácilito - Eduardo Ismael
+* [ ] 0x01 JavaScript - Udemy - Juan Pablo De la torre Valdez
+* [x] 0x02 Flask - Youtube - Código Fácilito - Eduardo Ismael
 * [x] 0x03 Flask - Platzi - Bernardo Cassina
 * [x] 0x04 ReactJS - Youtube - HolaMundo - Nicolas Schurmann
 * [ ] 0x05 Javascript - Udemy - Nicolas Schurmann
