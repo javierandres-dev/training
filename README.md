@@ -2,12 +2,11 @@
 :open_file_folder: training/
 
 ## Objective
-###### Courses, projects, exercises, everything to train.
+###### Courses and exercises, everything to train.
 
 ## Directories
 * [x] courses
 * [x] exercises
-* [x] projects
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

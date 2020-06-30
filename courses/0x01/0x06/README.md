@@ -1,20 +1,19 @@
-# 0x11
-:open_file_folder: training/exercises/0x11/
+# 0x06
+:open_file_folder: training/courses/0x01/0x06/
 
 ## Project
-Generador de nombres
-* Consumir los datos desde una REST API
-* Enviar parametros a la REST aPI para filtrar país, sexo, y cantidad de nombres.
-* Imprimir los resultados desde la REST API con FETCH API, AJAX y ASYNC / AWAIT.
-* Deberá ser realizado con Clases.
+AJAX y XMLHTTPRequest
+* AJAX
+* AJAX y JSON
+* API's, REST API's y Request
+* JSON y API
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
-* [API - uinames](https://github.com/thm/uinames)
-* [API - ramdomuser](https://randomuser.me/ )
 * normalize.css
 * skeleton.css
+* JSONPlaceholder
 
 ## Requeriments
 * Text editor
@@ -26,7 +25,7 @@ Generador de nombres
 * [x] JAVASCRIPT
 
 ###### Date (MM/DD/YYYY)
-06/24/2020
+06/23/2020
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

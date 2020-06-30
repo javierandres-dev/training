@@ -2,66 +2,69 @@
 :open_file_folder: training/courses/0x04/
 
 ## Course
-Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero
-
+ReactJS
+* ReactJS no es un framework, ReactJS está enfocado únicamente en construir interfaces de usuario
+* Entender el objetivo de ReactJS dentro de una aplicación
+* Construir interfaces de usuario utilizando ReactJS
+* Entender el ciclo de vida de los componentes
+* Construir aplicaciones utilizando estándares internacionales
+* Construir rápido interfaces de usuario
+  - ReactJS
+  - React-Router
+  - Redux
+  - Redux-Form​
+  - Redux avanzado
 ###### Lessons
-* Html
-  - Comments
-  - Tags
-  - Properties
-  - Values
-  - Elements
-* Css
-  - Comments
-  - Selectors
-  - Properties
-  - Values
-  - Elements
-  - Grid
-  - Flexbox
-* Javascript
-  - Instructions
-  - Interpreter
-  - Comments
-  - Data structures
-  - Data types
-  - Keywords
-  - Functions
-  - Methods
-  - Names
-  - Arguments
-  - Propierties
-  - Values
-  - Elements
-  - Good practices
-  - Mutability
-  - Operators
-  - Control flow
-  - Conditionals
-  - Own functions
-  - Fat arrow functions
-  - Promise
-    - Then
-    - catch
-  - DOM
+* Objetivos del curso
+* Contexto de reactjs en una app
+* Composición por sobre la herencia y componentes
+* ```const```, ```let ```, ```var```
+* Fat arrow functions
+* Object destructuring
+* Array spread operator
+* Object spread operator
+* Instalando nodejs
+* Instalando yarn
+* Hola mundo, primera app
+  - ```npx create-react-app```
+* JSX
+* refactor componentes
+* props
+* state
+* Diferencias entre state y pops
+* Componentes en mínima expresión
+* Alternativas para crear y extender componentes
+* css vs style
+* Inline style dinámico
+* Reutilizando componentes con estilos
+* Los campos y manejando los cambios con onChange
+* Validación de formulario
+* Limpiando el formulario
+* API Fetch
+  - Fake Online REST API for Testing and Prototyping
+* Axios
+  - ```yarn add axios```
+* Definición app
+* Arquitectura de la solución
+* Mantenedor de usuarios montando proyecto
+* Mantenedor de usuarios manejando rutas
+###### Curso no está completo :(
 
 ## Resources
 ###### :copyright:
-* [Main - Source link](https://www.udemy.com/share/102XRQAEEcdF5VRno=/)
-* zeit.co
-* mongodb.com
-
+* [Main - Source link](https://www.youtube.com/watch?v=6By0BN4Zfn8&list=PLSnadb41DsdKJQjAz4mVJjpbXbkciJ8sq)
+* [Nodejs](https://nodejs.org)
+* [yarn](https://yarnpkg.com/)
+* [JSONPlaceholder](https://jsonplaceholder.typicode.com)
 
 ## Requeriments
-* Browser
-* Text editor
+* Nodejs
+* Yarn
 
 ## Stack
 * [x] HTML
 * [x] CSS
 * [x] JAVASCRIPT
-
-## Date (MM/DD/YYYY)
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

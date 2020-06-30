@@ -1,5 +1,5 @@
 # 0x06
-:open_file_folder: training/projects/0x06/
+:open_file_folder: training/courses/0x06/
 
 ## Project
 Python Flask & MySQL REST API con SQLAlchemy

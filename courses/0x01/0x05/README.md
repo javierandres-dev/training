@@ -1,16 +1,16 @@
-# 0x12
-:open_file_folder: training/exercises/0x12/
+# 0x05
+:open_file_folder: training/courses/0x01/0x05/
 
 ## Project
-Fetch API
-* La nueva tecnología para realizar peticiones que desplazó a AJAX
+Gasto semanal
+* Agregar un presupuesto semanal.
+* Crear un listado de gastos e ir reduciendo la cantidad de presupuesto disponible.
+* Una vez gastado el 50% mostrar el restante en color amarillo.
+* Una vez gastado el 75% mostrar el restante en color rojo.
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
-* [Picsum - API](https://picsum.photos/list)
-* normalize.css
-* skeleton.css
 
 ## Requeriments
 * Text editor
@@ -22,7 +22,7 @@ Fetch API
 * [x] JAVASCRIPT
 
 ###### Date (MM/DD/YYYY)
-06/26/2020
+06/18/2020
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

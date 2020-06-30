@@ -1,5 +1,5 @@
-# 0x03
-:open_file_folder: training/projects/0x03/
+# 0x02
+:open_file_folder: training/courses/0x01/0x02/
 
 ## Project
 Simular envío de emails

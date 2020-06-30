@@ -1,5 +1,5 @@
-# 0x01
-:open_file_folder: training/projects/0x01/
+# 0x00
+:open_file_folder: training/courses/0x01/0x00/
 
 ## Project
 Local Storage desde un textarea

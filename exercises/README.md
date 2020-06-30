@@ -5,15 +5,17 @@
 ###### Do exercises to train.
 
 ## Directories
-* [x] 0x00
-* [x] 0x01
-* [x] 0x02
-* [x] 0x03
-* [x] 0x04
-* [x] 0x05
-* [x] 0x06
-* [ ] 0x07
-* [ ] 0x08
+* [x] 0x00 C
+* [x] 0x01 C
+* [x] 0x02 Html, Css, Javascript
+* [x] 0x03 Python
+* [x] 0x04 Python
+* [x] 0x05 Python
+* [x] 0x06 Python
+* [ ] 0x07 Html, Css, Javascript
+* [ ] 0x08 Html, Css, Javascript
+* [ ] 0x09 Python
+* [ ] 0x10 Html, Css, Javascript, Python
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

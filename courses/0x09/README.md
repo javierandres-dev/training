@@ -1,8 +1,9 @@
-# 0x04
-:open_file_folder: training/projects/0x04/
+# 0x09
+:open_file_folder: training/courses/0x09/
 
 ## Project
-Clase: Api-Media de JavaScript
+Crear un reproductor de medios
+* Clase: Api-Media de JavaScript
 * Api-Media es un grupo de propiedades, métodos y evento diseñados para manipular e integrar video y audio en nuestros documentos.
 * Combinando esta Api con Html,Css podemos crear nuestros propios reproductores de video o audio con los controles que queremos.
 

@@ -1,16 +1,20 @@
-# 0x09
-:open_file_folder: training/exercises/0x09/
+# 0x07
+:open_file_folder: training/courses/0x01/0x07/
 
 ## Project
-Gasto semanal
-* Agregar un presupuesto semanal.
-* Crear un listado de gastos e ir reduciendo la cantidad de presupuesto disponible.
-* Una vez gastado el 50% mostrar el restante en color amarillo.
-* Una vez gastado el 75% mostrar el restante en color rojo.
+Generador de nombres
+* Consumir los datos desde una REST API
+* Enviar parametros a la REST aPI para filtrar país, sexo, y cantidad de nombres.
+* Imprimir los resultados desde la REST API con FETCH API, AJAX y ASYNC / AWAIT.
+* Deberá ser realizado con Clases.
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
+* [API - uinames](https://github.com/thm/uinames)
+* [API - ramdomuser](https://randomuser.me/ )
+* normalize.css
+* skeleton.css
 
 ## Requeriments
 * Text editor
@@ -22,7 +26,7 @@ Gasto semanal
 * [x] JAVASCRIPT
 
 ###### Date (MM/DD/YYYY)
-06/18/2020
+06/24/2020
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

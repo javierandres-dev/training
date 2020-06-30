@@ -1,19 +1,16 @@
-# 0x10
-:open_file_folder: training/exercises/0x10/
+# 0x04
+:open_file_folder: training/courses/0x01/0x04/
 
 ## Project
-AJAX y XMLHTTPRequest
-* AJAX
-* AJAX y JSON
-* API's, REST API's y Request
-* JSON y API
+Cotizador de seguro de auto.
+* Existen 3 modelos, cada uno con precios distintos
+* Cada año del auto su precio deberá ser menor en un 3%
+* El seguro del auto completo o básico tienen distintos precios.
+* Deberá ser realizado con Prototypes y migrado a Clases.
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
-* normalize.css
-* skeleton.css
-* JSONPlaceholder
 
 ## Requeriments
 * Text editor
@@ -24,8 +21,8 @@ AJAX y XMLHTTPRequest
 * [x] CSS
 * [x] JAVASCRIPT
 
-###### Date (MM/DD/YYYY)
-06/23/2020
+###### Date (YY/MM/DD)
+2020/06/12
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

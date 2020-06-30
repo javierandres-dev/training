@@ -1,16 +1,16 @@
 # 0x08
-:open_file_folder: training/exercises/0x08/
+:open_file_folder: training/courses/0x01/0x08/
 
 ## Project
-Cotizador de seguro de auto.
-* Existen 3 modelos, cada uno con precios distintos
-* Cada año del auto su precio deberá ser menor en un 3%
-* El seguro del auto completo o básico tienen distintos precios.
-* Deberá ser realizado con Prototypes y migrado a Clases.
+Fetch API
+* La nueva tecnología para realizar peticiones que desplazó a AJAX
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/101Z6UAEEcdF5VRno=/)
+* [Picsum - API](https://picsum.photos/list)
+* normalize.css
+* skeleton.css
 
 ## Requeriments
 * Text editor
@@ -21,8 +21,8 @@ Cotizador de seguro de auto.
 * [x] CSS
 * [x] JAVASCRIPT
 
-###### Date (YY/MM/DD)
-2020/06/12
+###### Date (MM/DD/YYYY)
+06/26/2020
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

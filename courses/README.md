@@ -5,11 +5,16 @@
 ###### Do courses to train.
 
 ## Directories
-* [x] 0x00 - JavaScript - One Month
-* [ ] 0x01 - Flask - Código Facilito
-* [x] 0x02 - Flask - Platzi
-* [ ] 0x03 - ReactJS - HolaMundo
-* [ ] 0x04 - Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero
+* [x] 0x00 JavaScript - One Month - Chris Castiglione
+* [x] 0x01 JavaScript - Udemy - Juan Pablo De la torre Valdez
+* [ ] 0x02 Flask - Youtube - Código Fácilito - Eduardo Ismael
+* [x] 0x03 Flask - Platzi - Bernardo Cassina
+* [x] 0x04 ReactJS - Youtube - HolaMundo - Nicolas Schurmann
+* [ ] 0x05 Javascript - Udemy - Nicolas Schurmann
+* [x] 0x06 Python - Crear una REST API usando Flask, MySQL, SQLAlchemy - 
+* [x] 0x07 Python - Aplicación web utilizando Flask, MySQL, operaciones CRUD - 
+* [ ] 0x08 Python - Youtube - Píldoras informáticas - 
+* [x] 0x09 Javascript - Udemy - DevCodeWebApp
 
 ## Developer
 Javier Andrés Garzón Patarroyo  

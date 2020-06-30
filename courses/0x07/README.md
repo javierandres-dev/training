@@ -1,5 +1,5 @@
 # 0x07
-:open_file_folder: training/projects/0x07/
+:open_file_folder: training/courses/0x07/
 
 ## Project
 Python Flask y Mysql Aplicación Web | Aplicación de Ejemplo
