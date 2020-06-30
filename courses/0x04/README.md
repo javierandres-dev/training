@@ -39,10 +39,18 @@ Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero
   - Control flow
   - Conditionals
   - Own functions
+  - Fat arrow functions
+  - Promise
+    - Then
+    - catch
+  - DOM
 
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://www.udemy.com/share/102XRQAEEcdF5VRno=/)
+* zeit.co
+* mongodb.com
+
 
 ## Requeriments
 * Browser
