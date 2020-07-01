@@ -1,0 +1,41 @@
+.shoppingBasket {
+    border: 1px solid lightgray;
+    font-family: sans-serif;
+}
+
+.shoppingBasket div {
+    width: 480px;
+    height: 240px;
+    background-color: lightgray;
+}
+
+.shoppingBasket h3 {
+    background-color: black;
+    color: white;
+    padding: 16px;
+}
+
+.shoppingBasket .buttons {
+    width: 128px;
+    height: 32px;
+    margin-left: 16px;
+}
+
+.shoppingBasket button {
+    width: 32px;
+    height: 32px;
+    background-color: lightskyblue;
+    border: 1px solid gray;
+}
+
+.shoppingBasket span {
+    width: 80px;
+    height: 32px;
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+}
+
+.shoppingBasket p {
+    margin-left: 16px;
+}
