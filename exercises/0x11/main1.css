@@ -1,6 +1,11 @@
 .shoppingBasket {
+    width: 480px;
     border: 1px solid lightgray;
     font-family: sans-serif;
+}
+.shoppingBasket h2,
+.shoppingBasket p {
+    padding-left: 16px;
 }
 
 .shoppingBasket div {
@@ -12,7 +17,7 @@
 .shoppingBasket h3 {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 32px;
 }
 
 .shoppingBasket .buttons {
@@ -34,8 +39,4 @@
     background-color: white;
     padding: 8px 16px;
     border: 1px solid gray;
-}
-
-.shoppingBasket p {
-    margin-left: 16px;
 }
