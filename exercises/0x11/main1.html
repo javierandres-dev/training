@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            margin: 16px;
+        }
+
+        section {
+            max-width: 400px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            background-color: black;
+            color: white;
+            padding: 16px 32px;
+        }
+
+        .kmToMilesConverter {
+            background-color: lightgray;
+            padding-bottom: 16px;
+        }
+
+        .kmToMilesConverter p,
+        .kmToMilesConverter input {
+            margin-left: 16px;
+        }
+
+        .kmToMilesConverter input,
+        .kmToMilesConverter span {
+            padding: 8px
+        }
+
+        .kmToMilesConverter span {
+            background-color: white;
+            border: 1px solid gray;
+        }
+    </style>
+    <title>Replicating projects</title>
+</head>
+
+<body>
+    <h1>Replicating projects</h1>
+    <section>
+        <h2>KM to Miles converter</h2>
+        <p>Build the logic behind a KM to Miles converter web app.</p>
+        <div class="kmToMilesConverter">
+            <h3>KM to Miles converter</h3>
+            <p><strong>Enter the number in kilometers</strong></p>
+            <input type="number" id="readKms" placeholder="Number"> kms is <span id="showMiles">0</span> miles
+        </div>
+    </section>
+</body>
+<script>
+    const readKms = document.getElementById('readKms')
+    const showMiles = document.getElementById('showMiles')
+
+    function kmsToMilesConvert() {
+        let miles = readKms.value * 0.62137
+        showMiles.innerHTML = miles
+    }
+
+    function eventListeners() {
+        readKms.addEventListener('click', kmsToMilesConvert)
+    }
+    eventListeners()
+</script>
+
+</html>

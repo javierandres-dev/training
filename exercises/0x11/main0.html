@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            margin: 16px;
+        }
+
+        section {
+            max-width: 400px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            background-color: black;
+            color: white;
+            padding: 16px 32px;
+        }
+
+        .shoppingBasket {
+            background-color: lightgray;
+            padding-bottom: 16px;
+        }
+
+        .shoppingBasket p {
+            margin-left: 16px;
+        }
+
+        .shoppingBasket button {
+            width: 32px;
+            height: 32px;
+            background-color: lightskyblue;
+            border: none
+        }
+
+        .shoppingBasket span {
+            width: 80px;
+            background-color: white;
+            padding: 8px 16px;
+        }
+    </style>
+    <title>Replicating projects</title>
+</head>
+
+<body>
+    <h1>Replicating projects</h1>
+    <section>
+        <h2>Shopping basket</h2>
+        <p>Conditionally show the message on a shopping basket based on the number of items.</p>
+        <div class="shoppingBasket">
+            <h3>Shopping basket</h3>
+            <p><button id="btnLess">-</button>
+                <span id="showAmount"></span>
+                <button id="btnMore">+</button></p>
+            <p id="showMessage"></p>
+        </div>
+    </section>
+</body>
+<script>
+    const btnLess = document.getElementById('btnLess')
+    const btnMore = document.getElementById('btnMore')
+    const showAmount = document.getElementById('showAmount')
+    const showMessage = document.getElementById('showMessage')
+    let amount = 0;
+
+    function less() {
+        setAmount(amount = amount - 1)
+    }
+
+    function more() {
+        setAmount(amount = amount + 1)
+    }
+    const setAmount = (amount) => {
+        showAmount.innerHTML = amount
+        setMessage(amount)
+    }
+    setAmount(amount)
+
+    function setMessage(amount) {
+        if (amount === 0) {
+            showMessage.innerHTML = "You don't have any items in your shopping list"
+        } else if (amount > 0) {
+            if (amount === 1) {
+                showMessage.innerHTML = "You have one item in your shopping list"
+            } else {
+                showMessage.innerHTML = "You have more than 1 item in your shopping list"
+            }
+        } else {
+            showMessage.innerHTML = "Invalid number"
+        }
+    }
+
+    function eventListeners() {
+        btnLess.addEventListener('click', less)
+        btnMore.addEventListener('click', more)
+    }
+    eventListeners()
+</script>
+
+</html>
