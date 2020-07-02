@@ -4,6 +4,14 @@
 ## Objetive
 Replicating projects to train.
 
+## Projects
+* Shopping basket
+* KM to Miles converter
+* Celsius to Fahrenheit converter
+* Double or Triple operation
+* Password validation
+* Promo code validation
+
 ## Resources
 ###### :copyright:
 * [Main - Source link](https://learnprogramming.online/pay.html)

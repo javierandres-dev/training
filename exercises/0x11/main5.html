@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        span {
+            font-weight: normal;
+            color: gray;
+        }
+
+        input {
+            margin-top: 0.5em;
+            padding: 0.5em;
+            font-family: sans-serif;
+            font-size: 1.1em;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+<title>Replicating projects</title>
+</head>
+
+<body>
+    <h1>Replicating projects to train.</h1>
+    <hr>
+    <h2>Promo code validation</h2>
+    <p>Build the logic behind a promo code validation form.</p>
+    <h3>Enter promo code</h3>
+    <legend>Enter the code below to get your discount <span>(5 to 10 characters)</span></legend>
+    <input type="text" id="readCode" placeholder="Enter your code">
+</body>
+<script>
+    const readCode = document.getElementById('readCode')
+    readCode.addEventListener('input', checkSizeCode)
+
+    function checkSizeCode() {
+        let code = readCode.value
+        let sizeCode = code.length
+        if (sizeCode > 5 && sizeCode < 10) {
+            readCode.style.border = '2px solid gray'
+        } else {
+            readCode.style.border = '2px solid red'
+        }
+    }
+</script>
+
+</html>

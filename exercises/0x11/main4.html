@@ -22,17 +22,7 @@
 
         input {
             padding: 8px;
-            border: 1px solid gray;
-        }
-        input:focus,
-        select {
-            border-color: greenyellow;
-        }
-        .b-red {
-            border: 1px solid red;
-        }
-        .b-green {
-            border: 1px solid green;
+            outline: none;
         }
     </style>
     <title>Replicating projects</title>
@@ -44,20 +34,22 @@
     <h2>Password validation</h2>
     <p>Build the logic behind a password validation form.</p>
     <h3>Register</h3>
-    <legend>Enter a new password to completed your registration</legend>
-    <input type="password" name="" id="readPwd" placeholder="Enter your password" oninput="checkSize()">
+    <form>
+        <legend>Enter a new password to completed your registration</legend>
+        <input type="password" id="readPwd" placeholder="Enter your password">
+    </form>
 </body>
 <script>
     const readPwd = document.getElementById('readPwd')
-    const checkSize = () => {
+    let checkSize = () => {
         let sizePwd = readPwd.value.length
-        if(sizePwd < 8){
-            readPwd.classList.add('b-red')
-        }
-        else{
-            console.log('>= 8')
+        if (sizePwd > 0 && sizePwd < 8) {
+            readPwd.style.border = '2px solid red'
+        } else {
+            readPwd.style.border = '2px solid gray'
         }
     }
+    readPwd.addEventListener('input', checkSize)
 </script>
 
 </html>
