@@ -2,7 +2,7 @@
 :open_file_folder: training/exercises/0x11/
 
 ## Objetive
-Replicating projects
+Replicating projects to train.
 
 ## Resources
 ###### :copyright:

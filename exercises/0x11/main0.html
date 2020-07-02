@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <style>
-        h1 {
-            margin: 16px;
-        }
-
-        section {
-            max-width: 400px;
-            margin: auto;
-            font-family: sans-serif;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
         }
 
         h3 {
@@ -22,6 +18,7 @@
         }
 
         .shoppingBasket {
+            max-width: 480px;
             background-color: lightgray;
             padding-bottom: 16px;
         }
@@ -47,18 +44,17 @@
 </head>
 
 <body>
-    <h1>Replicating projects</h1>
-    <section>
-        <h2>Shopping basket</h2>
-        <p>Conditionally show the message on a shopping basket based on the number of items.</p>
-        <div class="shoppingBasket">
-            <h3>Shopping basket</h3>
-            <p><button id="btnLess">-</button>
-                <span id="showAmount"></span>
-                <button id="btnMore">+</button></p>
-            <p id="showMessage"></p>
-        </div>
-    </section>
+    <h1>Replicating projects to train.</h1>
+    <hr>
+    <h2>Shopping basket</h2>
+    <p>Conditionally show the message on a shopping basket based on the number of items.</p>
+    <div class="shoppingBasket">
+        <h3>Shopping basket</h3>
+        <p><button id="btnLess">-</button>
+            <span id="showAmount"></span>
+            <button id="btnMore">+</button></p>
+        <p id="showMessage"></p>
+    </div>
 </body>
 <script>
     const btnLess = document.getElementById('btnLess')
@@ -93,12 +89,8 @@
             showMessage.innerHTML = "Invalid number"
         }
     }
-
-    function eventListeners() {
-        btnLess.addEventListener('click', less)
-        btnMore.addEventListener('click', more)
-    }
-    eventListeners()
+    btnLess.addEventListener('click', less)
+    btnMore.addEventListener('click', more)
 </script>
 
 </html>

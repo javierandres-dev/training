@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <style>
-        h1 {
-            margin: 16px;
-        }
-
-        section {
-            max-width: 400px;
-            margin: auto;
-            font-family: sans-serif;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
         }
 
         h3 {
@@ -22,6 +18,7 @@
         }
 
         .celsiusToFahrenheitConverter {
+            max-width: 480px;
             background-color: lightgray;
             padding-bottom: 16px;
         }
@@ -40,17 +37,16 @@
 </head>
 
 <body>
-    <h1>Replicating projects</h1>
-    <section>
-        <h2>Celsius to Fahrenheit converter</h2>
-        <p>Build the logic behind a Celsius to Fahrenheit converter web app.</p>
-        <div class="celsiusToFahrenheitConverter">
-            <h3>Celsius to Fahrenheit converter</h3>
-            <p><strong>Enter the number in Celsius</strong></p>
-            <input type="number" id="readCelsius" placeholder="Number"> Celsius is <span
-                id="showFahrenheit">Result</span> Fahrenheit
-        </div>
-    </section>
+    <h1>Replicating projects to train.</h1>
+    <hr>
+    <h2>Celsius to Fahrenheit converter</h2>
+    <p>Build the logic behind a Celsius to Fahrenheit converter web app.</p>
+    <div class="celsiusToFahrenheitConverter">
+        <h3>Celsius to Fahrenheit converter</h3>
+        <p><strong>Enter the number in Celsius</strong></p>
+        <input type="number" id="readCelsius" placeholder="Number"> Celsius is <span id="showFahrenheit">Result</span>
+        Fahrenheit
+    </div>
 </body>
 <script>
     const readCelsius = document.getElementById('readCelsius')
@@ -60,11 +56,7 @@
         let fahrenheit = (readCelsius.value * 9 / 5) + 32
         showFahrenheit.innerHTML = fahrenheit
     }
-
-    function eventListeners() {
-        readCelsius.addEventListener('click', celsiusToFahrenheitConverter)
-    }
-    eventListeners()
+    readCelsius.addEventListener('click', celsiusToFahrenheitConverter)
 </script>
 
 </html>
