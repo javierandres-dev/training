@@ -29,10 +29,6 @@ input {
     outline: none;
 }
 
-input:focus {
-    border-color: red;
-}
-
 textarea {
     width: 100%;
 
@@ -50,4 +46,20 @@ button {
 span {
     font-weight: 100;
     color: grey;
+}
+
+input:valid {
+    border-color: lightgreen;
+}
+
+input:focus:invalid {
+    border-color: lightpink;
+}
+
+input:invalid:required {
+    border-color: red;
+}
+
+abbr {
+    color: lightpink;
 }
