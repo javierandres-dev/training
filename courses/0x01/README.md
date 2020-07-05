@@ -19,6 +19,7 @@ JavaScript Moderno Guía Definitiva Construye +15 Proyectos
 * [x] 0x06 AJAX y XMLHTTPRequest
 * [x] 0x07 Generador de nombres con REST API y AJAX
 * [x] 0x08 Fetch API
+* [x] 0x09 Cotizar criptomonedas
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
