@@ -2,7 +2,7 @@
 :open_file_folder: training/exercises/0x13/
 
 ## Objetive
-Learn HTML
+Learn HTML and CSS
 
 ## Resources
 ###### :copyright:
@@ -11,13 +11,13 @@ Learn HTML
 * [Notepad++](https://notepad-plus-plus.org/)
 * [TextMate](https://macromates.com/)
 
-
 ## Requeriments
 * Text editor
 * Browser
 
 ## Stack
 * [x] HTML
+* [x] CSS
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
