@@ -17,6 +17,8 @@
 * [ ] 0x09 Python
 * [ ] 0x10 Html, Css, Javascript, Python
 * [ ] 0x11 Html, Css, Javascript
+* [ ] 0x12 Html, Css, Javascript
+* [x] 0x13 Html
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
