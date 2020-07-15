@@ -19,6 +19,7 @@
 * [ ] 0x11 Html, Css, Javascript
 * [ ] 0x12 Html, Css, Javascript
 * [x] 0x13 Html, Css
+* [ ] 0x14 React
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
