@@ -15,6 +15,7 @@
 * [x] 0x07 Python - Aplicación web utilizando Flask, MySQL, operaciones CRUD - 
 * [ ] 0x08 Python - Youtube - Píldoras informáticas - 
 * [x] 0x09 Javascript - Udemy - DevCodeWebApp
+* [ ] 0x10 Desarrollo del lado servidor: NodeJS, Express y Mongo - Universidad Austral | Programa del gobierno | Coursera
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
