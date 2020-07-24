@@ -24,8 +24,9 @@ Desarrollo del lado servidor: NodeJS, Express y Mongo
 * NodeJS
 * NPM
 * Express
-* MongoDB
 * VCS
+* CRUD without DB
+* MongoDB
 * Heroku
 
 ## Stack
