@@ -16,6 +16,9 @@ Desarrollo del lado servidor: NodeJS, Express y Mongo
 * [Comenzando un proyecto con Nodejs y Express](https://d3c33hcgiwev3.cloudfront.net/bXzUvTW5Eem4egrIUlgmqg_6d9d066035b911e9b4f4bfe8815a00e7_Comenzando-un-proyecto-con-Nodejs-y-Express.pdf?Expires=1595548800&Signature=NIJsKdgoLejG3iWzFchJ1ni6MB04B50Y1XJkwqnrXnbf3C80s1o3IBmw6ddk3~y1er8nvklrWFcNIh2DBF1PqA5dW0obrBGTXg82ixWNSUDXl45eHwgsdgSFzp107XhEJ7xOf25RJqR0e98XrRPxp14UuQOhY9fkX2twE9NygNA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Comenzando un proyecto con Nodejs y Express](https://d3c33hcgiwev3.cloudfront.net/bXzUvTW5Eem4egrIUlgmqg_6d9d066035b911e9b4f4bfe8815a00e7_Comenzando-un-proyecto-con-Nodejs-y-Express.pdf?Expires=1595548800&Signature=NIJsKdgoLejG3iWzFchJ1ni6MB04B50Y1XJkwqnrXnbf3C80s1o3IBmw6ddk3~y1er8nvklrWFcNIh2DBF1PqA5dW0obrBGTXg82ixWNSUDXl45eHwgsdgSFzp107XhEJ7xOf25RJqR0e98XrRPxp14UuQOhY9fkX2twE9NygNA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Model View Controller](https://d3c33hcgiwev3.cloudfront.net/e0KuLTW5Eemo6BKcywtCxg_7b65ecd035b911e99a35b7f34e23c325_Model-View-Controller.pdf?Expires=1595548800&Signature=bVTqKeg4mthqe7QH98dNpInDg62DDq27KpuI7VcTAyXbNjXWjWqNgR9QF-0pEVH4XZQbwkJP6armYrVjxTxnvfmPTpmbyfLjd8Ypb~jIEGfCt5KfC4PgtsD4L3Vu2-qYvxZ0EUAYrIxqBGrUepTfd1nTSYxVpcwoOIg1vJMljpo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Boostrap Themes](https://startbootstrap.com/themes/)
+* [grayscale template](https://startbootstrap.com/themes/grayscale/)
+* [Pasar del html al pug](https://html-to-pug.com/)
 
 ## Learning Objectives
 ###### General
