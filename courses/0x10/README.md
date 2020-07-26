@@ -19,6 +19,7 @@ Desarrollo del lado servidor: NodeJS, Express y Mongo
 * [Boostrap Themes](https://startbootstrap.com/themes/)
 * [grayscale template](https://startbootstrap.com/themes/grayscale/)
 * [Pasar del html al pug](https://html-to-pug.com/)
+* [Postman](https://www.getpostman.com)
 
 ## Learning Objectives
 ###### General
@@ -30,7 +31,6 @@ Desarrollo del lado servidor: NodeJS, Express y Mongo
 * VCS
 * CRUD without DB
 * API
-* Postman
 * MongoDB
 * Heroku
 

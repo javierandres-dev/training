@@ -14,9 +14,19 @@ exports.bicicleta_create = function (req, res) {
         bicicleta: bici
     });
 }
+// Method to update a bike
+exports.bicicleta_update = function(req, res){
+    const bici = Bicicleta.findById(req.body.id);
+    bici.id = req.body.id;
+    bici.color = req.body.color;
+    bici.modelo = req.body.modelo;
+    bici.ubicacion = [req.body.lat, req.body.lng];
+    res.status(200).json({
+        bicicleta: bici
+    });
+}
 // Method to delete a bike
 exports.bicicleta_delete = function(req, res){
     Bicicleta.removeById(req.body.id);
     res.status(204).send();
 }
-// Method to update a bike
