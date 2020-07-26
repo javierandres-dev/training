@@ -1,6 +1,6 @@
-let { bicicleta_create_get } = require("../controllers/bicicleta");
+const { bicicleta_create_get } = require("../controllers/bicicleta");
 
-let Bicicleta = function (id, color, modelo, ubicacion) {
+const Bicicleta = function (id, color, modelo, ubicacion) {
     this.id = id;
     this.color = color;
     this.modelo = modelo;
@@ -14,7 +14,7 @@ Bicicleta.add = function (aBici) {
     Bicicleta.allBicis.push(aBici);
 }
 Bicicleta.findById = function(aBiciId){
-    let aBici = Bicicleta.allBicis.find(x => x.id == aBiciId);
+    const aBici = Bicicleta.allBicis.find(x => x.id == aBiciId);
     if (aBici){
         return aBici;
     }
