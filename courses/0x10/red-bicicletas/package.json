@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon"
+    "devstart": "nodemon",
+    "test": "jasmine"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -15,6 +16,7 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "jasmine": "^3.6.1",
     "nodemon": "^2.0.4"
   }
 }
