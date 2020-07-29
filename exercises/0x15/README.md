@@ -6,8 +6,8 @@ Javascript exercises
 
 ## Resources
 ###### :copyright:
-* [Main - Source](https://github.com/DorianDesings/js2018/blob/master/Clase%2014/ejercicios.md)
-
+* [Exercises: 1 to 10](https://github.com/DorianDesings/js2018/blob/master/Clase%2014/ejercicios.md)
+* [Exercise 11](https://github.com/DorianDesings/js2018/blob/master/Clase%2020/scripts.js)
 ## Requeriments
 * Text editor
 * Browser
