@@ -3,6 +3,6 @@
  * "Hola ____, tienes ____ años y el año que viene tendrás ____ años"
  * Realiza el ejercicio con prompt(mensaje) y haz uso de los template strings
  */
-let name = prompt('Ingrese nombre: ');
-let age = parseInt(prompt('Ingrese edad: '));
-console.log(`Hola ${name}, tienes ${age} años y el año que viene tendrás ${age + 1} años.`);
+let name = prompt('Enter name: ');
+let age = parseInt(prompt('Enter age: '));
+console.log(`Hello ${name}, you are ${age} years old and the next year you will be ${age + 1} years old.`);

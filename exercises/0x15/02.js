@@ -6,36 +6,34 @@
  * rectángulo = b * h
  * círculo = π * r2 (pi * radio al cuadrado)
  */
-const areaTriangle = (b, h) => { console.log('El área del triángulo es: '+ (b * h) / 2) };
-const areaRectangle = (b, h) => { console.log('El área del rectángulo es: '+ b * h) };
-const areaCircle = (r) => { console.log('El área del círculo es: '+ Math.PI * (r * r)) };
+const areaTriangle = (b, h) => { console.log('The area of the triangle is: ' + (b * h) / 2) };
+const areaRectangle = (b, h) => { console.log('The area of the rectangle is: ' + b * h) };
+const areaCircle = (r) => { console.log('the area of the circle is: ' + Math.PI * (r * r)) };
 let b, h, r;
 const selection = prompt(`
-  Seleccione la figura de la que quiere calcular el área:
-  1 para triángulo
-  2 para rectángulo
-  3 para círculo
+  Choice a figure to get area:
+  1 for a triangle
+  2 for a rectangle
+  3 for a circle
 `);
 if (selection > 0 && selection < 4) {
     switch (selection) {
         case '1':
             b = parseInt(prompt('Base: '));
-            h = parseInt(prompt('Altura: '));
+            h = parseInt(prompt('Height: '));
             areaTriangle(b, h);
             break;
         case '2':
             b = parseInt(prompt('Base: '));
-            h = parseInt(prompt('Altura: '));
+            h = parseInt(prompt('Height: '));
             areaRectangle(b, h);
             break;
         case '3':
-            r = parseInt(prompt('Radio: '));
+            r = parseInt(prompt('Radius: '));
             areaCircle(r);
             break;
         default:
+            console.log('Choose a valid option!');
             break;
     }
-}
-else {
-    console.log('Elige una opción válida!');
 }
