@@ -13,14 +13,10 @@
 * [x] 0x05 Python
 * [x] 0x06 Python
 * [ ] 0x07 Html, Css, Javascript
-* [ ] 0x08 Html, Css, Javascript
 * [ ] 0x09 Python
 * [ ] 0x10 Html, Css, Javascript, Python
-* [ ] 0x11 Html, Css, Javascript
-* [ ] 0x12 Html, Css, Javascript
 * [x] 0x13 Html, Css
 * [ ] 0x14 React
-* [ ] 0x15 Javascript
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
