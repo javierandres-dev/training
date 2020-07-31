@@ -88,3 +88,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+// Export for activate server automatically from another file
+module.exports = server;
