@@ -3,15 +3,17 @@ const request = require('request');// Install previously
 const server = require('../../bin/www');// Activate server automatically
 // Tests
 describe('Bicicleta API', () => {
+    beforeEach(() => console.log('testeando...'));
     // Unit test
     describe('GET BICICLETAS /', () => {
-        it('Status 200', () => {
+        it('Status 200', (done) => {
             expect(Bicicleta.allBicis.length).toBe(0);
             let a = new Bicicleta(10, 'dorado', 'urbana', [4.654404, -74.055284]);
             Bicicleta.add(a);
             expect(Bicicleta.allBicis.length).toBe(1);
             request.get('http://localhost:3000/api/bicicletas', function (error, response, body) {
                 expect(response.statusCode).toBe(200);
+                done();
             });
         });
     });
