@@ -21,11 +21,21 @@ Coursera
 * [Testing con Jasmine](https://d3c33hcgiwev3.cloudfront.net/4jQ3RjW7Eem4egrIUlgmqg_e259e75035bb11e9a5ee1988f78bd3a2_Testing-con-Jasmine.pdf?Expires=1596067200&Signature=INXPLzHrMxcEd9jardJsDqblTvq8MQjuhheTRVrXfVQqaO6A~MQDu0JsOUnZT1zcTmL3kxoowpfZNt8xXWjlOTEGiIGWNtYJjPiyOLpJ0Nn5~b~RtidS7bcQBxHMqJPGXIqJQnuaFU9tRveUtYeg0FLvqGu~GXdQeEUGZOlVDK8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Testing con Jasmine - Estructura de los tests](https://d3c33hcgiwev3.cloudfront.net/75t1WDW7Eemplgpfqc6zSA_efbb807035bb11e9879513d581718db8_Testing-con-Jasmine---Estructura-de-los-tests.pdf?Expires=1596067200&Signature=j8m6Bv567NCVTf1LZnqsiTV2iUOOgiadHob1aMDdFbBs5P-Nt2j0HAqV8bti8KwPyuGe3xhZZ4JyF9kJdP7AU2VMnu9tnUMXa76LP6Z92psNLwRjYomXPYsd0JJshGttT3axj3jRAlzNXyUpASww5GX840Hq1LnRhiw2Xz72RG8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Jasmine  para  NodeJS](https://jasmine.github.io/setup/nodejs.html)
+* [Base de datos NoSQL](https://d3c33hcgiwev3.cloudfront.net/_BwkbzW7EemFOA6Hm29iNA_fc3fb1e035bb11e9a5ee1988f78bd3a2_Base-de-datos-NoSQL.pdf?Expires=1596326400&Signature=bRPTeXNrZO7DeH5y~xkl~8w1WasCFyF0~Vpnt4wo5eVnTLh-khoJeMSSs35lDYvQmSOh~wV0P8ezosTXj7ClrnnhI18dlL842yXVSe7x6fFrTlpZhM5-s91QB3qhxxbdjG3eEAGxyZr39FqfFSWvcwdTzWpywnssnFf8ckBOMdM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [MongoDB](https://d3c33hcgiwev3.cloudfront.net/COpXhDW8Eem4egrIUlgmqg_090fb96035bc11e9a5ee1988f78bd3a2_MongoDB.pdf?Expires=1596326400&Signature=F8w~rg3P8w67467uqDxY7YixwHW7bGAo1m-HQ461EFB3yr-q0h2kBYfB3rgkafrDtJefsbGdihglheiiD-Wuco2xQDbIEcjwDNNHeWMI3t2WgKJwmU~BSkNsFzlBA7sonkIzIok7lEItJVEnldlBuAkOex7cOd0LN-xKWVYA2zM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Primeros pasos en MongoDB](https://d3c33hcgiwev3.cloudfront.net/F0rptzW8EemnrA4AsaAhFA_176c545035bc11e9a56c416199802a9c_Primeros-pasos-en-MongoDB.pdf?Expires=1596326400&Signature=i-Fb2uo~RtCcSuvHqLYUd3WYu-3kZAFFdlSBXHtQ9oKfp~oAPZKOQg6yyugLIymZBajlSs8dQ7QhxJBi~UcFgyEwdhW9Dhyq4jv5Aw59lpqDfItWYXj4A00~ME-92YoO4LefeQOF16hH3KHr1k67~mvuUFp~iM7olckE9UowSOY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Interactuando con las bases de datos](https://d3c33hcgiwev3.cloudfront.net/Jh-bjjW8Eemo6BKcywtCxg_2643eba035bc11e9a56c416199802a9c_Interactuando-con-las-bases-de-datos.pdf?Expires=1596326400&Signature=f5P4nqgu7XtsPvvSB97HD97BLbaa6JWn7YrYALBf-XwKxksYCtINGaGuzp~VZTnJwpYrHomfjx5tMhUhlkqz1syQkpPf-J~nDaLnLQOYiO1KLnSqWRQnODOdjaPx3TrP3UEkyZ~la333TJpiuP4T17OMSADXCZDEQTSwcNcrJ~c_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Mongoose](https://d3c33hcgiwev3.cloudfront.net/OHnxBTW8Eemo6BKcywtCxg_389d7dc035bc11e9a5ee1988f78bd3a2_Mongoose.pdf?Expires=1596326400&Signature=Oy857ikgMNJmJj33ctVFdJkAYcEATbR5BSrxmXN7TmpY5c9Jjqem5zpfsZVlS4kG~q~4Iktxz1LwqOgPw7Q4qGKjR2RgV~XfIKWDz2SARA17GkJwKT7djYnShjNAiB~zrUOXXHGiCbHbK7szzXsfEh~9QSN8P2-hP80ZlPQZ7n4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Boostrap Themes](https://startbootstrap.com/themes/)
 - [grayscale template](https://startbootstrap.com/themes/grayscale/)
 - [Pasar del html al pug](https://html-to-pug.com/)
 - [Postman](https://www.getpostman.com)
 - [Jasmine](https://jasmine.github.io/)
+- [Install MongoDB](https://docs.mongodb.com/manual/installation/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas?lang=es-es)
+- [MongoDB Compass](https://www.mongodb.com/products/compass)
+- [MongoDB CRUD Operations](https://docs.mongodb.com/manual/crud/)
+- [mongoose Getting Started](https://mongoosejs.com/docs/index.html)
 
 ## Learning Objectives
 ###### General
