@@ -5,8 +5,6 @@
 ###### Do exercises to train.
 
 ## Directories
-* [x] 0x00 C
-* [x] 0x01 C
 * [x] 0x03 Python
 * [x] 0x04 Python
 * [x] 0x05 Python
