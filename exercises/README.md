@@ -5,11 +5,7 @@
 ###### Do exercises to train.
 
 ## Directories
-* [x] 0x03 Python
-* [x] 0x04 Python
-* [x] 0x05 Python
 * [x] 0x06 Python
-* [ ] 0x09 Python
 * [ ] 0x10 Html, Css, Javascript, Python
 * [x] 0x13 Html, Css
 * [ ] 0x14 React
