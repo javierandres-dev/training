@@ -7,12 +7,10 @@
 ## Directories
 * [x] 0x00 C
 * [x] 0x01 C
-* [x] 0x02 Html, Css, Javascript
 * [x] 0x03 Python
 * [x] 0x04 Python
 * [x] 0x05 Python
 * [x] 0x06 Python
-* [ ] 0x07 Html, Css, Javascript
 * [ ] 0x09 Python
 * [ ] 0x10 Html, Css, Javascript, Python
 * [x] 0x13 Html, Css
