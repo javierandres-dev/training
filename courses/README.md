@@ -5,7 +5,6 @@
 ###### Do courses to train.
 
 ## Directories
-* [x] 0x00 JavaScript - One Month - Chris Castiglione
 * [ ] 0x01 JavaScript - Udemy - Juan Pablo De la torre Valdez
 * [x] 0x02 Flask - Youtube - Código Fácilito - Eduardo Ismael
 * [x] 0x03 Flask - Platzi - Bernardo Cassina

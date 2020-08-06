@@ -10,7 +10,6 @@ JavaScript Moderno Guía Definitiva Construye +15 Proyectos
 
 ## Projects
 :open_file_folder:
-* [x] 0x00 Local Storage desde un textarea
 * [x] 0x01 Carrito de compras
 * [x] 0x02 Simular envío de emails
 * [ ] 0x03 Crear un cotizador de prestamos con React
