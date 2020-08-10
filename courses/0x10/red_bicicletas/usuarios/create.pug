@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+  a(href='/usuarios') Volver
+
+  br
+  br
+  br
+
+  h1  Nuevo Usuario
+
+  br
+  br
+
+  form(action='/usuarios/create' method='post')
+    .form-group
+        label(for='nombre') Nombre: 
+        input#nombre.form-control(type='text' name='nombre' value= usuario.nombre class=errors.nombre ? 'is-invalid' : '')
+        if errors.nombre
+            small#nombreHelp.text-danger
+               = errors.nombre.message  
+    .form-group
+        label(for='email') Email: 
+        input#email.form-control(type='text' name='email' value= usuario.email class= errors.email ? 'is-invalid' : '')
+        if errors.email
+            small#emailHelp.text-danger
+               = errors.email.message  
+    
+    .form-group
+        label(for='pwd') Password: 
+        input#pwd.form-control(type='password' name='password' class= errors.password ? 'is-invalid' : '')
+        if errors.password
+            small#passwordHelp.text-danger
+               = errors.password.message  
+    .form-group
+        label(for='confirm_pwd') Confirmar Password: 
+        input#confirm_pwd.form-control(type='password' name='confirm_password' class= errors.confirm_password ? 'is-invalid' : '')
+        if errors.confirm_password
+            small#confirm_passwordHelp.text-danger
+               = errors.confirm_password.message  
+    br
+    br
+    input.btn.btn-primary(type='submit' value='OK')

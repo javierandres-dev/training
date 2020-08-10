@@ -1,0 +1,30 @@
+link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+head
+  link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet')
+  script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  link(rel='stylesheet', href='../../stylesheets/login.css')
+  meta(name='google-site-verification' content='pxOa2Qv7Wq0cQ78SbERxoOVDxJ-XbKHZL8rvLmki3xs')
+
+body#LoginForm
+  .container
+    .login-form
+      .main-div
+        .panel
+          if info && info.message 
+            div.alert.alert-danger
+              = info.message
+          h2 Admin Login
+          p Por favor, ingrese su email and password
+        form#Login(action='/login' method='post')
+          .form-group
+            input#username.form-control(type='email' placeholder='Email Address' name="username")
+          .form-group
+            input#password.form-control(type='password' placeholder='Password' name="password")
+          .forgot
+            a(href='/forgotPassword') Olvidé mi password
+
+
+          button.btn.btn-primary(type='submit') Login

@@ -28,6 +28,11 @@ Coursera
 * [Mongoose](https://d3c33hcgiwev3.cloudfront.net/OHnxBTW8Eemo6BKcywtCxg_389d7dc035bc11e9a5ee1988f78bd3a2_Mongoose.pdf?Expires=1596326400&Signature=Oy857ikgMNJmJj33ctVFdJkAYcEATbR5BSrxmXN7TmpY5c9Jjqem5zpfsZVlS4kG~q~4Iktxz1LwqOgPw7Q4qGKjR2RgV~XfIKWDz2SARA17GkJwKT7djYnShjNAiB~zrUOXXHGiCbHbK7szzXsfEh~9QSN8P2-hP80ZlPQZ7n4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Promises](https://d3c33hcgiwev3.cloudfront.net/UbCX0i0oEem4egrIUlgmqg_522d8f102d2811e9be1627e087019971_Anexo-Promises.pdf?Expires=1596672000&Signature=HNiJ0RoXxGVHPXO~AfBjBWG5hhXfE7p43q-DzJkVjiN8YD2eaUzZu21HCnccamDdQyQ-NzFsYBhY3Q9kHND6cajDWHIOCYzVF1KKy2FYRYSgpYNiaN4zLLBpw1AWZ~MiQrdW9ou3QfiTtiqreB8qjWskAl60lggPxoCQdghRAq8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)
+* [Autenticación y Autorización](https://d3c33hcgiwev3.cloudfront.net/bcTyqDW_EemFOA6Hm29iNA_6de9b81035bf11e99118fb8189c6ffed_Autenticacion-y-Autorizacion.pdf?Expires=1597190400&Signature=I34P2oTjNFsJFChe-dYVpu6YYhJnAOT6rqop63czxHCgRcK~wxVX~spj6ieI-ht9fMCLSq5RiAjC8P~x4gBZFtZopv4KlCK9MRtDP3NmleiBFfcX-87eLF8~RBbb1Ctf-na8g5iNf0SLTEM3Gt25k3Wq6JO2czYNFE-RXO3~WOU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Sesiones y cookies](https://d3c33hcgiwev3.cloudfront.net/fT35tDW_EemnrA4AsaAhFA_7d7499d035bf11e9b0979fab5d587c97_Sesiones-y-cookies.pdf?Expires=1597190400&Signature=ZbqFte4v~xv03lBJBWkAtRoWFavxCglmQJTBcECSlAc-ul6M1IarqhVJKxulLX-ZXnmfIsuHFtgZETtKd2orC1ULCV-a-nJUkqrazeLM2IpbivlDXOvUnPTKLgXiDc5QWk~z9K1x8eDyGCft8~ezC9TVmfOx5AkPhviSn15KMOI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Passport](https://d3c33hcgiwev3.cloudfront.net/i5sJrDW_Eemo6BKcywtCxg_8bc240a035bf11e99dd4ab7c735f7cb8_Passport.pdf?Expires=1597190400&Signature=X9EVmMSAcZTin04IzHiIoItAOF7GpheAMFm9MQXjodRDHxHq7cJSDIGRcbvihtrKB2e9sKjugdTKHoJ4E5mSp9G5t9tKt~CrjTg1Hsx~0c3d3J-ANr2Z81sYIJrPfEQepsV6wQdD~qM-dsa1lYF2hajQC7e3mOjXYlbpqDHQQeQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Autenticación en API](https://d3c33hcgiwev3.cloudfront.net/nvW4UDW_EemnrA4AsaAhFA_9f18d06035bf11e99dd4ab7c735f7cb8_Autenticacion-en-API.pdf?Expires=1597190400&Signature=MTSWJKRx4Nboanh8iL2f~1JNBLaiWOD6crEKA5-d-doMsBHj0sTuHwEzeFiVQPU4xT-4IR7kRmQOdQvM99ldIENokohLOM-Ch6ZWSxmMvRT5c5WgwHPyX6nqlp70EPnrRcBXaoqatJ3sDpqHsoPOuT9FtrQMssqj5T-1Tocieg4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [JWT (JSON Web Token)](https://d3c33hcgiwev3.cloudfront.net/qWUT4jW_Eem4egrIUlgmqg_a9851e5035bf11e9b0979fab5d587c97_JWT-_JSON-Web-Token_.pdf?Expires=1597190400&Signature=ZtfnpVi9RCAcqhi~a8JP~uD8YTJPzoC-UoXpHK1hYg101DUuT7hQTX-4wQ7H9awRfYjmMb-cEgM5za20Ri9vxTwAba4YIO35L1T1LZ2ZPYDhF~L7vn290eaSUL419Sltsv0bR4CwTg2FXCLZPgcPY2RLr2wGXo6NImIPoRZ1JpA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Boostrap Themes](https://startbootstrap.com/themes/)
 - [grayscale template](https://startbootstrap.com/themes/grayscale/)
 - [Pasar del html al pug](https://html-to-pug.com/)
@@ -38,6 +43,8 @@ Coursera
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
 - [MongoDB CRUD Operations](https://docs.mongodb.com/manual/crud/)
 - [mongoose Getting Started](https://mongoosejs.com/docs/index.html)
+- [Ethereal](https://ethereal.email/)
+- [Passport](http://www.passportjs.org/)
 
 ## Learning Objectives
 ###### General
