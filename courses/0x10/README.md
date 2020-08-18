@@ -33,6 +33,8 @@ Coursera
 * [Passport](https://d3c33hcgiwev3.cloudfront.net/i5sJrDW_Eemo6BKcywtCxg_8bc240a035bf11e99dd4ab7c735f7cb8_Passport.pdf?Expires=1597190400&Signature=X9EVmMSAcZTin04IzHiIoItAOF7GpheAMFm9MQXjodRDHxHq7cJSDIGRcbvihtrKB2e9sKjugdTKHoJ4E5mSp9G5t9tKt~CrjTg1Hsx~0c3d3J-ANr2Z81sYIJrPfEQepsV6wQdD~qM-dsa1lYF2hajQC7e3mOjXYlbpqDHQQeQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Autenticación en API](https://d3c33hcgiwev3.cloudfront.net/nvW4UDW_EemnrA4AsaAhFA_9f18d06035bf11e99dd4ab7c735f7cb8_Autenticacion-en-API.pdf?Expires=1597190400&Signature=MTSWJKRx4Nboanh8iL2f~1JNBLaiWOD6crEKA5-d-doMsBHj0sTuHwEzeFiVQPU4xT-4IR7kRmQOdQvM99ldIENokohLOM-Ch6ZWSxmMvRT5c5WgwHPyX6nqlp70EPnrRcBXaoqatJ3sDpqHsoPOuT9FtrQMssqj5T-1Tocieg4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [JWT (JSON Web Token)](https://d3c33hcgiwev3.cloudfront.net/qWUT4jW_Eem4egrIUlgmqg_a9851e5035bf11e9b0979fab5d587c97_JWT-_JSON-Web-Token_.pdf?Expires=1597190400&Signature=ZtfnpVi9RCAcqhi~a8JP~uD8YTJPzoC-UoXpHK1hYg101DUuT7hQTX-4wQ7H9awRfYjmMb-cEgM5za20Ri9vxTwAba4YIO35L1T1LZ2ZPYDhF~L7vn290eaSUL419Sltsv0bR4CwTg2FXCLZPgcPY2RLr2wGXo6NImIPoRZ1JpA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Heroku](https://d3c33hcgiwev3.cloudfront.net/pPn8GTXAEemnrA4AsaAhFA_a5196a5035c011e9926c6dc21ab4b455_Heroku.pdf?Expires=1597881600&Signature=E937EKcV~MxkismY6IVJy~CEcO3fnfJMoAs3h101QWmXdxfVw~dROWDo4J0VEZpFdISkFMQdYdoftAq7Wdv1yqFQYHRy~5S20kFdZK~O5Kso1OWqoVnC~uoyhV0chjCtfOzCLRK99M7EghBBcg9yWDYkyYJ6Au5DY~LOlXIcbjo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Mongo Atlas](https://d3c33hcgiwev3.cloudfront.net/sPJofDXAEemPcBIa2xz0qA_b111fd9035c011e9a9094f1966f06236_Mongo-Atlas.pdf?Expires=1597881600&Signature=Sd67Sm0c4RdVqr8Kr09HyDUHw-CMWxXMHN-aRS2NEgIRC3qKzkVKO6IwmAIaZVCVVdMvNJiM4e-TjtLS01ryrtYXh~I-adbpJ4V75ORE3iN44oD9dC2KBAa-0EYeqc6JjyQBht9RhvDYpJ8K3vNNYaPhx7n1XFopO~hMGXilWow_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Boostrap Themes](https://startbootstrap.com/themes/)
 - [grayscale template](https://startbootstrap.com/themes/grayscale/)
 - [Pasar del html al pug](https://html-to-pug.com/)
@@ -45,6 +47,7 @@ Coursera
 - [mongoose Getting Started](https://mongoosejs.com/docs/index.html)
 - [Ethereal](https://ethereal.email/)
 - [Passport](http://www.passportjs.org/)
+- [Heroku](https://www.heroku.com)
 
 ## Learning Objectives
 ###### General
