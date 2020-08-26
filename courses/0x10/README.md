@@ -35,6 +35,10 @@ Coursera
 * [JWT (JSON Web Token)](https://d3c33hcgiwev3.cloudfront.net/qWUT4jW_Eem4egrIUlgmqg_a9851e5035bf11e9b0979fab5d587c97_JWT-_JSON-Web-Token_.pdf?Expires=1597190400&Signature=ZtfnpVi9RCAcqhi~a8JP~uD8YTJPzoC-UoXpHK1hYg101DUuT7hQTX-4wQ7H9awRfYjmMb-cEgM5za20Ri9vxTwAba4YIO35L1T1LZ2ZPYDhF~L7vn290eaSUL419Sltsv0bR4CwTg2FXCLZPgcPY2RLr2wGXo6NImIPoRZ1JpA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Heroku](https://d3c33hcgiwev3.cloudfront.net/pPn8GTXAEemnrA4AsaAhFA_a5196a5035c011e9926c6dc21ab4b455_Heroku.pdf?Expires=1597881600&Signature=E937EKcV~MxkismY6IVJy~CEcO3fnfJMoAs3h101QWmXdxfVw~dROWDo4J0VEZpFdISkFMQdYdoftAq7Wdv1yqFQYHRy~5S20kFdZK~O5Kso1OWqoVnC~uoyhV0chjCtfOzCLRK99M7EghBBcg9yWDYkyYJ6Au5DY~LOlXIcbjo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [Mongo Atlas](https://d3c33hcgiwev3.cloudfront.net/sPJofDXAEemPcBIa2xz0qA_b111fd9035c011e9a9094f1966f06236_Mongo-Atlas.pdf?Expires=1597881600&Signature=Sd67Sm0c4RdVqr8Kr09HyDUHw-CMWxXMHN-aRS2NEgIRC3qKzkVKO6IwmAIaZVCVVdMvNJiM4e-TjtLS01ryrtYXh~I-adbpJ4V75ORE3iN44oD9dC2KBAa-0EYeqc6JjyQBht9RhvDYpJ8K3vNNYaPhx7n1XFopO~hMGXilWow_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [OAuth](https://d3c33hcgiwev3.cloudfront.net/vpJC8jXAEemnrA4AsaAhFA_beb55aa035c011e9b33799d2e8d2cbab_OAuth.pdf?Expires=1598572800&Signature=PcR45ojX0SQzaYmByKWXisCb7r2q2O5ZBsjBfZnqhKPHsREWWCPcG8GtlT49AyZzuZVXnIBeNiR-871~KaStIvDbp~vBAXr8MVwizZIoofPFXuIOVPtyQhTOs7AdnLqo0G8mofVjnGxXuf5gSi8LDEQueRld6q9MgJwaeR-yR-E_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Consola de desarrollo de Google](https://d3c33hcgiwev3.cloudfront.net/zAh1aDXAEemo6BKcywtCxg_cc2858e035c011e9926c6dc21ab4b455_Consola-de-desarrollo-de-Google.pdf?Expires=1598572800&Signature=MAe7XtIxmrhJ~l-iUBiOV3pUzwSf4g9u1QMWBo7RKS-Q00nreI6~Ihq8Kg7zm2Z7ABxNe2pvTqPZqC45KmjZrgpDhTTmMwz27EbojBs4B4rI3uVmF7Y3tSNKE0K0fLFOaMhKckej3z9reoSf~BDTVV5EtuF5yuGEDXEozyvARPE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Consola de desarrollo de Facebook](https://d3c33hcgiwev3.cloudfront.net/1uAInTXAEemFOA6Hm29iNA_d704589035c011e9a9094f1966f06236_Consola-de-desarrollo-de-Facebook.pdf?Expires=1598572800&Signature=egULIgDOmH6J-luHcbnhAfudLU-7AtLAxJDTjwQY0XgQU7TP45AsJEDgH-SfWcxcD0ODe9Rpo519JA5yl9YCeb3k4l9i16zwbewy6dAt1f2ydfj2JAFMw0JDSwzVTCD3SQ4xMLlTHXFT2SF9c8aGYDCEnPl1oo0ZINOpNvXjwDA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+* [Entendiendo métricas de performance del server](https://d3c33hcgiwev3.cloudfront.net/4rP8sDXAEemnrA4AsaAhFA_e2d8e91035c011e9b33799d2e8d2cbab_Entendiendo-metricas-de-performance-del-server.pdf?Expires=1598572800&Signature=XNFzmb9mnkrabyKJ8m3UhXeljxABnx1xuqbWBx0AF2PHMpo~-huSCYC7XEzkp6nl4ttjG4oh6Ied0nDOrgVuZ3rLzKhd3S3kkKpHqSGkVQZIJi0MML-Rkm-aX2l5dqTXmdEZMIwgReWm2v4krMINeekJG41qKVmPnE-Ex94EjxE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Boostrap Themes](https://startbootstrap.com/themes/)
 - [grayscale template](https://startbootstrap.com/themes/grayscale/)
 - [Pasar del html al pug](https://html-to-pug.com/)
@@ -48,6 +52,9 @@ Coursera
 - [Ethereal](https://ethereal.email/)
 - [Passport](http://www.passportjs.org/)
 - [Heroku](https://www.heroku.com)
+- [SendGrid](https://sendgrid.com)
+- [Google Developers](https://developers.google.com/)
+- [Facebook for Developers](https://developers.facebook.com)
 
 ## Learning Objectives
 ###### General
