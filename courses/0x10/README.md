@@ -74,11 +74,8 @@ Coursera
 * [X] Express
 
 ###### Date (MM/DD/YYYY)
-07/21/2020
+08/26/2020
 
 ## Developer
 Javier Andrés Garzón Patarroyo  
-:octocat: [GitHub](https://github.com/javierandresgp/)  
-:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
-:link: [Twitter](https://twitter.com/javierandresgp0)  
-:man_technologist: :books: :computer: :globe_with_meridians:
+:octocat: [GitHub](https://github.com/javierandresgp/)
