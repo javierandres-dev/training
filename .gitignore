@@ -1,4 +1,8 @@
-
+.vscode
+.DS_Store
+node_modules/
+package-lock.json
+yarn.lock
 # Created by https://www.toptal.com/developers/gitignore/api/windows,vagrant,linux,vim,visualstudiocode,c,python,node,react,git,flask,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,vagrant,linux,vim,visualstudiocode,c,python,node,react,git,flask,macos
 
