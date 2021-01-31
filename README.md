@@ -8,6 +8,9 @@
 * [x] courses
 * [x] exercises
 
+* [html](html.md)
+* [css](css.md)
+
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
 :octocat: [GitHub](https://github.com/javierandresgp/)
