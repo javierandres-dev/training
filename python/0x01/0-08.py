@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+print("----")
+print("Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.")
+print("---")
+sb=int(input("Ingrese el valor de su sueldo base: "))
+v1=int(input("Ingrese el valor de su primer venta: "))
+v2=int(input("Ingrese el valor de su segunda venta: "))
+v3=int(input("Ingrese el valor de su tercer venta: "))
+print("--")
+cv1=int(v1*0.10)
+cv2=int(v2*0.10)
+cv3=int(v3*0.10)
+cv=cv1+cv2+cv3
+print("Su comisión por la primer venta es:\t{}\nSu comisión por la segunda venta es:\t{}\nSu comisión por la tercer venta es:\t{}\nEste mes usted obtendrá: {} de sueldo base + {} de comisiones para un total de: {}".format(cv1,cv2,cv3,sb,cv,sb+cv))
+print("-")
