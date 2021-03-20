@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/12-number_guessing_game.css" />
+    <title>Number guessing game</title>
+  </head>
+  <body>
+    <h1>Number guessing game</h1>
+    <p>
+      We have selected a random number between 1 and 100. &nbsp; See if you can
+      guess it in 10 turns or fewer. &nbsp; We will tell you if your guess was
+      too high or too low.
+    </p>
+    <div id="theGame" class="the-game">
+      <form id="theForm" class="the-form">
+        <label>Enter a guess:</label>
+        <input
+          id="aNumber"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="A number between 1 and 100"
+        />
+        <button id="btnSubmit" type="submit" disabled>Submit guess</button>
+      </form>
+      <div id="showMessages"></div>
+      <button id="btnNewGame" class="d-none">Start new game</button>
+    </div>
+  </body>
+  <script src="./scripts/12-number_guessing_game.js"></script>
+</html>

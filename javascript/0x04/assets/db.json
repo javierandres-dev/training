@@ -1,0 +1,85 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "title": "microcar",
+      "description": "kei car"
+    },
+    {
+      "id": 2,
+      "title": "a-segment",
+      "description": "minicompact"
+    },
+    {
+      "id": 3,
+      "title": "b-segment",
+      "description": "subcompact"
+    },
+    {
+      "id": 4,
+      "title": "c-segment",
+      "description": "compact"
+    },
+    {
+      "id": 5,
+      "title": "d-segment",
+      "description": "mid-size"
+    },
+    {
+      "id": 6,
+      "title": "e-segment",
+      "description": "full-size"
+    },
+    {
+      "id": 7,
+      "title": "f-segment",
+      "description": "full-size luxury"
+    }
+  ],
+  "motorcycles": [
+    {
+      "id": 1,
+      "title": "scooter"
+    },
+    {
+      "id": 2,
+      "title": "cruiser"
+    },
+    {
+      "id": 3,
+      "title": "chopper"
+    },
+    {
+      "id": 4,
+      "title": "touring"
+    },
+    {
+      "id": 5,
+      "title": "dual purpose"
+    },
+    {
+      "id": 6,
+      "title": "standard"
+    },
+    {
+      "id": 7,
+      "title": "sport touring"
+    },
+    {
+      "id": 8,
+      "title": "unclad sport"
+    },
+    {
+      "id": 9,
+      "title": "sport"
+    },
+    {
+      "id": 10,
+      "title": "super sport"
+    },
+    {
+      "id": 11,
+      "title": "off-road"
+    }
+  ]
+}

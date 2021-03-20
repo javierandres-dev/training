@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+h3 {
+    width: 400px;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+legend {
+    margin: 1em;
+}
+
+input {
+    border: 2px solid red;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+table {
+    width: 400px;
+    margin-top: 1em;
+    margin-left: 1em;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: lightgray;
+}
+
+th,
+td {
+    padding: 0.5em;
+    border: 1px solid gray;
+}

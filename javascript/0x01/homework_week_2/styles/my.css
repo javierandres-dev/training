@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.screenTv {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+    border: 1px solid darkslategray;
+    background-color: black;
+}
+
+.controlTv {
+    margin: auto;
+    padding-top: 16px;
+    width: 320px;
+    height: 80px;
+    background-color: darkslategray;
+    border: 1px solid darkslategray;
+}
+
+.led {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    background-color: red;
+}
+
+.btnPower {
+    border-radius: 16px;
+}
+
+.show {
+    margin: auto;
+    display: none;
+}
+
+.myImg {
+    width: 100%;
+}

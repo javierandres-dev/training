@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD API REST FETCH</title>
+  </head>
+  <body>
+    <h1>CRUD API REST FETCH</h1>
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">Add car</h2>
+        <form class="crud-form">
+          <input type="text" name="segment" placeholder="Segment" required />
+          <br />
+          <input type="text" name="description" placeholder="Description" />
+          <br />
+          <input type="submit" value="Send" />
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+      <article>
+        <h2>View cars</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Segment</th>
+              <th>Description</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <template id="crud-template">
+      <tr>
+        <td class="segment"></td>
+        <td class="description"></td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </template>
+  </body>
+  <script>
+    const d = document,
+      $table = d.querySelector(".crud-table"),
+      $form = d.querySelector(".crud-form"),
+      $title = d.querySelector(".crud-title"),
+      $template = d.getElementById("crud-template").content,
+      $fragment = d.createDocumentFragment();
+    const getAll = async () => {
+      // GET - Read
+      try {
+        const res = await fetch("http://localhost:3000/cars"),
+          json = await res.json();
+        if (!res.ok) throw { status: res.status, statusText: res.statusText };
+        console.log(json);
+        json.forEach((el) => {
+          $template.querySelector(".segment").textContent = el.segment;
+          $template.querySelector(".description").textContent = el.description;
+          $template.querySelector(".btn-edit").dataset.id = el.id;
+          $template.querySelector(".btn-edit").dataset.segment = el.segment;
+          $template.querySelector(".btn-edit").dataset.description =
+            el.description;
+          $template.querySelector(".btn-delete").dataset.id = el.id;
+          const $clone = d.importNode($template, true);
+          $fragment.appendChild($clone);
+        });
+        $table.querySelector("tbody").appendChild($fragment);
+      } catch (err) {
+        const message = err.statusText || "An error occurred.";
+        $table.insertAdjacentHTML(
+          "afterend",
+          `<p><b>Error ${err.status}: ${message}</b></p>`
+        );
+      }
+    };
+    d.addEventListener("DOMContentLoaded", getAll);
+    d.addEventListener("submit", async (e) => {
+      if (e.target === $form) {
+        e.preventDefault();
+        if (!e.target.id.value) {
+          // POST - Create
+          try {
+            const options = {
+                method: "POST",
+                headers: {
+                  "Content-type": "application/json; charset=utf-8",
+                },
+                body: JSON.stringify({
+                  segment: e.target.segment.value,
+                  description: e.target.description.value,
+                }),
+              },
+              res = await fetch("http://localhost:3000/cars", options),
+              json = await res.json();
+            if (!res.ok)
+              throw { status: res.status, statusText: res.statusText };
+            location.reload();
+          } catch (error) {
+            const message = err.statusText || "An error occurred.";
+            $form.insertAdjacentHTML(
+              "afterend",
+              `<p><b>Error ${err.status}: ${message}</b></p>`
+            );
+          }
+        } else {
+          // PUT - Update
+          try {
+            const options = {
+                method: "PUT",
+                headers: {
+                  "Content-type": "application/json; charset=utf-8",
+                },
+                body: JSON.stringify({
+                  segment: e.target.segment.value,
+                  description: e.target.description.value,
+                }),
+              },
+              res = await fetch(
+                `http://localhost:3000/cars/${e.target.id.value}`,
+                options
+              ),
+              json = await res.json();
+            if (!res.ok)
+              throw { status: res.status, statusText: res.statusText };
+            location.reload();
+          } catch (error) {
+            const message = err.statusText || "An error occurred.";
+            $form.insertAdjacentHTML(
+              "afterend",
+              `<p><b>Error ${err.status}: ${message}</b></p>`
+            );
+          }
+        }
+      }
+    });
+    d.addEventListener("click", async (e) => {
+      if (e.target.matches(".btn-edit")) {
+        //console.log("Edit...");
+        $title.textContent = "Edit car";
+        $form.segment.value = e.target.dataset.segment;
+        $form.description.value = e.target.dataset.description;
+        $form.id.value = e.target.dataset.id;
+      }
+      if (e.target.matches(".btn-delete")) {
+        // DELETE - Delete
+        //console.log("Delete...");
+        const isDelete = confirm(
+          `The user with id ${e.target.dataset.id} will be deleted\nSure?`
+        );
+        if (isDelete) {
+          try {
+            const options = {
+                method: "DELETE",
+                headers: {
+                  "Content-type": "application/json; charset=utf-8",
+                },
+              },
+              res = await fetch(
+                `http://localhost:3000/cars/${e.target.dataset.id}`,
+                options
+              ),
+              json = await res.json();
+            if (!res.ok)
+              throw { status: res.status, statusText: res.statusText };
+            location.reload();
+          } catch (error) {
+            const message = err.statusText || "An error occurred.";
+            alert(`Error ${err.status}: ${message}`);
+          }
+        }
+      }
+    });
+  </script>
+</html>

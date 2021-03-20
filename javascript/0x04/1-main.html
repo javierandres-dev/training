@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./1-main.css" />
+    <title>DOM Exercises</title>
+  </head>
+  <body data-theme>
+    <header class="header">
+      <h1>DOM Exercises</h1>
+    </header>
+    <button class="btn-panel hamburger hamburger--arrow" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#section01" data-scroll-spy>Section 01</a>
+        <a href="#section02" data-scroll-spy>Section 02</a>
+        <a href="#section03" data-scroll-spy>Section 03</a>
+        <a href="#section04" data-scroll-spy>Section 04</a>
+        <a href="#section05" data-scroll-spy>Section 05</a>
+        <a href="#section06" data-scroll-spy>Section 06</a>
+        <a href="#section07" data-scroll-spy>Section 07</a>
+        <a href="#section08" data-scroll-spy>Section 08</a>
+        <a href="#section09" data-scroll-spy>Section 09</a>
+        <a href="#section10" data-scroll-spy>Section 10</a>
+        <a href="#section11" data-scroll-spy>Section 11</a>
+        <a href="#section12" data-scroll-spy>Section 12</a>
+        <a href="#section13" data-scroll-spy>Section 13</a>
+        <a href="#section14" data-scroll-spy>Section 14</a>
+        <a href="#section15" data-scroll-spy>Section 15</a>
+        <a href="#section16" data-scroll-spy>Section 16</a>
+      </nav>
+    </aside>
+    <main>
+      <section id="section01" class="section" data-scroll-spy>
+        <h2>Section 01</h2>
+        <h3>Digital Clock and Audible Alarm</h3>
+        <div id="resultBox"></div>
+        <button id="btnStartClock">Start Clock</button>
+        <button id="btnStopClock">Stop Clock</button>
+        <button id="btnStartAlarm">Start Alarm</button>
+        <button id="btnStopAlarm">Stop Alarm</button>
+      </section>
+      <section id="section02" class="section" data-scroll-spy>
+        <h2>Section 02</h2>
+        <h3>Keyboard Events</h3>
+        <p>
+          If you click on the rectangle you'll be able to move the circle with
+          the arrow keys and you'll be able to use the shortcuts with the ALT
+          key.
+        </p>
+        <div id="keRectangle" class="ke-rectangle">
+          <div id="keCircle" class="ke-circle"></div>
+        </div>
+      </section>
+      <section id="section03" class="section" data-scroll-spy>
+        <h2>Section 03</h2>
+        <h3>Countdown</h3>
+        <strong><p id="boxCountdown"></p></strong>
+      </section>
+      <section id="section04" class="section" data-scroll-spy>
+        <h2>Section 04</h2>
+        <h3>Responsible and Responsive with JavaScript</h3>
+        <div id="boxRandR"></div>
+        </section>
+      <section id="section05" class="section" data-scroll-spy>
+        <h2>Section 05</h2>
+        <h3>Responsive tester</h3>
+        <form id="formRespTest">
+          <input type="text" name="url" placeholder="URL: http://..." required>
+          <br>
+          <input type="text" name="width" placeholder="Width" required>
+          <br>
+          <input type="text" name="height" placeholder="Height" required>
+          <br>
+          <button type="submit" name="test">Test</button>
+          <button type="button" name="close">Close</button>
+        </form>
+        </section>
+        <section id="section06" class="section" data-scroll-spy>
+          <h2>Section 06</h2>
+          <h3>Device detection (User Agent)</h3>
+          <div id="userDevice"></div>
+          </section>
+        <section id="section07" class="section" data-scroll-spy>
+          <h2>Section 07</h2>
+          <h3>Connection detect</h3>
+          <div id="boxConnectionDetect"></div>
+          </section>
+        <section id="section08" class="section" data-scroll-spy>
+          <h2>Section 08</h2>
+          <h3>Webcam detection</h3>
+          <video id="boxWebcam"></video>
+        </section>
+        <section id="section09" class="section" data-scroll-spy>
+          <h2>Section 09</h2>
+          <h3>Geolocation</h3>
+          <div id="boxGeolocation"></div>
+        </section>
+        <section id="section10" class="section" data-scroll-spy>
+          <h2>Section 10</h2>
+          <h3>Search filters</h3>
+          <input type="search" placeholder="Search..." class="card-filter">
+          <article class="cards">
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/nature" alt="Nature">
+              <figcaption>Nature</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/any" alt="Any">
+              <figcaption>Any</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/tech" alt="Tech">
+              <figcaption>Tech</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/animals" alt="Animals">
+              <figcaption>Animals</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/people" alt="People">
+              <figcaption>People</figcaption>
+            </figure>
+            <figure class="card">
+              <img src="https://placeimg.com/200/200/arch" alt="Architecture">
+              <figcaption>Architecture</figcaption>
+            </figure>
+          </article>
+        </section>
+        <section id="section11" class="section" data-scroll-spy>
+          <h2>Section 11</h2>
+          <h3>Digital draw</h3>
+          <div id="boxDigDra"></div>
+        </section>
+                <section id="section12" class="section" data-scroll-spy>
+          <h2>Section 12</h2>
+          <h3>Responsive Slider</h3>
+          <div class="slider">
+            <div class="slider-slides">
+              <div class="slider-slide active">
+                <img src="https://placeimg.com/400/400/animals" alt="Animals">
+              </div>
+              <div class="slider-slide">
+                <h4>Diapositiva 2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dignissimos mollitia vitae dicta eos, recusandae maiores. Neque corporis amet ut quam. Dolor esse aliquid dicta a eveniet rerum quos consequatur.
+                </p>
+              </div>
+              <div class="slider-slide">
+                <img src="https://placeimg.com/400/400/nature" alt="Nature">
+              </div>
+              <div class="slider-slide">
+                <h4>Diapositiva 4</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et veniam assumenda, odio esse quibusdam amet sapiente labore! Maiores esse deleniti aperiam beatae, amet soluta, consequatur pariatur impedit, ducimus nihil fuga?
+                </p>
+              </div>
+            </div>
+            <div class="slider-btns">
+              <a href="#" class="prev">&laquo;</a>
+              <a href="#" class="next">&raquo;</a>
+            </div>
+          </div>
+        </section>
+                <section id="section13" class="section" data-scroll-spy>
+          <h2>Section 13</h2>
+          <h3>Smart video</h3>
+          <video src="./assets/video.mp4" muted controls loop data-smart-video width="100%"></video>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <video src="./assets/video.mp4" muted controls loop data-smart-video width="100%"></video>
+        </section>
+                <section id="section14" class="section" data-scroll-spy>
+          <h2>Section 14</h2>
+          <h3>Contact form (Validations)</h3>
+          <form class="contact-form" action="https://formsubmit.co/javierandresgarzonpatarroyo@gmail.com" method="POST" target="_blank">
+            <legend>Send us your comments</legend>
+            <input type="text" name="name" placeholder="Type your name" title="Name only accept letters and white space" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="email" name="email" placeholder="Type your email" title="Incorrect email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            <input type="text" name="subject" placeholder="Subject" title="This field is requerid" required>
+            <textarea name="comments" cols="40" rows="4" placeholder="Write your comments" title="Your comment must not exceed 255 characters" data-pattern="^.{1,255}$" required></textarea>
+            <button type="submit">Send</button>
+            <div class="contact-form-loader d-none"><img src="./assets/rings.svg" alt="Loading"></div>
+            <div class="contact-form-response d-none">
+              <p>The data was sent.</p>
+            </div>
+          </form>
+        </section>
+                <section id="section15" class="section" data-scroll-spy>
+          <h2>Section 15</h2>
+          <h3>Narrator</h3>
+          <select id="speech-select">
+            <option value="">---- Choose an voice ----</option>
+          </select>
+          <br><br>
+          <textarea id="speech-text" cols="40" rows="4" placeholder="Enter a text to read..."></textarea>
+          <br><br>
+          <button id="speech-btn">Read text</button>
+        </section>
+                <section id="section16" class="section" data-scroll-spy>
+          <h2>Section 16</h2>
+          <h3></h3>
+        </section>
+    </main>
+    <button class="btn-scroll-top v-hidden">&#11014</button>
+    <button id="btnMode" class="btn-mode">🌙</button>
+    <aside>
+    </aside>
+    <footer>
+      <p>
+        <a href="https://github.com/javierandresgp" target="_blank">GitHub</a>
+      </p>
+      &copy;
+      <p>
+        Exercises taken from
+        <a
+          href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Jonathan MirCha</a
+        >
+      </p>
+    </footer>
+  </body>
+  <script src="./1-main.js" type="module"></script>
+</html>

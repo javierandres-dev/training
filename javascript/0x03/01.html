@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=01.css">
+    <title>0x07</title>
+  </head>
+
+  <body>
+    <h1>CRUD - Usuarios</h1>
+    <header>
+      <form id="formOpciones">
+        <fieldset>
+          <legend>Selecciona una opción y confirma la acción</legend>
+          <label for="opcLeerListaUsuarios">Ver lista de usuarios</label>
+          <input type="radio" name="opcion" id="opcVerUsuarios" />
+          <label for="opcCrearUsuario">Crear un usuario</label>
+          <input type="radio" name="opcion" id="opcCrearUsuario" />
+          <label for="opcEditarUsuario">Editar un usuario</label>
+          <input type="radio" name="opcion" id="opcEditarUsuario" />
+          <label for="opcEliminarUsuario">Eliminar un usuario</label>
+          <input type="radio" name="opcion" id="opcEliminarUsuario" />
+          <button id="btnConfirmarSeleccion">Confirmar selección</button>
+        </fieldset>
+      </form>
+    </header>
+    <main id="mostrarSeleccion"></main>
+    <aside id="mostrarMensajes"></aside>
+  </body>
+  <script src="01.js"></script>
+</html>

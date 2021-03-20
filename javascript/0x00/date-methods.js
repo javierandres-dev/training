@@ -1,0 +1,19 @@
+let res = undefined;
+res = new Date();
+res = new Date().getDate(); // Current Month
+res = new Date().getDay(); // Current Day
+res = new Date().getFullYear(); // Current Year
+res = new Date().getHours(); // Current Hour
+res = new Date().getMilliseconds(); // Current Milliseconds
+res = new Date().getMinutes(); // Current Minutes
+res = new Date().getMonth(); // Current Month
+res = new Date().getSeconds(); // Current Seconds
+res = new Date().getTime(); // Milliseconds since January 1, 1970 00:00:00 UTC
+res = new Date().toDateString(); // Current, portion of the Date as string
+res = new Date().toLocaleDateString(); // Current, format: Month/Day/Year
+res = new Date().toLocaleString(); // Current, format: M/D/Y 0:00:00: AM\PM
+res = new Date().toLocaleTimeString(); // Current time, format: 0:00:00: AM\PM
+res = new Date().toString();
+res = new Date().setFullYear(2020);
+res = Date.now();
+console.log(res);

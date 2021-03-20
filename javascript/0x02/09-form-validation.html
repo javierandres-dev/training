@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="09-form-validation.css">
+    <title>Replicating projects</title>
+</head>
+
+<body>
+    <h1>Replicating projects to train.</h1>
+    <hr>
+    <h2>Form validation</h2>
+    <p>Complete a gym registration form with proper validation.</p>
+    <form id="gymForm">
+        <h3>Your Gym Pal</h3>
+        <label>Email<abbr title="Este campo es obligatorio">*</abbr></label>
+        <input type="email" id="readEmail" placeholder="Enter your email" required>
+        <label>Password<abbr title="Este campo es obligatorio">*</abbr></label>
+        <input type="password" id="readPassword" placeholder="Enter your password" required>
+        <label>How many times do you want to workout?<abbr title="Este campo es obligatorio">*</abbr></label>
+        <input type="number" id="readWorkouts" placeholder="Number of workouts per week" required min="1" max="7">
+        <label>Phone number<abbr title="Este campo es obligatorio">*</abbr> <span>(4 to 12 digits)</span></label>
+        <input type="text" id="readPhone" placeholder="Phone number" required minlength="4" maxlength="12">
+        <label>How did you find out about our website? <span>Optional</span></label>
+        <input type="text" id="readSource" placeholder="Source" maxlength="40"></input>
+        <button type="submit" id="btnSignUp">Sign up</button>
+    </form>
+</body>
+<script type="text/javascript" src="09-form-validation.js"></script>
+
+</html>

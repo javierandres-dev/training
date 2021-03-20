@@ -1,0 +1,42 @@
+#reproductor{
+	width: 720px;
+	margin: 20px auto;
+	padding: 10px 5px 5px 5px;
+	background: rgba(0,0,0,.8);
+	border: 1px solid rgba(0,0,0,.8);
+	border-radius: 10px;
+}
+#reproducir,#silenciar{
+	padding: 5px 10px;
+	width: 70px;
+	border: 1px solid #000000;
+	background: #DDDDDD;
+	font-weight: bold;
+	border-radius: 10px;
+}
+nav{
+   margin: 5px 0px;
+}
+#botones{
+	float: left;
+	width: 145px;
+	height: 20px;
+	padding-left: 5px;
+}
+#barra{
+	float: left;
+	width: 400px;
+	height: 16px;
+	padding: 2px;
+	margin: 2px 5px;
+	border: 1px solid #CCCCCC;
+	background: #EEEEEE;
+}
+#progreso{
+	width: 0px;
+	height: 16px;
+	background: lightblue;
+}
+.recuperar{
+	clear: both
+}

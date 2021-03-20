@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="08-classroom-statistics.css" />
+    <title>Replicating projects</title>
+  </head>
+
+  <body>
+    <h1>Replicating projects to train.</h1>
+    <hr />
+    <h2>Classroom statistics</h2>
+    <p>
+      Build a Grade statistics app that allows you to enter the grades of your
+      students and see statistics about those grades.
+    </p>
+    <h3>Classroom statistics</h3>
+    <div>
+      <legend>Enter grade</legend>
+      <input type="number" id="readGrade" placeholder="Grade (0 to 20)" />
+      <button type="button" id="btnAdd">Add</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Lowest</th>
+            <th>Average</th>
+            <th>Count</th>
+            <th>Highest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="lowest"></td>
+            <td id="average"></td>
+            <td id="count"></td>
+            <td id="highest"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Passing</th>
+            <th>Failing</th>
+            <th>Raised</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="passing"></td>
+            <td id="failing"></td>
+            <td id="raised"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="08-classroom-statistics.js"></script>
+</html>

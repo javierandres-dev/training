@@ -1,0 +1,35 @@
+.the-game {
+  width: 300px;
+  margin: auto;
+}
+.the-form {
+  display: flex;
+  flex-direction: column;
+}
+.the-form input {
+  margin: 1rem 0;
+}
+.alerts {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  color: azure;
+}
+.warning {
+  background-color: yellow;
+  color: blue;
+}
+.danger {
+  background-color: red;
+}
+.success {
+  background-color: green;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
