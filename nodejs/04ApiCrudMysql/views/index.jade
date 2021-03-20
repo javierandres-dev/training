@@ -1,0 +1,31 @@
+extends layout.jade
+block content
+  section.container
+    div.item.logo
+    div.item
+      h1
+        a(href="/")= title
+    article.item
+      -if(data.length)
+        table.table
+          tr
+            th Id
+            th Title
+            th Year
+            th Rating
+            th Poster
+            th(colspan="2")
+              form(method="get" action="/Add")
+                input.button.add(type="submit", value="Add")
+          -each movie in data
+            tr
+              td #{movie.movie_id}
+              td #{movie.title}
+              td #{movie.release_year}
+              td #{movie.rating}/10
+              td
+                img.poster(src="#{movie.image}", alt="#{movie.title}")
+              td Edit
+              td Delete
+      -else
+        p.error Don't exists movies in the database

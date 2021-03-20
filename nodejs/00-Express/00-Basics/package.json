@@ -1,0 +1,18 @@
+{
+  "name": "basics-express",
+  "version": "0.0.1",
+  "description": "Basic expamples with Express framework",
+  "main": "00-hello_express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "javierandresgp",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

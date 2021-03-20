@@ -1,0 +1,14 @@
+### create a new user
+POST http://localhost:3000/users
+### read all users
+GET http://localhost:3000/users
+### read a specific user
+GET http://localhost:3000/users/:id
+### update a specific user
+PUT http://localhost:3000/users/:id
+### delete a specific user
+DELETE http://localhost:3000/users/:id
+### root
+GET http://localhost:3000
+### page not found
+GET http://localhost:3000/x

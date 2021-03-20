@@ -1,0 +1,59 @@
+html {
+  background-color: #1d1d1d;
+}
+a,
+h1,
+h2,
+label {
+  color: #80bd01;
+}
+a:hover {
+  opacity: 0.75;
+}
+.logo {
+  display: block;
+  margin: 1rem auto;
+  width: 512px;
+  height: auto;
+  vertical-align: bottom;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+}
+.error {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #80bd01;
+  color: #fff;
+}
+.poster {
+  max-width: 100px;
+}
+.table {
+  width: 100%;
+}
+.table td,
+.table th {
+  padding: 1rem;
+}
+.table tr:first-child {
+  background-color: #292623;
+  color: #80bd01;
+}
+.table tr:nth-child(even) {
+  background-color: #ccc;
+}
+.table tr:nth-child(odd):not(:first-child) {
+  background-color: #eee;
+}
+.button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #80bd01;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.75;
+}
+.add {
+  background: #0b0;
+}

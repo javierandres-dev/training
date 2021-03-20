@@ -1,0 +1,24 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(name="description", content="#{description}")
+    link(rel="stylesheet", href="./css/style.css")
+    title #{title}
+h1 This is a Jade template
+// HTML comment
+//- Jade comment
+h2 By #{author}
+h3
+  a(href="#{link}") #{title}
+p #{description}
+h4 Example
+ul
+  li Hello
+  li Wolrd
+ol
+  li One
+  li Two
+  li Three
+  li Four

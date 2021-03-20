@@ -1,0 +1,26 @@
+{
+  "name": "templates-engines",
+  "version": "0.0.1",
+  "description": "Exercise to see how to use the Jade and Ejs templates to the Express views",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "keywords": [
+    "express",
+    "jade",
+    "ejs",
+    "templates",
+    "engines",
+    "nodejs"
+  ],
+  "author": "javierandresgp",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
