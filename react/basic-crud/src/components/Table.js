@@ -4,18 +4,18 @@ import Row from './Row';
 const Table = ({ data, setRecordToUpdate, deleteRecord }) => {
   return (
     <table>
-      <caption>Table</caption>
+      <caption>ITEMS</caption>
       <thead>
         <tr>
-          <th>BRAND</th>
+          <th>ITEM</th>
           <th>MODEL</th>
-          <th colSpan='3'>ACTION</th>
+          <th colSpan='2'>ACTION</th>
         </tr>
       </thead>
       <tbody>
         {data.length === 0 ? (
-          <tr>
-            <td colSpan='5'>no data</td>
+          <tr className='ta-center'>
+            <td colSpan='4'>no data</td>
           </tr>
         ) : (
           data.map((el) => (

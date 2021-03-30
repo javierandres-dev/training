@@ -8,9 +8,6 @@ const Row = ({ el, setRecordToUpdate, deleteRecord }) => {
       <td>{brand}</td>
       <td>{model}</td>
       <td>
-        <button type='button'>Read</button>
-      </td>
-      <td>
         <button type='button' onClick={() => setRecordToUpdate(el)}>
           Update
         </button>
