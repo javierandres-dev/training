@@ -1,9 +1,7 @@
 # Self ― Learning
-:open_file_folder: training/algorithms
+:open_file_folder: training/react
 
-## Training algorithms
-* searching_algorithms
-* sorting_algorithms
+## Training react
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)

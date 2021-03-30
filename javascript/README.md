@@ -1,8 +1,7 @@
-# Self-learning
-## JavaScript
-### :open_file_folder: subject-javascript
+# Self ― Learning
+:octocat: training/javascript
 
-#### Training
+## Training javascript
 * :open_file_folder: 0x00 Foundations
 * :open_file_folder: 0x01 [:copyright: One Month](https://onemonth.com/users/auth/github)
 * :open_file_folder: 0x02

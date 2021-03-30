@@ -1,8 +1,7 @@
-# Self-learning
-## Python
-### :open_file_folder: subject-python
+# Self ― Learning
+:octocat: training/python
 
-#### Training
+## Training python
 * :open_file_folder: 0x00 Foundations
 * :open_file_folder: 0x01
   - [x] 0-01 to 0-16 [:copyright: Alvaro Chirou](https://www.udemy.com/share/101sFuAEEcdF5VRno=/)

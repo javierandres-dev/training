@@ -1,8 +1,7 @@
-# Self-learning
-## Java
-### :open_file_folder: subject-java
+# Self ― Learning
+:octocat: training/java
 
-#### Training
+## Training java
 * :open_file_folder: 0x00 Foundations
 * :open_file_folder: 0x01 Java Explorer
 

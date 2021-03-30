@@ -1,8 +1,7 @@
-# Self-learning
-## C
-### :open_file_folder: subject-c
+# Self ― Learning
+:open_file_folder: training/c
 
-#### Training
+## Training c
 * :open_file_folder: 0x00 Foundations
 * :open_file_folder: 0x01 [:copyright: Alejandro Miguel Taboada Sanchez](https://www.udemy.com/share/101xMsAEEcdF5VRno=/)
   - [x] Serie 1 Operadores

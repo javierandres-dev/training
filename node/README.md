@@ -1,9 +1,7 @@
-# Self-learning
-## Nodejs
-### :open_file_folder: subject-nodejs
+# Self ― Learning
+:octocat: training/node
 
-#### Training
-* :open_file_folder:
+## Training node
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com/)
