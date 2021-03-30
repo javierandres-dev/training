@@ -1,6 +1,5 @@
-# Self-learning
-## Programming 
-### :open_file_folder: subject-programming
+# Self ― Learning
+:open_file_folder: training/algorithms
 
 #### Training
 * searching_algorithms

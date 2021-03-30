@@ -1,10 +1,8 @@
-# Training
+# Self ― Learning
 :octocat: training/
 
-## Objective
-###### Courses and exercises, everything to train.
-
-## Directories
+## Training
+### Directories
 :open_file_folder: algorithm  
 :open_file_folder: c  
 :open_file_folder: html-css  
