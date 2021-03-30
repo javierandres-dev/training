@@ -29,23 +29,33 @@ const initialDb = [
 
 function App() {
   const [db, setDb] = useState(initialDb);
-  const [isUpdate, setIsUpdate] = useState(false);
+  const [recordToUpdate, setRecordToUpdate] = useState(null);
 
-  const createRecord = () => {};
+  const createRecord = (record) => {
+    record.id = db.length + 1;
+    setDb([...db, record]);
+  };
   const readRecord = () => {};
-  const updateRecord = () => {};
+  const updateRecord = (record) => {
+    const updatedRecord = db.map((el) => (el.id === record.id ? record : el));
+    setDb(updatedRecord);
+  };
   const deleteRecord = () => {};
 
   return (
     <>
       <h1>BASIC CRUD</h1>
       <Form
-        isUpdate={isUpdate}
-        setIsUpdate={setIsUpdate}
+        recordToUpdate={recordToUpdate}
+        setRecordToUpdate={setRecordToUpdate}
         createRecord={createRecord}
         updateRecord={updateRecord}
       />
-      <Table data={db} setIsUpdate={setIsUpdate} deleteRecord={deleteRecord} />
+      <Table
+        data={db}
+        setRecordToUpdate={setRecordToUpdate}
+        deleteRecord={deleteRecord}
+      />
     </>
   );
 }

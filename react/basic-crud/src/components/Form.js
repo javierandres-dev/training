@@ -1,48 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const initialForm = {
+const initialRecord = {
   id: undefined,
   brand: '',
   model: '',
 };
 
-const Form = ({ isUpdate, setIsUpdate, createRecord, updateRecord }) => {
-  const [form, setForm] = useState(initialForm);
+const Form = ({
+  recordToUpdate,
+  setRecordToUpdate,
+  createRecord,
+  updateRecord,
+}) => {
+  const [record, setRecord] = useState(initialRecord);
 
   const handleChange = (e) => {
-    setForm({
-      ...form,
+    setRecord({
+      ...record,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleReset = (e) => {
-    setForm(initialForm);
-    setIsUpdate(false);
+    setRecord(initialRecord);
+    setRecordToUpdate(false);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.brand || !form.model) {
+    if (!record.brand || !record.model) {
       alert('Empty field');
       return;
     }
-    if (form.id === undefined) {
-      createRecord(form);
+    if (record.id === undefined) {
+      createRecord(record);
     } else {
-      updateRecord(form);
+      updateRecord(record);
     }
     handleReset();
   };
 
+  useEffect(() => {
+    if (recordToUpdate) {
+      setRecord(recordToUpdate);
+    } else {
+      setRecord(initialRecord);
+    }
+  }, [recordToUpdate]);
+
   return (
     <form onSubmit={handleSubmit}>
-      <legend>Form</legend>
+      <legend>{recordToUpdate ? 'Update' : 'Create'}</legend>
       <input
         type='text'
         name='brand'
         id='brand'
         placeholder='e.g. Chevrolet'
         onChange={handleChange}
-        value={form.brand}
+        value={record.brand}
       />
       <input
         type='text'
@@ -50,7 +65,7 @@ const Form = ({ isUpdate, setIsUpdate, createRecord, updateRecord }) => {
         id='model'
         placeholder='e.g. Aveo'
         onChange={handleChange}
-        value={form.model}
+        value={record.model}
       />
       <button type='reset' onClick={handleReset}>
         Reset

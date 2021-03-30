@@ -1,17 +1,24 @@
 import React from 'react';
 
-const Row = ({ el }) => {
+const Row = ({ el, setRecordToUpdate, deleteRecord }) => {
+  const { id, brand, model } = el;
+
   return (
     <tr>
-      <td>{el.brand}</td>
+      <td>{brand}</td>
+      <td>{model}</td>
       <td>
         <button type='button'>Read</button>
       </td>
       <td>
-        <button type='button'>Update</button>
+        <button type='button' onClick={() => setRecordToUpdate(el)}>
+          Update
+        </button>
       </td>
       <td>
-        <button type='button'>Delete</button>
+        <button type='button' onClick={() => deleteRecord(id)}>
+          Delete
+        </button>
       </td>
     </tr>
   );
