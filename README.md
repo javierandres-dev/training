@@ -1,7 +1,7 @@
 # Self ― Learning
 :octocat: training/
 
-## Training
+## Courses, examples, test, exercises, everything to train.
 ### Directories
 :open_file_folder: algorithm  
 :open_file_folder: c  
