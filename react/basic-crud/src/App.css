@@ -1,0 +1,11 @@
+h1,
+form legend {
+  text-align: center;
+}
+form,
+table {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
