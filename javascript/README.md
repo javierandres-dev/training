@@ -19,6 +19,7 @@
   - [x] 1-11. Class Book [:copyright: DorianDesings](https://github.com/DorianDesings/js2018/blob/master/Clase%2020/scripts.js)
 * :open_file_folder: 0x07 Testing the JSONplaceholder API
 * :open_file_folder: 0x08 Classes
+* :open_file_folder: 0x09 TDD (Test Driven Development)
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
