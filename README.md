@@ -13,5 +13,5 @@
 :open_file_folder:  react  
 :open_file_folder: typescript
 
-## Software engineer
+## Software Developer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
