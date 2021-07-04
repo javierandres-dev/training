@@ -25,6 +25,7 @@
 * :open_file_folder: 0x05 [:copyright: w3resource](https://www.w3resource.com/python-exercises/python-basic-exercises.php)
   - [x] 001 to 023
   - [ ] 024 to 150
+* :open_file_folder: 0x06 [:copyright: Walter Coto](https://www.udemy.com/share/103K0W2@Pm1KbFldT1UJcEB7OEhNfT0=/)
 
-## Software engineer
+## Software Developer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
