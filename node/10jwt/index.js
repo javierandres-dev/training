@@ -1,15 +1,19 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
-const keys = require('./settings/keys');
 
 const app = express();
+
+app.listen(4000, () => console.log('Server running on port 4000'));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('/', (req, res) => res.json({ message: 'Hello, World!' }));
+
+const jwt = require('jsonwebtoken');
+const keys = require('./settings/keys');
+
 app.set('key', keys.key);
 
-app.get('/', (req, res) => res.json({ message: 'Hello, World!' }));
 app.post('/signin', (req, res) => {
   if (req.body.username === 'pepita' && req.body.password === '1234') {
     const payload = { check: true };
@@ -21,5 +25,26 @@ app.post('/signin', (req, res) => {
 });
 
 const verification = express.Router();
+verification.use((req, res, next) => {
+  let token = req.headers['x-access-token'] || req.headers['authorization'];
+  if (!token) {
+    return res.json({ message: 'Denied access, token mandatory' });
+  }
+  if (token.startsWith('Bearer ')) {
+    token = token.slice(7, token.length);
+  }
+  if (token) {
+    jwt.verify(token, app.get('key'), (error, decoded) => {
+      if (error) {
+        return res.json({ message: 'Invalid token' });
+      } else {
+        req.decoded = decoded;
+        next();
+      }
+    });
+  }
+});
 
-app.listen(4000, () => console.log('Server running on port 4000'));
+app.get('/info', verification, (req, res) => {
+  res.json({ message: 'in info ... private content ...' });
+});
