@@ -1,0 +1,21 @@
+{
+  "name": "10jwt",
+  "version": "0.0.1",
+  "description": "learning jwt",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon run dev"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "https://www.javierandresgp.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
