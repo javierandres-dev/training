@@ -1,32 +1,33 @@
-var d = document;
-d.addEventListener('DOMContentLoaded', function () {
+"use strict";
+const d = document;
+d.addEventListener('DOMContentLoaded', () => {
     show('Welcome');
     setName();
 });
-var setName = function () {
-    var $form = d.querySelector('form'), $str = d.getElementById('str'), $num = d.getElementById('num'), $list = d.getElementById('list');
-    $form.addEventListener('submit', function (e) {
+const setName = () => {
+    const $form = d.querySelector('form'), $str = d.getElementById('str'), $num = d.getElementById('num'), $list = d.getElementById('list');
+    $form.addEventListener('submit', (e) => {
         e.preventDefault();
-        var str = $str.value;
-        var num = parseInt($num.value);
+        const str = $str.value;
+        const num = parseInt($num.value);
         if (str.length === 0 || isNaN(num)) {
             console.log('stop');
             return;
         }
-        $list.textContent = str + ", " + num;
+        $list.textContent = `${str}, ${num}`;
     });
 };
-var show = function (aString) {
-    d.getElementById('test').innerHTML = "" + aString;
+const show = (aString) => {
+    d.getElementById('test').innerHTML = `${aString}`;
 };
 console.log('Hello, World!');
 console.log('-- -- -- -- DataTypes -- -- -- --');
-var anyType;
-var numberType = 0;
-var stringType = 'str';
-var arrNumbers = [1, 2, 3, 4];
-var arrStrings = ['a', 'b', 'c'];
-var arrAny = [1, 'a', true, {}, []];
+let anyType;
+const numberType = 0;
+const stringType = 'str';
+const arrNumbers = [1, 2, 3, 4];
+const arrStrings = ['a', 'b', 'c'];
+const arrAny = [1, 'a', true, {}, []];
 function types() {
     console.log(anyType);
     console.log(numberType);
@@ -37,11 +38,11 @@ function types() {
 }
 types();
 console.log('-- -- -- -- Interface -- -- -- --');
-var user1 = { username: 'Mary', password: '1234', nickmane: 'mari' };
-var user2 = { username: 'Jhon', password: '4321' };
+const user1 = { username: 'Mary', password: '1234', nickmane: 'mari' };
+const user2 = { username: 'Jhon', password: '4321' };
 console.log(user1, '\n', user2);
-var action1 = {
-    greet: function () { return console.log('hi'); }
+const action1 = {
+    greet: () => console.log('hi'),
 };
 action1.greet();
 console.log('-- -- -- -- Functions -- -- -- --');
@@ -49,5 +50,5 @@ function fn(a, b) {
     return a + b;
 }
 console.log(fn(1, 2));
-var afn = function (a, b) { return a * b; };
+const afn = (a, b) => a * b;
 console.log(afn(1, 2));
