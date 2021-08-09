@@ -1,4 +1,4 @@
-class Monitor {
+abstract class Monitor {
   constructor(private readonly size: number, private price: number) {}
 
   public get getPrice(): string {
