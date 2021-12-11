@@ -7,6 +7,7 @@
 :open_file_folder: angular  
 :open_file_folder: c  
 :open_file_folder: data structures  
+:open_file_folder: graphql  
 :open_file_folder: html-css  
 :open_file_folder: java  
 :open_file_folder: javascript  
