@@ -26,6 +26,7 @@
   - [x] 001 to 023
   - [ ] 024 to 150
 * :open_file_folder: 0x06 [:copyright: Walter Coto](https://www.udemy.com/share/103K0W2@Pm1KbFldT1UJcEB7OEhNfT0=/)
+* :open_file_folder: 0x07 [:copyright: freecodecamp | Introducción a Programación en Python](https://www.youtube.com/watch?v=DLikpfc64cA)
 
 ## Software Developer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
