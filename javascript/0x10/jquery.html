@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery</title>
+    <style>
+      .d-none {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jquery</h1>
+    <h2>Con jquery</h2>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <button>botón1</button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //con jquery
+      /*
+      $(document).ready(function () {
+        $('button').click(function () {
+          $('p').hide();
+        });
+      });
+      */
+      const $btn = document.querySelector('button');
+      const $p = document.querySelectorAll('p');
+
+      document.addEventListener('DOMContentLoaded', function () {
+        $btn.addEventListener('click', function () {
+          $p.classList.add('d-none');
+        });
+      });
+    </script>
+  </body>
+</html>
