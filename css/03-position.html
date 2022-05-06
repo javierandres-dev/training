@@ -2,87 +2,91 @@
 <html>
   <head>
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      .father {
+      .parent {
+        height: 100vh;
         background-color: blue;
-        width: 400px;
-        height: 400px;
+        padding: 64px 16px;
+        position: relative;
       }
-      .son {
-        background-color: lightblue;
-        color: blue;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        padding-top: 90px;
-        font-size: 20px;
-        font-family: monospace;
+      .child {
+        width: 100px;
+        height: 100px;
+        padding: 16px;
+      }
+      .one {
+        background-color: yellowgreen;
+        position: absolute;
+        top: 100px;
+      }
+      .two {
+        background-color: greenyellow;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        z-index: 10;
+      }
+      .three {
+        background-color: yellow;
+        position: absolute;
+        top: 300px;
+        left: 200px;
+      }
+      .four {
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+      .five {
+        background-color: salmon;
+        position: sticky;
+        top: 0;
+        left: 0;
       }
       .p-static {
         position: static;
       }
       .p-relative {
         position: relative;
-        /*
         top: 0;
         right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 0;
-        */
+        /* bottom: 0; */
+        /* left: 0; */
+        /* z-index: 0; */
       }
       .p-absolute {
         position: absolute;
         top: 0;
         right: 0;
+        /* bottom: 0; */
+        /* left: 0; */
+        /* z-index: 0; */
       }
       .p-fixed {
         position: fixed;
         top: 0;
         right: 0;
+        /* bottom: 0; */
+        /* left: 0; */
+        /* z-index: 0; */
       }
       .p-sticky {
         position: sticky;
         top: 0;
         right: 0;
+        /* bottom: 0; */
+        /* left: 0; */
+        /* z-index: 0; */
       }
     </style>
   </head>
   <body>
-    <div class="father">
-      <div class="son">example text</div>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="father p-static">
-      <div class="son p-static">position static</div>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="father p-relative">
-      <div class="son p-relative">position relative</div>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="father p-relative">
-      <div class="son p-absolute">position absolute</div>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="father p-relative">
-      <div class="son p-fixed">position fixed</div>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <div class="father p-relative">
-      <div class="son p-sticky">position sticky</div>
+    <div class="parent">
+      <div class="child one">1</div>
+      <div class="child two">2</div>
+      <div class="child three">3</div>
+      <div class="child four">4</div>
+      <div class="child five">5</div>
     </div>
   </body>
 </html>
