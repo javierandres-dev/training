@@ -1,8 +1,8 @@
-# Self ― Learning
-:octocat: training/
-
-## Courses, examples, test, exercises, everything to train.
-### Directories
+# :octocat: training/
+Self ― Learning 
+Courses, examples, test, exercises, everything to learn and train.
+---
+## Directories
 :open_file_folder: algorithm  
 :open_file_folder: angular  
 :open_file_folder: c  
@@ -18,6 +18,6 @@
 :open_file_folder:  react  
 :open_file_folder: svelte  
 :open_file_folder: typescript
-
+---
 ## Software Developer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
+[Javier Andrés Garzón Patarroyo](https://javierandresgp.com) :copyright: 2020
