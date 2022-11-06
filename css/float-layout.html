@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header,
+      nav,
+      main,
+      aside,
+      footer {
+        background-color: grey;
+        color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+      }
+      header {
+        height: 150px;
+        line-height: 150px;
+      }
+      nav {
+        height: 75px;
+        line-height: 75px;
+      }
+      main,
+      aside {
+        height: 600px;
+        line-height: 600px;
+        float: left;
+      }
+      main {
+        width: 75%;
+      }
+      aside {
+        width: 25%;
+      }
+      footer {
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>HEADER CONTENT</header>
+    <nav>NAV CONTENT</nav>
+    <main>MAIN CONTENT</main>
+    <aside>ASIDE CONTENT</aside>
+    <footer>FOOTER CONTENT</footer>
+  </body>
+</html>
