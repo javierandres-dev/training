@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media queries</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        height: 100vh;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        color: white;
+        padding: 16px;
+        text-align: center;
+        line-height: 100vh;
+        font-size: 64px;
+      }
+      .mobile {
+        background-color: red;
+      }
+      .tablet {
+        background-color: green;
+        display: none;
+      }
+      .computer {
+        background-color: blue;
+        display: none;
+      }
+      @media screen and (min-width: 768px) {
+        .mobile {
+          display: none;
+        }
+        .tablet {
+          display: block;
+        }
+        .computer {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .mobile {
+          display: none;
+        }
+        .tablet {
+          display: none;
+        }
+        .computer {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box mobile">mobile</div>
+    <div class="box tablet">tablet</div>
+    <div class="box computer">computer</div>
+  </body>
+</html>
