@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Layout</title>
+  </head>
+  <body
+    style="
+      width: 1024px;
+      height: 512px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: lightgrey;
+      border: 2px solid black;
+    "
+  >
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <td
+            style="
+              height: 88px;
+              background-color: grey;
+              color: white;
+              text-align: center;
+            "
+          >
+            HEADER CONTENT
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="
+              height: 48px;
+              background-color: grey;
+              color: white;
+              text-align: center;
+            "
+          >
+            NAV CONTENT
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table style="width: 100%">
+              <tr>
+                <td
+                  style="
+                    width: 800px;
+                    height: 320px;
+                    background-color: grey;
+                    color: white;
+                    text-align: center;
+                  "
+                >
+                  MAIN CONTENT
+                </td>
+                <td
+                  style="
+                    width: 220px;
+                    height: 320px;
+                    background-color: grey;
+                    color: white;
+                    text-align: center;
+                  "
+                >
+                  ASIDE CONTENT
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td
+            style="
+              height: 32px;
+              background-color: grey;
+              color: white;
+              text-align: center;
+            "
+          >
+            FOOTER CONTENT
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
