@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid + MQ</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        height: 100%;
+        font-size: 62.5%;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: lightgray;
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .container {
+        width: 100%;
+        padding: 16px;
+        background-color: #fff;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        border: 1px solid blue;
+      }
+      .card {
+        border: 1px solid green;
+      }
+      .card h2,
+      .card p {
+        padding: 0 1rem;
+      }
+      @media screen and (min-width: 576px) {
+        .container {
+          max-width: 540px;
+          margin: auto;
+        }
+        .cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+        .cards {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+        .cards {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+        .cards {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        .container {
+          max-width: 1320px;
+        }
+        .cards {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive - Grid with media queries</h1>
+    <hr />
+    <div class="container">
+      <section class="cards">
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/any" alt="random image" />
+          <h2>1. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/animals" alt="random image" />
+          <h2>2. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img
+            src="https://placeimg.com/1024/512/architecture"
+            alt="random image"
+          />
+          <h2>3. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/nature" alt="random image" />
+          <h2>4. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/people" alt="random image" />
+          <h2>5. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/tech" alt="random image" />
+          <h2>6. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/any" alt="random image" />
+          <h2>7. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/animals" alt="random image" />
+          <h2>8. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img
+            src="https://placeimg.com/1024/512/architecture"
+            alt="random image"
+          />
+          <h2>9. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/nature" alt="random image" />
+          <h2>10. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/people" alt="random image" />
+          <h2>11. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/1024/512/tech" alt="random image" />
+          <h2>12. Lorem dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Ipsum saepe, quo aliquid neque a id impedit, magni commodi,
+            repellendus facilis maiores temporibus soluta necessitatibus.
+          </p>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
