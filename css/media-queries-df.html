@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media queries</title>
+    <title>Media queries DF</title>
     <style>
       body {
         margin: 0;
@@ -22,6 +22,7 @@
       }
       .mobile {
         background-color: red;
+        display: none;
       }
       .tablet {
         background-color: green;
@@ -29,9 +30,8 @@
       }
       .computer {
         background-color: blue;
-        display: none;
       }
-      @media screen and (min-width: 768px) {
+      @media screen and (max-width: 1024px) and (min-width: 768px) {
         .mobile {
           display: none;
         }
@@ -42,15 +42,22 @@
           display: none;
         }
       }
-      @media screen and (min-width: 1024px) {
-        .mobile {
+      @media screen and (min-width: 577px) and (max-width: 767px) {
+        .mobile,
+        .tablet,
+        .computer {
           display: none;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        .mobile {
+          display: block;
         }
         .tablet {
           display: none;
         }
         .computer {
-          display: block;
+          display: none;
         }
       }
     </style>
