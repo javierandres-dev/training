@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flexbox Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightgrey;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      header,
+      nav,
+      main,
+      aside,
+      footer {
+        background-color: grey;
+        color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header,
+      nav,
+      main,
+      aside,
+      footer {
+        flex-basis: 100%;
+      }
+      header {
+        height: 88px;
+      }
+      nav {
+        height: 48px;
+      }
+      main {
+        height: 340px;
+      }
+      aside {
+        height: 120px;
+      }
+      footer {
+        height: 32px;
+      }
+      @media screen and (min-width: 768px) {
+        header,
+        nav,
+        main,
+        aside,
+        footer {
+          background-color: darkgrey;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        body {
+          max-width: 1024px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        header,
+        nav,
+        main,
+        aside,
+        footer {
+          background-color: grey;
+        }
+        main {
+          flex-basis: 80%;
+        }
+        aside {
+          flex-basis: 20%;
+          height: 340px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>HEADER CONTENT</header>
+    <nav>NAV CONTENT</nav>
+    <main>MAIN CONTENT</main>
+    <aside>ASIDE CONTENT</aside>
+    <footer>FOOTER CONTENT</footer>
+  </body>
+</html>
