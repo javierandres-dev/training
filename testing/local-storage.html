@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <style>
+      .notify {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .contact-form {
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+      }
+      .contact-form fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border: 2px solid blue;
+        border-radius: 16px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px 16px;
+      }
+      textarea {
+        resize: none;
+        height: 75px;
+      }
+      .btn {
+        padding: 8px;
+        color: white;
+        border: none;
+        border-radius: 8px;
+      }
+      .btn-send {
+        background-color: green;
+      }
+      .btn-reset {
+        background-color: red;
+      }
+      .c-red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Storage</h1>
+    <h2>local Storage</h2>
+    <hr />
+    <p id="notify" class="notify">All fields are required</p>
+    <form id="contactForm" class="contact-form">
+      <fieldset>
+        <legend>Contact</legend>
+        <label
+          >Name
+          <input type="text" name="name" />
+        </label>
+        <label
+          >Email
+          <input type="email" name="email" />
+        </label>
+        <label
+          >Message
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit" class="btn btn-send">Send</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+      </fieldset>
+    </form>
+    <script>
+      const d = document,
+        $form = d.getElementById('contactForm');
+
+      $form.addEventListener('submit', handleSubmit);
+
+      function handleSubmit(e) {
+        e.preventDefault();
+        if (!$form.name.value || !$form.email.value || !$form.message.value) {
+          d.getElementById('notify').classList.add('c-red');
+        } else {
+          const name = $form.name.value;
+          const email = $form.email.value;
+          const message = $form.message.value;
+          localStorage.setItem('name', name);
+          localStorage.setItem('email', email);
+          localStorage.setItem('message', message);
+          $form.reset();
+        }
+      }
+    </script>
+  </body>
+</html>
