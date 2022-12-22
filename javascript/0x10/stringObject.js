@@ -1,4 +1,7 @@
 'use strict';
+const singleQuotes = 'I am singles';
+const doubleQuotes = "I'm doubles";
+const backticks = `I'am backticks`;
 const helloWorld = 'Hello, World!';
 const firstName = 'pepita';
 const lastName = 'pérez';
@@ -7,17 +10,22 @@ const manName = 'pepito';
 const hellos = 'Hello ladies, Hello gentlemen, Hello World!';
 const strObj = new String('Hello, Object!');
 const helloSpaces = '   Hello!   ';
+
+// console.log(singleQuotes);
+// console.log(doubleQuotes);
+// console.log(backticks);
+
 //console.log(helloWorld);
 //console.log(helloWorld.length);
 //console.log(helloWorld[0]);
 //console.log(helloWorld[12]);
+
 //console.log(helloWorld.at(0));
 //console.log(helloWorld.at(-1));
 //console.log(helloWorld.charAt(0));
 //console.log(helloWorld.charAt(12));
 //console.log(helloWorld.charCodeAt(0));
 //console.log(firstName.concat(' ', lastName, ' ', helloWorld));
-//console.log(helloWorld.constructor);
 //console.log(helloWorld.endsWith('!'));
 //console.log(String.fromCharCode(72));
 //console.log(helloWorld.includes('!'));
