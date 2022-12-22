@@ -21,5 +21,6 @@
 * :open_file_folder: 0x08 Classes
 * :open_file_folder: 0x09 TDD (Test Driven Development)
 
-## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
+## Software Developer
+Built by [Javi](https://javierandres.dev) :copyright: 2020 - 2023  
+Found a bug or have an idea? [Contact me](https://javierandres.dev).

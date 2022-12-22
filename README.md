@@ -20,4 +20,5 @@ Courses, examples, test, exercises, everything to learn and train.
 :open_file_folder: typescript
 ---
 ## Software Developer
-[Javier Andrés Garzón Patarroyo](https://javierandresgp.com) :copyright: 2020
+Built by [Javi](https://javierandres.dev) :copyright: 2020 - 2023  
+Found a bug or have an idea? [Contact me](https://javierandres.dev).
