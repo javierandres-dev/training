@@ -20,6 +20,9 @@ const person = {
 
 const otherPerson = person;
 
+const objA = { prop1: 1, prop2: 2, prop3: 3, prop4: 4 };
+const objB = { prop1: 1, prop2: 2, prop3: 3, prop4: 4 };
+
 const arr = ['el1', 'el2', 'el3', 'el4'];
 
 const source = { a: 1, b: 2, c: 3, d: 4 };
@@ -56,6 +59,15 @@ const arrArr = [
 // otherPerson.isSameObj = true;
 // console.log(person);
 // console.log(otherPerson);
+
+// console.log(objA);
+// console.log(objB);
+// console.log(objA == objB);
+// console.log(objA === objB);
+// const objC = objA;
+// console.log(objC);
+// console.log(objC === objA);
+// console.log(objC === objB);
 
 // console.log(person.firstname);
 // console.log(person['firstname']);
@@ -232,3 +244,52 @@ const arrArr = [
 // console.log(Fn1.prototype.isPrototypeOf(fn));
 // console.log(Fn2.prototype.isPrototypeOf(fn));
 // console.log(Fn3.prototype.isPrototypeOf(fn));
+
+// const obj = { prop: 'value' };
+// console.log(obj);
+// obj.prop = 'change';
+// obj.addProp = 'added';
+// console.log(obj);
+// Object.seal(obj);
+// delete obj.prop;
+// console.log(obj);
+
+// const obj = { prop: 'value' };
+// console.log(Object.isSealed(obj));
+// Object.seal(obj);
+// console.log(Object.isSealed(obj));
+
+// const obj = { prop1: 'value1' };
+// obj.prop2 = 'value2';
+// console.log(obj);
+// Object.preventExtensions(obj);
+// obj.prop1 = 'value changed';
+// console.log(obj);
+// obj.prop3 = 'value3';
+// console.log(obj);
+
+// const obj = { prop: 'value' };
+// const array = ['element'];
+// console.log(obj.propertyIsEnumerable('prop'));
+// console.log(array.propertyIsEnumerable(0));
+// console.log(array.propertyIsEnumerable('length'));
+
+// function Fn1() {}
+// function fn2() {}
+// console.log(Fn1);
+// console.log(fn2);
+// Object.setPrototypeOf(fn2, Fn1.prototype);
+// console.log(fn2);
+
+// const array = [1000, 2000, 3000, 4000];
+// console.log(array.toLocaleString('en-US'));
+// console.log(array.toLocaleString('es-CO'));
+
+// const obj = { prop: 'value' };
+// console.log(obj.toString());
+// const array = [1000, 2000, 3000, 4000];
+// console.log(array.toString());
+
+// const obj = { prop: 'value' };
+// console.log(obj.valueOf());
+// console.log(obj.valueOf() === obj);
