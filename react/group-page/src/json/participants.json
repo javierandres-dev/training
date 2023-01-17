@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "pepita pérez",
+    "image": "https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?s=612x612&w=0&k=20&c=d8W_C2D-2rXlnkyl8EirpHGf-GpM62gBjpDoNryy98U=",
+    "website": "http://tanyamerone.com/"
+  },
+  {
+    "id": 2,
+    "name": "jon doe",
+    "image": "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "website": "https://www.seanhalpin.design/"
+  }
+]
