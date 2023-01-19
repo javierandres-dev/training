@@ -1,0 +1,10 @@
+.done {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  width: 40px;
+  padding: 4px 16px;
+  margin-left: 16px;
+  border-radius: 4px;
+  text-align: center;
+}

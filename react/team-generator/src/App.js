@@ -3,6 +3,7 @@ import './App.css';
 import ClassComponent from './components/ClassComponent';
 import FunctionalComponent from './components/FunctionalComponent';
 import Hello from "./components/Hello";
+import { FragmentComponent } from './components/FragmentComponent';
 import { ConditionalComponet } from './components/ConditionalComponet';
 import { Lists } from './components/Lists';
 import { HandleEvents } from './components/HandleEvents';
@@ -38,6 +39,7 @@ function App() {
         <HandleEvents/>
         <Lists/>
         <ConditionalComponet/>
+        <FragmentComponent/>
         <Hello/>
         <FunctionalComponent/>
         <ClassComponent/>
