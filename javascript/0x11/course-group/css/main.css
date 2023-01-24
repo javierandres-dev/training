@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.form {
+  max-width: 30rem;
+  margin: 4rem auto;
+  text-align: center;
+}
+.form-input {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-btn {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.card {
+  margin: 0 auto;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 50px #909090;
+}
+.card-text {
+  width: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-link {
+  color: lightseagreen;
+  opacity: 0.8;
+  transition: opacity 500ms ease-in-out;
+}
+.card-link:hover {
+  opacity: 1;
+}
+.not-found {
+  font-size: 2rem;
+  text-align: center;
+}
