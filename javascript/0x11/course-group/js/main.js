@@ -1,11 +1,12 @@
-import getList from "./functions.js";
+import getList, { getUnorderedList } from "./functions.js";
 
 const d = document,
   $search = d.getElementById('search'),
   $results = d.getElementById('results'),
   $p = d.querySelector('p');
 
-const all = getList();
+//const all = getList();
+const all = getUnorderedList();
 let html = ''
 
 const getCard = (obj) => {
