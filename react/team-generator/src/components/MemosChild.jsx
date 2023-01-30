@@ -2,6 +2,7 @@ import React from 'react'
 
 function MemosChild({childCount, setChildCount}) {
   console.log('MemosChild component rendered')
+  
   return (
     <>
     <div>MemosChild</div>

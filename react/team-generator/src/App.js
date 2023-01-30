@@ -14,6 +14,8 @@ import { StylesModule } from './components/StylesModule';
 import { StateHook } from './components/StateHook';
 import { EffectHook } from './components/EffectHook';
 import { MemosParent } from './components/MemosParent';
+import { Lifecycle } from './components/Lifecycle';
+import { CustomHook } from './components/CustomHook';
 
 function App() {
   return (
@@ -31,8 +33,10 @@ function App() {
         >
           Learn React
         </a>
-        <EffectHook/>
         <MemosParent/>
+        <CustomHook/>
+        <EffectHook/>
+        <Lifecycle/>
         <StateHook/>
         <StylesModule/>
         <Styles/>
