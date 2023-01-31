@@ -1,18 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Form } from './components/Form';
 import { Header } from './components/Header';
-import { List } from './components/List';
+import { Lists } from './components/Lists';
 
 function App() {
-const [todo, setTodo] = useState('')
+const [todo, setTodo] = useState({
+  id: null,
+  name: '',
+  completed: false
+})
 const [todoList, setTodoList] = useState([])
+const [rename, setRename] = useState(null)
+const [message, setMessage] = useState('Press "Add" button to add a task.')
+
+useEffect(() => {
+  if (localStorage.getItem('todoList')) {
+    setTodoList(JSON.parse(localStorage.getItem('todoList')))
+  }
+}, [])
 
   return (
     <div>
       <Header/>
-      <Form todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList}/>
-      <List todoList={todoList} setTodoList={setTodoList} todo={todo} setTodo={setTodo}/>
+      <p>{message}</p>
+      <Form todo={todo} setTodo={setTodo} todoList={todoList} setTodoList={setTodoList} rename={rename} setRename={setRename} setMessage={setMessage} />
+      <Lists todoList={todoList} setTodoList={setTodoList} setRename={setRename} />
     </div>
   );
 }
