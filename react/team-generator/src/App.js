@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ClassComponent from './components/ClassComponent';
 import FunctionalComponent from './components/FunctionalComponent';
-import Hello from "./components/Hello";
+import Hello from './components/Hello';
 import { FragmentComponent } from './components/FragmentComponent';
 import { ConditionalComponet } from './components/ConditionalComponet';
 import { Lists } from './components/Lists';
@@ -12,46 +12,40 @@ import { PropsChildren } from './components/PropsChildren';
 import { Styles } from './components/Styles';
 import { StylesModule } from './components/StylesModule';
 import { StateHook } from './components/StateHook';
-import { EffectHook } from './components/EffectHook';
-import { MemosParent } from './components/MemosParent';
 import { Lifecycle } from './components/Lifecycle';
+import { EffectHook } from './components/EffectHook';
 import { CustomHook } from './components/CustomHook';
+import { ContextHook } from './components/ContextHook';
+import { RefHook } from './components/RefHook';
+import { MemosParent } from './components/MemosParent';
+import { ReducerHook } from './components/ReducerHook';
+import { CallbackHook } from './components/CallbackHook';
+import { Portals } from './components/Portals';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <MemosParent/>
-        <CustomHook/>
-        <EffectHook/>
-        <Lifecycle/>
-        <StateHook/>
-        <StylesModule/>
-        <Styles/>
-        <PropsChildren>{<p>I'm a child</p>}</PropsChildren>
-        <Props str={"I'm a prop"}/>
-        <HandleEvents/>
-        <Lists/>
-        <ConditionalComponet/>
-        <FragmentComponent/>
-        <Hello/>
-        <FunctionalComponent/>
-        <ClassComponent/>
-      </header>
-    </div>
-  );
+  return <Portals />;
 }
 
 export default App;
+/*
+<CallbackHook />
+<ReducerHook />
+<MemosParent />
+<RefHook />
+<ContextHook />
+<CustomHook />
+<EffectHook />
+<Lifecycle />
+<StateHook />
+<StylesModule />
+<Styles />
+<PropsChildren>{<p>I'm a child</p>}</PropsChildren>
+<Props str={"I'm a prop"} />
+<HandleEvents />
+<Lists />
+<ConditionalComponet />
+<FragmentComponent />
+<Hello />
+<FunctionalComponent />
+<ClassComponent />
+*/
