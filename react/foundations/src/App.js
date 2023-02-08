@@ -21,13 +21,36 @@ import { MemosParent } from './components/MemosParent';
 import { ReducerHook } from './components/ReducerHook';
 import { CallbackHook } from './components/CallbackHook';
 import { Portals } from './components/Portals';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { PageA } from './components/PageA';
+import { PageB } from './components/PageB';
+import { PageC } from './components/PageC';
+import { ApiCalls } from './components/ApiCalls';
 
 function App() {
-  return <Portals />;
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to='/'>Home</Link>
+        <Link to='/page-a'>Page A</Link>
+        <Link to='/page-b'>Page B</Link>
+        <Link to='/page-c'>Page C</Link>
+        <Link to={'/api-calls'}>API Calls</Link>
+      </nav>
+      <Routes>
+        <Route path='/' />
+        <Route path='/page-a' element={<PageA />} />
+        <Route path='/page-b' element={<PageB />} />
+        <Route path='/page-c' element={<PageC />} />
+        <Route path='/api-calls' element={<ApiCalls />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
 /*
+<Portals />
 <CallbackHook />
 <ReducerHook />
 <MemosParent />
