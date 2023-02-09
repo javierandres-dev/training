@@ -1,42 +1,43 @@
-import React, { useEffect, useState } from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
+import Spinner from 'react-bootstrap/Spinner';
+import Alert from 'react-bootstrap/Alert';
 
 export const Ex02 = () => {
-  const [users, setUsers] = useState(null);
-  const [items, setItems] = useState(null);
+  const [duck, setDuck] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState(false);
 
-  useEffect(() => {
-    getUsers();
-  }, []);
-
-  useEffect(() => {
-    if (users) getItems();
-  }, [users]);
-
-  const getUsers = async () => {
+  const getDuck = async () => {
     try {
-      const res = await fetch('https://jsonplaceholder.typicode.com/users');
-      setUsers(await res.json());
+      setLoading(true);
+      const res = await fetch('https://random-d.uk/api/v2/random');
+      setDuck(await res.json());
     } catch (error) {
-      console.log(error);
+      setAlert(true);
+    } finally {
+      setLoading(false);
     }
-  };
-
-  const getItems = () => {
-    const arr = users.map((u) => (
-      <ListGroup.Item as='li' key={u.id}>
-        {u.name}
-      </ListGroup.Item>
-    ));
-    setItems(arr);
   };
 
   return (
     <div>
-      <h2>Users</h2>
-      <ListGroup as='ol' numbered className='text-start'>
-        {items}
-      </ListGroup>
+      <h2>Duck</h2>
+      {alert ? (
+        <Alert variant='warning'>An error occurred, try again later</Alert>
+      ) : loading ? (
+        <Spinner animation='border' variant='primary' />
+      ) : (
+        duck && <Image thumbnail src={duck.url} alt='duck' className='mt-2' />
+      )}
+      <Button
+        variant='primary'
+        onClick={() => getDuck()}
+        className='d-block mx-auto mt-4'
+      >
+        Get duck
+      </Button>
     </div>
   );
 };
