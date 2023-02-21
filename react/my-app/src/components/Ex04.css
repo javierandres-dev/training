@@ -1,0 +1,25 @@
+.calculator {
+  width: 300px;
+  margin: auto;
+}
+.c-display {
+  font-size: 64px;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 8px 16px;
+
+}
+.c-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid blue;
+}
+.c-btn {
+  font-size: 64px;
+  width: 20%;
+  border: 1px solid salmon;
+}
