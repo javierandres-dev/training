@@ -1,0 +1,5 @@
+print()
+type()
+str()
+len()
+input()
