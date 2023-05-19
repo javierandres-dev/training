@@ -1,1 +1,42 @@
 # Lists
+my_list = list()
+my_list = []
+my_list = ["one", "two", "three", "four", "five"]
+print(len(my_list))
+print(type(my_list))
+print(my_list[0])
+print(my_list[-1])
+print(my_list[-3])
+print(my_list[-5])
+print(my_list.count("three"))
+a, b, c, d, e = my_list
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+my_other_list = ["monday", "tuesday", " wednesday", "thursday", "friday"]
+print(my_list + my_other_list)
+my_other_list.append("sunday")
+print(my_other_list)
+my_other_list.insert(-1, "saturday")
+print(my_other_list)
+my_other_list.remove("monday")
+print(my_other_list)
+my_other_list.pop()
+print(my_other_list)
+my_other_list.pop(1)
+print(my_other_list)
+del my_other_list[1]
+print(my_other_list)
+my_copy_list = my_other_list.copy()
+print(my_copy_list)
+my_other_list.clear()
+print(my_other_list)
+print(my_copy_list)
+my_copy_list[0] = "holiday"
+print(my_copy_list)
+my_copy_list.reverse()
+print(my_copy_list)
+my_copy_list.sort()
+print(my_copy_list)
