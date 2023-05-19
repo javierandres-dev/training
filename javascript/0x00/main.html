@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body></body>
-  <script src="./operators.js"></script>
+  <head>
+    <!-- <script async src="./events.js"></script> -->
+    <script defer src="./events.js"></script>
+  </head>
+  <body>
+    <p id="notify"></p>
+    <hr />
+    <form id="hiForm">
+      <fieldset>
+        <legend>Hi</legend>
+        <input type="text" name="name" placeholder="What is your name?" />
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+    <hr />
+    <form id="byeForm">
+      <fieldset>
+        <legend>Bye</legend>
+        <input type="text" name="name" placeholder="What is your name?" />
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+    <hr />
+    <form id="msgForm">
+      <fieldset>
+        <legend>Message</legend>
+        <input type="text" name="name" placeholder="What is your name?" /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="What is your email?"
+        /><br />
+        <textarea name="message" placeholder="What is your message?"></textarea
+        ><br />
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+    <!-- <script>
+      'use strict';
+      const $success = document.getElementById('success');
+      console.log($success);
+    </script> -->
+  </body>
 </html>
