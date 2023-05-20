@@ -1,0 +1,9 @@
+html {
+  background-color: lightgray;
+}
+.active {
+  color: green;
+}
+.inactive {
+  color: gray;
+}
