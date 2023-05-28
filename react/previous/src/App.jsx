@@ -1,14 +1,15 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Header } from './components/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
-import { Main } from './components/Main';
-import { Aside } from './components/Aside';
-import { Footer } from './components/Footer';
+import { PageHome } from './components/PageHome';
+import { PageSpecial } from './components/PageSpecial';
+import { PageLogin } from './components/PageLogin';
+import { PageSignUp } from './components/PageSignUp';
+import { PageNotFound } from './components/PageNotFound';
 
 function App() {
   const [logged, setLogged] = useState(false);
-  const [mainView, setMainView] = useState(null);
 
   useEffect(() => {
     const backend = JSON.parse(localStorage.getItem('back'));
@@ -18,25 +19,20 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    if (logged) {
-      setMainView('greet');
-    }
-  }, [logged]);
-
   return (
-    <>
-      <Header />
-      <Nav logged={logged} setLogged={setLogged} setMainView={setMainView} />
-      <Main
-        mainView={mainView}
-        setMainView={setMainView}
-        logged={logged}
-        setLogged={setLogged}
-      />
-      <Aside />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Nav logged={logged} setLogged={setLogged} />
+      <Routes>
+        <Route path='/' element={<PageHome />} />
+        <Route path='/login' element={<PageLogin setLogged={setLogged} />} />
+        <Route path='/sign-up' element={<PageSignUp setLogged={setLogged} />} />
+        <Route
+          path='/special'
+          element={<PageSpecial setLogged={setLogged} />}
+        />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

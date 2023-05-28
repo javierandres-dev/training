@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export const Login = ({ setLogged }) => {
+export const PageLogin = ({ setLogged }) => {
   const [back, setBack] = useState(null);
-  const [user, setUser] = useState({
+  const [currentUser, setCurrentUser] = useState({
     username: null,
     password: null,
   });
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const backend = JSON.parse(localStorage.getItem('back'));
@@ -15,21 +18,23 @@ export const Login = ({ setLogged }) => {
   }, []);
 
   const handleInput = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setCurrentUser({ ...currentUser, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!user.username || !user.password) {
+    if (!currentUser.username || !currentUser.password) {
       alert('All fields are requerid.');
       return;
     }
     const isValid =
-      user.username === back.username && user.password === back.password;
+      currentUser.username === back.username &&
+      currentUser.password === back.password;
 
     if (isValid) {
       localStorage.setItem('token', JSON.stringify({ name: back.name }));
       setLogged(true);
+      navigate('/special');
     } else {
       alert('Oops!  Please try again, type username and password valid');
     }

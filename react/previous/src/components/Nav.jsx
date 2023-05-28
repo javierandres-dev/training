@@ -1,31 +1,26 @@
-export const Nav = ({ logged, setLogged, setMainView }) => {
+import { Link, Navigate } from 'react-router-dom';
+
+export const Nav = ({ logged, setLogged }) => {
   let output = null;
-
-  const handleSignUp = () => {
-    setMainView('signUp');
-  };
-
-  const handleLogin = () => {
-    setMainView('login');
-  };
 
   const handleLogout = () => {
     localStorage.removeItem('token');
     setLogged(false);
+    <Navigate to='/' replace={true} />;
   };
 
   if (logged) {
     output = (
       <div>
-        <a href='#'>VIP</a>
-        <button onClick={handleLogout}>logout</button>
+        <Link to='/special'>Special</Link>
+        <button onClick={handleLogout}>Logout</button>
       </div>
     );
   } else {
     output = (
       <div>
-        <button onClick={handleLogin}>login</button>
-        <button onClick={handleSignUp}>sign up</button>
+        <Link to='/login'>Login</Link>
+        <Link to='/sign-up'>Sign Up</Link>
       </div>
     );
   }
@@ -34,11 +29,7 @@ export const Nav = ({ logged, setLogged, setMainView }) => {
     <>
       <div className='nav'>
         <div>
-          <a href='#'>home</a>
-          <a href='#'>products</a>
-          <a href='#'>services</a>
-          <a href='#'>about</a>
-          <a href='#'>contact</a>
+          <Link to='/'>Home</Link>
         </div>
         <div>{output}</div>
       </div>

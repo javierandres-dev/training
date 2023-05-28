@@ -1,25 +1,31 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export const SignUp = ({ setLogged }) => {
-  const [user, setUser] = useState({
+export const PageSignUp = ({ setLogged }) => {
+  const [newUser, setNewUser] = useState({
     name: null,
     username: null,
     password: null,
   });
 
+  const navigate = useNavigate();
+
   const handleInput = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setNewUser({ ...newUser, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!user.name || !user.username || !user.password) {
+    if (!newUser.name || !newUser.username || !newUser.password) {
       alert('All fields are requerid.');
       return;
     }
-    localStorage.setItem('back', JSON.stringify(user));
-    localStorage.setItem('token', JSON.stringify({ name: user.name }));
+    localStorage.setItem('back', JSON.stringify(newUser));
+    localStorage.setItem('token', JSON.stringify({ name: newUser.name }));
     setLogged(true);
+    navigate('/special');
   };
+
   return (
     <>
       <form onSubmit={handleSubmit}>
