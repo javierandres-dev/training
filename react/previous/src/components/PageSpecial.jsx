@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { catalog } from '../utils/catalog';
+import { Cards } from './Cards';
 
 export const PageSpecial = ({ setLogged }) => {
   const [name, setName] = useState(null);
@@ -20,6 +22,8 @@ export const PageSpecial = ({ setLogged }) => {
     <>
       <div>Page Special</div>
       <div>Hello, {name}! </div>
+      <hr />
+      <Cards catalog={catalog} />
     </>
   );
 };

@@ -12,3 +12,25 @@
   display: flex;
   gap: 10px;
 }
+.subtitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 32px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card button {
+  width: fit-content;
+  margin: 20px 0;
+}
