@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loaders</title>
+    <style>
+      .loaders {
+        display: flex;
+        gap: 20px;
+      }
+      .box0 {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        animation: spin0 2000ms linear infinite;
+      }
+      @keyframes spin0 {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .loader0 {
+        border: 4px solid black;
+        border-top-color: red;
+      }
+      .loader1::before,
+      .loader1::after {
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+      }
+      .loader1::before {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(0deg, #f0c 0%, #80f 100%);
+      }
+      .loader1::after {
+        width: 85%;
+        height: 85%;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Loaders</h1>
+    <hr />
+    <div class="loaders">
+      <div class="box0 loader0"></div>
+      <div class="box0 loader1"></div>
+    </div>
+    <hr />
+  </body>
+</html>
