@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Checkbox</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      html {
+        height: 100%;
+        font-size: 62.5%;
+      }
+      body {
+        height: 100%;
+      }
+      h1,
+      div {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      label {
+        display: inline-block;
+        width: 15rem;
+        padding: 1rem;
+        border-radius: 15rem;
+      }
+      span {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        transition: all 1000ms ease;
+      }
+      input {
+        display: none;
+      }
+      input ~ label {
+        border: 1px solid black;
+      }
+      input:checked ~ label {
+        border: 1px solid white;
+      }
+      input ~ label span {
+        background-color: black;
+        border: 1px solid black;
+      }
+      input:checked ~ label span {
+        background-color: white;
+        border: 1px solid white;
+        margin-left: 10rem;
+      }
+      .dark {
+        background-color: black;
+        color: white;
+        transition: 1000ms;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Custom Checkbox</h1>
+    <div>
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox"><span></span></label>
+    </div>
+    <script>
+      const $body = document.querySelector('body');
+      const $input = document.querySelector('input');
+      $input.addEventListener('change', (e) => {
+        $body.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
