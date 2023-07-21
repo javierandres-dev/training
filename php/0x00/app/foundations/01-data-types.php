@@ -5,7 +5,7 @@
   Type juggling
   Type casting
   */
-  $name = "Pepita";
+  $name = "Jane";
   echo "Name: {$name}<br>";
   $num1 = 10;
   $num2 = 5;
@@ -62,6 +62,7 @@
   echo (int)"hello" . "<br>";
   echo (int)"1000 hello" . "<br>";
   echo (int)null . "<br>";
+  echo intval("20 hello") . "<br>";
   echo (float)"10.5" . "<br>";
   echo (string)10.5 . "<br>";
   echo (string)true . "<br>";

@@ -106,11 +106,17 @@
   echo "Union: <br>";
   print_r(array_values($z));
   echo"<br>";
-  // Conditional assignment
+  // Conditional assignment - ternary
   $name = null;
   $who = (empty($name)) ? "Anonymous" : "{$name}";
   echo "Is: {$who}<br>";
-  $name = "Pepita";
+  $name = "Jane";
   $who = (empty($name)) ? "anonymous" : "{$name}";
   echo "Is: {$who}<br>";
+  // Conditional assignment - Null coalescing
+  //$name = "John";
+  $name = null;
+  $anonymous = "Anonymous";
+  $who = $name ?? $anonymous;
+  echo $who;
 ?>

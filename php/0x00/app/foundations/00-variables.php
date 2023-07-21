@@ -4,8 +4,8 @@
   VARIABLES SCOPE: local, global, static
   Basic functions: var_dump, gettype, isset, empty, is_null
   */
-  $name = "Pepita";
-  $_surname = "Pérez";
+  $name = "Jane";
+  $_surname = "Doe";
   // Variable interpolation
   echo "Hello, {$name} {$_surname}!<br>";
   echo "var_dum: ";
