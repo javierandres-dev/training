@@ -56,5 +56,18 @@ try {
         <script>function handleClick(){
             alert('Clicked!')
         }</script>
+        <hr>
+        <nav>
+            <a href="./00-variables.php">variables</a>
+            <a href="./01-data-types.php">data types</a>
+            <a href="./02-string-functions.php">string functions</a>
+            <a href="./03-number-functions.php">number functions</a>
+            <a href="./04-operators.php">operators</a>
+            <a href="./05-math-functions.php">math functions</a>
+            <a href="./06-conditionals.php">conditionals</a>
+            <a href="./07-loops.php">loops</a>
+            <a href="./08-arrays.php">arrays</a>
+            <a href="./09-forms.php">forms</a>
+        </nav>
     </body>
 </html>
