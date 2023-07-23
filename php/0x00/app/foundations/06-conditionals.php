@@ -1,3 +1,4 @@
+<a href="/foundations/">Back to foundations</a><hr><br>
 <?php
   echo "CONDITIONALS<br><br>";
   // if, if...else, if...elseif...else, switch

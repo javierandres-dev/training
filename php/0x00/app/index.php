@@ -6,7 +6,8 @@
     <title>Home</title>
 </head>
 <body>
-    <?php include "./ui/navbar.php"; ?>
+    <?php include "./html/nav.html"; ?>
     <h1>Home</h1>
+    <?php include "./html/footer.html"; ?>
 </body>
 </html>

@@ -1,9 +1,11 @@
+<a href="/foundations/">Back to foundations</a><hr><br>
 <?php
   echo "STRING FUNCTIONS<br><br>";
   /*
   single-quoted, double-quoted, concatenate, interpolation,
   escaping (special characters), length, accessing characters, heredoc, newdoc,
-  count words, reverse, search, replace, etc.
+  count words, reverse, search, replace, lower, upper, trim, shuffle, compare,
+  pad, find position, substring, explode, implode, etc.
   */
   // single-quoted
   $surname = 'doe';
@@ -63,5 +65,36 @@
   echo "<br>";
   // replace
   echo str_replace("learning", "practicing", "I'm learning PHP");
-  echo "<br>";
+  echo "<br><br>";
+  $fullname = "Jane Doe";
+  // lower
+  echo strtolower($fullname) . "<br>";
+  // upper
+  echo strtoupper($fullname) . "<br>";
+  // trim
+  echo trim($fullname) . "<br>";
+  // shuffle
+  echo str_shuffle($fullname) . "<br>";
+  // compare
+  echo strcmp($fullname, "Jane Doe") . "<br>";
+  echo strcmp($fullname, "John Doe") . "<br>";
+  // pad
+  echo str_pad($fullname, 10, "z") . "<br>";
+  // find position
+  echo strpos($fullname, " ") . "<br>";
+  // substring
+  echo substr($fullname, 0, 4) . "<br>";
+  echo substr($fullname, 5) . "<br>";
+  // explode
+  $arr = explode(" ", $fullname);
+  echo "<pre>";
+  print_r($arr);
+  echo "</pre>";
+  // implode
+  $fullnameArr = array("Anna", "Taylor");
+  echo "<pre>";
+  print_r($fullnameArr);
+  echo "</pre>";
+  $fullname = implode(" ", $fullnameArr);
+  echo $fullname . "<br>";
 ?>

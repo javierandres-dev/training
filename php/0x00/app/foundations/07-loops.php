@@ -1,3 +1,4 @@
+<a href="/foundations/">Back to foundations</a><hr><br>
 <?php
   echo "LOOPS<br><br>";
   // while, do...while, for, foreach, break, continue

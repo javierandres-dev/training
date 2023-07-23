@@ -39,7 +39,7 @@ try {
         <title>Foundations</title>
     </head>
     <body>
-        <?php include "../ui/navbar.php"; ?>
+        <?php include "../html/nav.html"; ?>
         <h1>Foundations</h1>
         <?php echo 'Hello, World! from PHP in HTML file'; ?><br>
         <?php ECHO 'Hello, World! from PHP in HTML file'; ?><br>
@@ -58,16 +58,18 @@ try {
         }</script>
         <hr>
         <nav>
-            <a href="./00-variables.php">variables</a>
-            <a href="./01-data-types.php">data types</a>
-            <a href="./02-string-functions.php">string functions</a>
-            <a href="./03-number-functions.php">number functions</a>
-            <a href="./04-operators.php">operators</a>
-            <a href="./05-math-functions.php">math functions</a>
-            <a href="./06-conditionals.php">conditionals</a>
-            <a href="./07-loops.php">loops</a>
-            <a href="./08-arrays.php">arrays</a>
-            <a href="./09-forms.php">forms</a>
+            <a href="./00-variables.php">variables</a><br>
+            <a href="./01-data-types.php">data types</a><br>
+            <a href="./02-string-functions.php">string functions</a><br>
+            <a href="./03-number-functions.php">number functions</a><br>
+            <a href="./04-operators.php">operators</a><br>
+            <a href="./05-math-functions.php">math functions</a><br>
+            <a href="./06-conditionals.php">conditionals</a><br>
+            <a href="./07-loops.php">loops</a><br>
+            <a href="./08-arrays.php">arrays</a><br>
+            <a href="./09-forms.php">forms</a><br>
+            <a href="./10-functions.php">functions</a><br>
         </nav>
+        <?php include "../html/footer.html"; ?>
     </body>
 </html>
