@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-DJANGO_APPS = [
+DEFAULT_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,9 +41,9 @@ DJANGO_APPS = [
 
 THIRD_APPS = []
 
-OWN_APPS = ["apps.web.apps"]
+LOCAL_APPS = ["apps.web", "apps.services"]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + OWN_APPS
+INSTALLED_APPS = DEFAULT_APPS + THIRD_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -74,17 +74,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "core.wsgi.application"
-
-
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 
 
 # Password validation

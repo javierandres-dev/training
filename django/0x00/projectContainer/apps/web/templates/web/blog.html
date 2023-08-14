@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-  </head>
-  <body>
-    <h1>Blog</h1>
-  </body>
-</html>
+{% extends "web/base.html" %} {% load static %} {% block content %}
+<!-- Heading -->
+<section class="page-section clearfix">
+  <div class="container">
+    <h1 class="text-white">Blog</h1>
+  </div>
+</section>
+<!-- Message -->
+<section class="page-section cta">
+  <div class="container">
+    <p>contenido en desarrollo</p>
+  </div>
+</section>
+{% endblock %}
