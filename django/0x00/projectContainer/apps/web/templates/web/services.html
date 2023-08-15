@@ -8,7 +8,11 @@
 <!-- Message -->
 <section class="page-section cta">
   <div class="container">
-    <p>contenido en desarrollo</p>
+    {% for service in services %}
+    <div>{{service.title}}</div>
+    <div>{{service.content}}</div>
+    <img src="{{service.image.url}}" alt="{{service.title}}" />
+    {% endfor %}
   </div>
 </section>
 {% endblock %}
