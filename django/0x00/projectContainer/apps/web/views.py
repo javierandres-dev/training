@@ -1,15 +1,9 @@
 from django.shortcuts import render, HttpResponse
-from apps.services.models import Service
 
 
 # Create your views here.
 def home(request):
-    return render(request, "web/home.html")
-
-
-def services(request):
-    services = Service.objects.all()
-    return render(request, "web/services.html", {"services": services})
+    return render(request, "web/index.html")
 
 
 def shop(request):
