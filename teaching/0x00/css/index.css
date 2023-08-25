@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100%;
+  font-size: 1rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+:root {
+  --ff-sans-serif: 'Noto Sans Multani', sans-serif;
+  --ff-serif: 'Sawarabi Mincho', serif;
+}
+.home {
+  min-height: 100vh;
+  background-color: black;
+  background-image: url('../images/bbt.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 540px;
+}
+.hello {
+  padding-top: 10rem;
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+}
+.me {
+  margin: 0 auto 5rem;
+}
+.me-photo {
+  border-radius: 5rem;
+}
+.me-name {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  font-family: var(--ff-sans-serif);
+}
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 4rem;
+}
+.navigation a {
+  font-family: var(--ff-serif);
+  color: white;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.copy {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+}
+.material-symbols-outlined {
+  font-size: 4rem;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .hello {
+    padding-top: 5rem;
+    font-size: 5rem;
+  }
+  .me {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .me {
+    width: 25rem;
+  }
+  .me-photo {
+    border-radius: 2.5rem;
+  }
+  .me-name {
+    font-size: 3rem;
+  }
+  .navigation {
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2.5rem;
+  }
+  .copy {
+    font-size: 1rem;
+  }
+  .material-symbols-outlined {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
