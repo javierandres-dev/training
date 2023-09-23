@@ -1,3 +1,5 @@
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 const UserModel = require("../models/users.model");
 
 const usersCrontroller = {
@@ -10,9 +12,33 @@ const usersCrontroller = {
     //console.log(created);
     //res.json({ created: created._id });
     try {
-      const newUser = new UserModel(req.body);
+      /* const newUser = new UserModel(req.body);
       const created = await newUser.save();
-      res.json({ created: created._id });
+      res.json({ created: created._id }); */
+      const { name, email, password } = req.body;
+      //console.log(name, email, password);
+      const hashPassword = await bcrypt.hash(password, 10);
+      const newUser = new UserModel({
+        name,
+        email,
+        password: hashPassword,
+      });
+      const created = await newUser.save();
+      //res.json({ created: created._id });
+      //res.json({ created: true, id: created._id, name: created.name });
+      /* jwt.sign(
+        { id: created._id, name: created.name },
+        "topSecret321",
+        { expiresIn: "1d" },
+        (err, token) => {
+          if (err) {
+            res.json({ err });
+          } else {
+            res.cookie("token", token);
+            res.json({ message: "User created successfully", token });
+          }
+        }
+      ); */
     } catch (error) {
       res.json({ error });
     }
