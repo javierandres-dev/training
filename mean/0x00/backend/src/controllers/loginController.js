@@ -1,6 +1,9 @@
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+//const jwt = require("jsonwebtoken");
 const UserModel = require("../models/users.model");
+const { getToken, getTen } = require("../helpers/getFunctions");
+
+console.log(getTen());
 
 const loginController = {
   loginUser: async (req, res) => {
@@ -27,6 +30,11 @@ const loginController = {
               }
             }
           ); */
+          const token = await getToken({
+            id: userFound._id,
+            name: userFound.name,
+          });
+          res.json(token);
         }
       } else {
         res.status(400).json({ message: "User not found." });

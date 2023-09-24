@@ -1,6 +1,8 @@
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+//const jwt = require("jsonwebtoken");
 const UserModel = require("../models/users.model");
+//import { getToken } from "../helpers/getFunctions.js";
+const { getToken } = require("../helpers/getFunctions");
 
 const usersCrontroller = {
   createUser: async (req, res) => {
@@ -39,6 +41,8 @@ const usersCrontroller = {
           }
         }
       ); */
+      const token = await getToken({ id: created._id, name: created.name });
+      res.json(token);
     } catch (error) {
       res.json({ error });
     }
