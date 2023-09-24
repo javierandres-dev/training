@@ -18,10 +18,42 @@ console.log(os.release());
 console.log(os.totalmem());
 console.log(os.freemem()); */
 
-const fs = require("fs");
+/* const fs = require("fs");
 
 fs.writeFile("./file.txt", "first line", (err) => {
   if (err) console.log("error:", err);
   else console.log("success");
 });
 console.log("end line of script");
+
+fs.readFile("./file.txt", (err, data) => {
+  if (err) {
+    console.log("error:", err);
+  } else {
+    console.log("data:", data);
+    console.log("data:", data.toString());
+  }
+}); */
+
+const http = require("http");
+
+http
+  .createServer((request, response) => {
+    response.writeHead(200, { "Content-type": "text/html" });
+    response.write(`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+</head>
+<body>
+  <p>Response from web server with node</p>
+</body>
+</html>`);
+    response.end();
+  })
+  .listen(4000, () => {
+    console.log("Running server on port: 4000");
+  });
