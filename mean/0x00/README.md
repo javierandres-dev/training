@@ -13,6 +13,7 @@ gitignore file
 npm i express
 npm i morgan
 npm i nodemon
+npm i dotenv
 npm i mongoose
 npm i bcryptjs
 npm i jsonwebtoken

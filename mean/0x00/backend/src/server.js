@@ -5,8 +5,9 @@ const usersRouter = require("./routers/users.router");
 const loginRouter = require("./routers/loginRouter");
 
 const server = express();
+const port = process.env.PORT;
 
-server.set("port", process.env.PORT || 4000);
+server.set("port", port);
 
 server.use(morgan("dev"));
 server.use(express.json());

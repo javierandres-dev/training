@@ -1,3 +1,4 @@
+require("dotenv").config();
 require("./database");
 const server = require("./server");
 const port = server.get("port");
