@@ -40,7 +40,9 @@ const loginController = {
         res.status(400).json({ message: "User not found." });
       }
     } catch (error) {
-      res.status(500).json({ message: error.message });
+      res.status(500).json({
+        error: error.message || "An error occurred loging the user",
+      });
     }
   },
 };

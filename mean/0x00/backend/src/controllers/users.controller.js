@@ -44,7 +44,9 @@ const usersCrontroller = {
       const token = await getToken({ id: created._id, name: created.name });
       res.json(token);
     } catch (error) {
-      res.json({ error });
+      res.json({
+        error: error.message || "An error occurred creating the user.",
+      });
     }
   },
 
@@ -57,7 +59,9 @@ const usersCrontroller = {
       const allUsers = await UserModel.find();
       res.json({ allUsers });
     } catch (error) {
-      res.json({ error });
+      res.json({
+        error: error.message || "An error occurred reading the users.",
+      });
     }
   },
 
@@ -73,7 +77,9 @@ const usersCrontroller = {
       else throw new Error("user not found");
     } catch (error) {
       //console.log(error);
-      res.json({ error: error.message || error });
+      res.json({
+        error: error.message || "An error occurred reading the user.",
+      });
     }
   },
 
@@ -92,7 +98,9 @@ const usersCrontroller = {
       if (updated) res.json({ updated: updated._id });
       else throw new Error("user not found");
     } catch (error) {
-      res.json({ error: error.message || error });
+      res.json({
+        error: error.message || "An error occurred updating the user.",
+      });
     }
   },
 
@@ -107,7 +115,9 @@ const usersCrontroller = {
       if (deleted) res.json({ deleted: deleted._id });
       else throw new Error("user not found");
     } catch (error) {
-      res.json({ error: error.message || error });
+      res.json({
+        error: error.message || "An error occurred deleting the user.",
+      });
     }
   },
 };
