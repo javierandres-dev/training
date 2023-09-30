@@ -19,3 +19,20 @@ npm i bcryptjs
 npm i jsonwebtoken
 ---
 FRONTEND
+$ node --version
+$ npm install -g @angular/cli
+$ ng version
+
+Angular Language Service for VSCode
+
+$ ng new frontend
+
+Bootstrap and Icons CDN
+
+$ ng serve
+$ ng g c components/home
+$ ng g c components/login
+$ ng g c components/tasks
+$ ng g c components/pageNotFound
+
+app.module:
