@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const morgan = require("morgan");
 
 const usersRouter = require("./routers/users.router");
@@ -10,9 +11,10 @@ const port = process.env.PORT;
 
 server.set("port", port);
 
-server.use(morgan("dev"));
+server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
+server.use(morgan("dev"));
 server.use("/users/", usersRouter);
 server.use("/login/", loginRouter);
 server.use("/tasks/", tasksRouter);

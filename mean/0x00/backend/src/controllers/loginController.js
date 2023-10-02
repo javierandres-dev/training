@@ -37,7 +37,7 @@ const loginController = {
           res.json(token);
         }
       } else {
-        res.status(400).json({ message: "User not found." });
+        res.status(400).json({ message: "Invalid credentials." });
       }
     } catch (error) {
       res.status(500).json({

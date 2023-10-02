@@ -17,6 +17,7 @@ npm i dotenv
 npm i mongoose
 npm i bcryptjs
 npm i jsonwebtoken
+npm i cors
 ---
 FRONTEND
 $ node --version
@@ -26,13 +27,30 @@ $ ng version
 Angular Language Service for VSCode
 
 $ ng new frontend
-
-Bootstrap and Icons CDN
-
 $ ng serve
+
 $ ng g c components/home
 $ ng g c components/login
 $ ng g c components/tasks
 $ ng g c components/pageNotFound
 
 app.module:
+Routing
+router-outlet
+
+Bootstrap and Icons CDN
+
+$ ng g c components/top
+$ ng g c components/bottom
+
+home
+login
+app.module:
+HttpClientModule
+FormsModule
+
+$ ng g s services/login
+redirect
+
+$ ng g g guards/auth
+guard
