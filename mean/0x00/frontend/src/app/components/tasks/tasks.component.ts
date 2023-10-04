@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
@@ -11,6 +12,7 @@ import { TasksService } from '../../services/tasks.service';
 export class TasksComponent {
   constructor(
     private jwtHelper: JwtHelperService,
+    public toastr: ToastrService,
     public tasksService: TasksService
   ) {}
 
@@ -28,12 +30,47 @@ export class TasksComponent {
 
   addTask(form: NgForm) {
     //console.log(form.value);
-    this.tasksService.createTask(form.value).subscribe(
+    if (form.value._id) {
+      //console.log('update...');
+      this.tasksService.updateTask(form.value).subscribe(
+        (res) => {
+          //console.log('res:', res);
+          //this.getAllTasks();
+          this.resetForm();
+          this.toastr.success('Task updated', 'Success!');
+        },
+        (err) => {
+          console.log('err:', err);
+        }
+      );
+    } else {
+      if (!form.value.name) {
+        this.toastr.warning('Name is required.', 'Warning!');
+      } else {
+        console.log('create...');
+        this.tasksService.createTask(form.value).subscribe(
+          (res) => {
+            //console.log('res:', res);
+            //this.tasksService.tasks = res.allTasks;
+            //this.getAllTasks();
+            //form.reset();
+            this.resetForm();
+            this.toastr.success('Task created', 'Success!');
+          },
+          (err) => {
+            console.log('err:', err);
+          }
+        );
+      }
+    }
+  }
+
+  getAllTasks() {
+    this.tasksService.readAllTasks().subscribe(
       (res) => {
         //console.log('res:', res);
-        //this.tasksService.tasks = res.allTasks;
-        this.getAllTasks();
-        form.reset();
+        this.tasksService.tasks = res.allTasks;
+        //this.toastr.success('All tasks', 'Success!');
       },
       (err) => {
         console.log('err:', err);
@@ -41,15 +78,33 @@ export class TasksComponent {
     );
   }
 
-  getAllTasks() {
-    this.tasksService.readAllTasks().subscribe(
+  editTask(task: any) {
+    //console.log('edit task...', task);
+    this.tasksService.selectedTask = task;
+  }
+
+  removeTask(id: string | any) {
+    //console.log('remove task...');
+    this.tasksService.deleteTask(id).subscribe(
       (res) => {
-        console.log('res:', res);
-        this.tasksService.tasks = res.allTasks;
+        //console.log('res:', res);
+        this.getAllTasks();
+        this.toastr.success('Task deleted', 'Success!');
       },
       (err) => {
         console.log('err:', err);
       }
     );
+  }
+
+  resetForm(form?: NgForm) {
+    if (form) {
+      form.reset();
+    }
+    this.tasksService.selectedTask = {
+      name: '',
+      completed: false,
+    };
+    this.getAllTasks();
   }
 }

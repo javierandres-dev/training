@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
+import { LoginService } from '../../services/login.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({

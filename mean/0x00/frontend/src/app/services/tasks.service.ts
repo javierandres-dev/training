@@ -24,10 +24,10 @@ export class TasksService {
   readTask() {
     return null;
   }
-  updateTask() {
-    return null;
+  updateTask(task: Task) {
+    return this.http.put(`${this.urlBackend}/${task._id}`, task);
   }
-  deleteTask() {
-    return null;
+  deleteTask(id: string) {
+    return this.http.delete(`${this.urlBackend}/${id}`);
   }
 }
