@@ -1,5 +1,42 @@
 <app-top></app-top>
 <main class="container">
-  <p>tasks works!</p>
+  <h1>Tasks</h1>
+  <h2>Hello, {{ getUserName() }}!</h2>
+  <form class="mt-5" #taskForm="ngForm" (ngSubmit)="addTask(taskForm)">
+    <div class="mb-3">
+      <label for="name" class="form-label">Task</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        [(ngModel)]="tasksService.selectedTask.name"
+      />
+    </div>
+    <div class="mb-3 form-check">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="completed"
+        name="completed"
+        [(ngModel)]="tasksService.selectedTask.completed"
+      />
+      <label class="form-check-label" for="completed">Completed</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+  <ul class="list-group mt-5" *ngFor="let task of tasksService.tasks">
+    <li
+      class="list-group-item d-flex justify-content-between align-items-center"
+    >
+      <div>{{ task.name }}</div>
+      <button type="button" class="btn btn-info">
+        <i class="bi bi-check-circle-fill d-block"></i>Update
+      </button>
+      <!-- <button type="button" class="btn btn-danger">
+          <i class="bi bi-x-circle-fill"></i><span class="d-block">Delete</span>
+        </button> -->
+    </li>
+  </ul>
 </main>
 <app-bottom></app-bottom>

@@ -1,56 +1,54 @@
 BACKEND
-npm init -y
-
-src
-src/index.js
-src/routers
-src/controllers
-src/models
-src/helpers
-
-gitignore file
-
-npm i express
-npm i morgan
-npm i nodemon
-npm i dotenv
-npm i mongoose
-npm i bcryptjs
-npm i jsonwebtoken
-npm i cors
+- npm init -y
+- src
+- src/index.js
+- src/routers
+- src/controllers
+- src/models
+- src/helpers
+- gitignore file
+- npm i express
+- npm i morgan
+- npm i nodemon
+- npm i dotenv
+- npm i mongoose
+- npm i bcryptjs
+- npm i jsonwebtoken
+- npm i cors
 ---
 FRONTEND
-$ node --version
-$ npm install -g @angular/cli
-$ ng version
-
-Angular Language Service for VSCode
-
-$ ng new frontend
-$ ng serve
-
-$ ng g c components/home
-$ ng g c components/login
-$ ng g c components/tasks
-$ ng g c components/pageNotFound
-
-app.module:
-Routing
-router-outlet
-
-Bootstrap and Icons CDN
-
-$ ng g c components/top
-$ ng g c components/bottom
-
-home
-login
-app.module:
-HttpClientModule
-FormsModule
-
-$ ng g s services/login
-redirect
-
-$ ng g g guards/auth
-guard
+- node --version
+- npm install -g typescript
+- tsc -init
+- tsc <filename> -w
+- npm install -g @angular/cli
+- ng version
+- Angular Language Service for VSCode
+- ng new frontend
+- ng new frontend --routing
+- ng serve
+- ng g c components/home
+- ng g c components/login
+- ng g c components/tasks
+- ng g c components/pageNotFound
+- app.module:
+- Routing
+- router-outlet
+- Bootstrap and Icons CDN
+- ng g c components/top
+- ng g c components/bottom
+- home
+- login
+- app.module:
+- HttpClientModule
+- FormsModule
+- ng g s services/login
+- redirect
+* ngx-toastr
+  - angular.json
+  - app.module
+* npm i @auth0/angular-jwt
+  - app.module
+- ng g g guards/auth
+- guard
+- ng g s services/tasks
