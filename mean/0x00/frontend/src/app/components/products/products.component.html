@@ -1,0 +1,42 @@
+<app-top></app-top>
+<main class="container my-5">
+  <h1>Products</h1>
+  <form (submit)="(handleSubmit)">
+    <div>
+      <label for="">Name</label>
+      <input required type="text" #name />
+    </div>
+    <div>
+      <label for="">Description</label>
+      <textarea
+        required
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        #desription
+      ></textarea>
+    </div>
+    <div>
+      <label for="">Image</label>
+      <input required type="file" name="upload-image" id="" #uploadImg />
+      <!-- <input
+        type="file"
+        class="d-none"
+        (change)="onUploadImage($event)"
+        #uploadImage
+      />
+      <img
+        [src]="uploadImage || 'assets/upload-image.png'"
+        alt="upload image"
+        (click)="uploadImage.click()"
+      /> -->
+      <button type="submit">Submit</button>
+    </div>
+    <div>
+      <label for="">Price</label>
+      <input type="text" />
+    </div>
+  </form>
+</main>
+<app-bottom></app-bottom>

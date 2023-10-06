@@ -52,3 +52,10 @@ FRONTEND
 - ng g g guards/auth
 - guard
 - ng g s services/tasks
+---
+Products
+- ng g c components/products
+- ng g s services/products
+- interface
+- router
+- ui
