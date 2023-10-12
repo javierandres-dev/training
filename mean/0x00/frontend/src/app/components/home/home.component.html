@@ -193,36 +193,12 @@
       cupiditate? Iusto necessitatibus odit nihil optio voluptas facere
       perferendis doloribus magnam!
     </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae quae
-      hic voluptates? Quisquam eveniet vitae autem tempore ratione omnis
-      temporibus neque hic, modi, perferendis minima sit fuga officiis
-      architecto?
-    </p>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus aspernatur
-      dignissimos necessitatibus architecto officia est non provident magnam
-      minus doloribus? Consequuntur culpa ut esse nisi error quod totam deleniti
-      facere.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae quae
-      hic voluptates? Quisquam eveniet vitae autem tempore ratione omnis
-      temporibus neque hic, modi, perferendis minima sit fuga officiis
-      architecto?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic
-      nobis vel itaque voluptatem possimus ipsam quam omnis culpa tempora,
-      praesentium, nesciunt fugit quidem inventore perspiciatis id, perferendis
-      ab eaque.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae quae
-      hic voluptates? Quisquam eveniet vitae autem tempore ratione omnis
-      temporibus neque hic, modi, perferendis minima sit fuga officiis
-      architecto?
-    </p>
+    <p>{{ inData.date }}</p>
+    <p>{{ inData.formattedDate }}</p>
+    <form (submit)="handleSubmit()">
+      <input type="date" name="date" [(ngModel)]="outData.date" />
+      <button type="submit">Submit</button>
+    </form>
   </section>
 </main>
 <app-bottom></app-bottom>

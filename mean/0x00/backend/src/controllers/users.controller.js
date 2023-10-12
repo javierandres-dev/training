@@ -17,13 +17,14 @@ const usersCrontroller = {
       /* const newUser = new UserModel(req.body);
       const created = await newUser.save();
       res.json({ created: created._id }); */
-      const { name, email, password } = req.body;
+      const { name, email, password, dateOfBirth } = req.body;
       //console.log(name, email, password);
       const hashPassword = await bcrypt.hash(password, 10);
       const newUser = new UserModel({
         name,
         email,
         password: hashPassword,
+        dateOfBirth,
       });
       const created = await newUser.save();
       //res.json({ created: created._id });
