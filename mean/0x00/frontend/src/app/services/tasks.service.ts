@@ -21,8 +21,8 @@ export class TasksService {
   readAllTasks() {
     return this.http.get<any>(this.urlBackend);
   }
-  readTask() {
-    return null;
+  readTask(id: string) {
+    return this.http.get<any>(`${this.urlBackend}/${id}`);
   }
   updateTask(task: Task) {
     return this.http.put(`${this.urlBackend}/${task._id}`, task);

@@ -12,9 +12,9 @@ export class HomeComponent {
   };
 
   getFormattedDate(date: string) {
-    let newDate = new Date(date);
+    let newDate: any = new Date(date);
     newDate = newDate.toLocaleString();
-    console.log('newDate:', newDate);
+    //console.log('newDate:', newDate);
     return newDate;
   }
 

@@ -1,0 +1,13 @@
+<app-top></app-top>
+<main class="container">
+  <h1>Task</h1>
+  <h2>Details</h2>
+  <ul class="list-group">
+    <li class="list-group-item">{{ currentTask.name }}</li>
+    <li class="list-group-item">{{ currentTask.completed }}</li>
+    <li class="list-group-item">{{ currentTask._id }}</li>
+    <li class="list-group-item">{{ currentTask.createdAt }}</li>
+    <li class="list-group-item">{{ currentTask.updatedAt }}</li>
+  </ul>
+</main>
+<app-bottom></app-bottom>
