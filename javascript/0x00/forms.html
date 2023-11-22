@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <input type="text" name="firstName" placeholder="first name" />
+      <input type="text" name="lastName" placeholder="last name" />
+      <input type="date" name="birthday" />
+      <input type="submit" value="Send" />
+    </form>
+    <script>
+      const d = document,
+        $form = d.querySelector("form");
+      $form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        /*
+        console.log(e);
+        const data = new FormData(e.target);
+        console.log(data);
+        const firstName = data.get("firstName");
+        console.log(firstName);
+        const lastName = data.get("lastName");
+        console.log(lastName);
+        const birthday = data.get("birthday");
+        console.log(birthday);
+        */
+        const obj = {
+          firstName: $form.firstName.value,
+          lastName: $form.lastName.value,
+          birthday: $form.birthday.value,
+        };
+        console.log(obj);
+        const birthdayDate = new Date(obj.birthday);
+        console.log("birthdayDate:", birthdayDate);
+        const msBirthdayDate = birthdayDate.getTime();
+        console.log("msBirthdayDate:", msBirthdayDate);
+        const msDiff = Date.now() - msBirthdayDate;
+        console.log("msDiff:", msDiff);
+        const ageDt = new Date(msDiff);
+        console.log("ageDt:", ageDt);
+        const age = ageDt.getUTCFullYear() - 1970;
+        console.log("age:", age);
+        d.write(`${obj.firstName} ${obj.lastName} is ${age} years old.`);
+      });
+    </script>
+  </body>
+</html>

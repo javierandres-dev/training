@@ -36,5 +36,16 @@ function changeContent($h1, $img, $button) {
       $h1.style.fontSize = "48px";
       $h1.style.color = "white";
     }
+    if (count > 5) {
+      const html = `Clicks <strong>${count} x 2 = ${count * 2}</strong>`;
+      if (count === 6) {
+        const $p = d.createElement("p");
+        $p.innerHTML = html;
+        $root.appendChild($p);
+      } else {
+        const $p = d.querySelector("p");
+        $p.innerHTML = html;
+      }
+    }
   });
 }
