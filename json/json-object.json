@@ -1,0 +1,12 @@
+{
+  "name": "anne",
+  "weight": 60,
+  "height": 1.7,
+  "hobies": ["read", "dance"],
+  "contact": {
+    "address": "123 east",
+    "phone": "555"
+  },
+  "enable": true,
+  "profile": null
+}

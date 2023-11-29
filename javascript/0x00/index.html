@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      .d-none {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <!-- webStorage -->
+    <form id="webStorageForm">
+      <input type="text" name="name" placeholder="name" />
+      <input type="email" name="email" placeholder="email" />
+      <input type="submit" value="Set item" />
+    </form>
+    <section>
+      <button type="button" id="giBtn">Get item</button>
+      <button type="button" id="rBtn">Remove item</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </section>
+    <section id="private" class="d-none">
+      <h2>PRIVATE</h2>
+      <p id="greet"></p>
+    </section>
+    <script src="webStorage.js"></script>
+  </body>
+</html>
