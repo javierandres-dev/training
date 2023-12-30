@@ -1,18 +1,24 @@
 /**
  * Testing to learn
  */
-const num = 1234;
-const num0 = 12.34;
-const num1 = -1.234;
+const num = 1234; //integer
+const num0 = 12.34; //float
+const num1 = -1.234; //negative float
 const num2 = 5 - 2;
 const num3 = 0;
-const num4 = '1234';
-const num5 = 'Hello';
-const num6 = '2020/09/03';
+const num4 = "1234";
+const num5 = "Hello";
+const num6 = "2020/09/03";
 const num7 = Infinity;
 const num8 = -Infinity;
 const num9 = 0 / 0;
 const num10 = new Number(1000000);
+const num11 = 2.5e3; //exponential notation
+const num12 = 1.5e-2; //negative exponential notation
+const num13 = 0xa; //hexadecimal or base 16
+const num14 = 0o12; // octal or base 8
+const num15 = 0b1010; //binary or base 2
+const num16 = NaN;
 let res = undefined;
 res = Number.isFinite(num);
 res = Number.isFinite(num0);
@@ -91,8 +97,8 @@ res = num.toExponential(1);
 res = num.toExponential(20);
 res = num0.toFixed();
 res = num0.toFixed(1);
-res = num10.toLocaleString('es-CO');
-res = num10.toLocaleString('en-US');
+res = num10.toLocaleString("es-CO");
+res = num10.toLocaleString("en-US");
 res = num0.toPrecision();
 res = num0.toPrecision(2);
 res = num.toString();
