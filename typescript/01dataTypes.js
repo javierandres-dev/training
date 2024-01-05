@@ -1,35 +1,26 @@
-var aInteger = 10;
-var aFloat = 3.14;
-var aBinary = 9;
-var aOctal = 8;
-var aHexadecimal = 0xff;
-var sum = aInteger + aFloat + aBinary + aOctal + aHexadecimal;
-//console.log(aInteger, aFloat, aBinary, aOctal, aHexadecimal, sum);
-var aChar = "!";
-var aString = "Hello, World";
-var aConcat = " - " + aString + aChar;
-//console.log(aChar, aString, aConcat);
-var aBoolean = true;
-//console.log(aBoolean);
-var aSpecificType;
+"use strict";
+const aInteger = 10;
+const aFloat = 3.14;
+const aBinary = 0b1001;
+const aOctal = 0o10;
+const aHexadecimal = 0xff;
+const sum = aInteger + aFloat + aBinary + aOctal + aHexadecimal;
+const aChar = "!";
+const aString = "Hello, World";
+const aConcat = ` - ${aString}${aChar}`;
+const aBoolean = true;
+let aSpecificType;
 aSpecificType = "using variable";
-//console.log(aSpecificType);
-var array1 = ["a", "b", "c"];
-//console.log(array1);
-var array2 = [1, 2, 3];
-//console.log(array2);
-var objSimple = { key: "value" };
-//console.log(objSimple, typeof objSimple);
-var objLiteral = {
+const array1 = ["a", "b", "c"];
+const array2 = [1, 2, 3];
+const objSimple = { key: "value" };
+let objLiteral = {
     name: "javi",
     age: 45,
-    dev: true
+    dev: true,
 };
-//console.log(objLiteral, typeof objLiteral);
-//console.log(objLiteral.name, objLiteral.age, objLiteral.dev);
-var aTuple;
+let aTuple;
 aTuple = ["a", 1, true];
-//console.log(aTuple);
 var CardinalDirections;
 (function (CardinalDirections) {
     CardinalDirections[CardinalDirections["North"] = 1] = "North";
@@ -37,8 +28,7 @@ var CardinalDirections;
     CardinalDirections[CardinalDirections["South"] = 3] = "South";
     CardinalDirections[CardinalDirections["West"] = 4] = "West";
 })(CardinalDirections || (CardinalDirections = {}));
-var ubication = CardinalDirections.South;
-//console.log(ubication);
+const ubication = CardinalDirections.South;
 var roles;
 (function (roles) {
     roles[roles["guest"] = 0] = "guest";
@@ -46,47 +36,36 @@ var roles;
     roles[roles["admin"] = 2] = "admin";
     roles[roles["superadmin"] = 3] = "superadmin";
 })(roles || (roles = {}));
-var profile = roles.guest;
-//console.log(profile);
-var unknown;
+const profile = roles.guest;
+let unknown;
 unknown = "anything";
-//console.log(unknown, typeof unknown);
 unknown = 10;
-//console.log(unknown, typeof unknown);
 unknown = true;
-//console.log(unknown, typeof unknown);
-var aNull = null;
-//console.log(aNull);
-var aUndefined = undefined;
-//console.log(aUndefined);
-var noReturn = function () { return console.log("void example"); };
-//noReturn();
-var neverExample = function (msg) {
+let aNull = null;
+let aUndefined = undefined;
+const noReturn = () => console.log("void example");
+const neverExample = (msg) => {
     throw new Error(msg);
 };
-//console.log(neverExample("a message"));
-var infinityLoop = function () {
+const infinityLoop = () => {
     while (true) { }
 };
-//infinityLoop();
-var literal;
-var printPerson = function (person) { return console.log(person); };
-var person1 = {
+let literal;
+const printPerson = (person) => console.log(person);
+const person1 = {
     name: "javi",
     age: 45,
-    dev: true
+    dev: true,
 };
-var person2 = {
+const person2 = {
     name: "andy",
     age: 25,
-    dev: false
+    dev: false,
 };
-var usingCustomType = ["hi", 10, true];
-var usingCustomTypeWithOptions = "Hi";
-//console.log(usingCustomTypeWithOptions);
+const usingCustomType = ["hi", 10, true];
+let usingCustomTypeWithOptions = "Hi";
 usingCustomTypeWithOptions = 10;
-//console.log(usingCustomTypeWithOptions);
-var returnDiff = function (args) {
+const returnDiff = (args) => {
     if (typeof args === "string") {
         return true;
     }
@@ -94,15 +73,10 @@ var returnDiff = function (args) {
         return 0;
     }
 };
-//console.log(returnDiff("Hi"));
-//console.log(returnDiff(10));
-var varName;
-var fnClg = function (str) { return console.log(str); };
+let varName;
+const fnClg = (str) => console.log(str);
 varName = fnClg;
-//console.log(varName("Hi"));
-var fnSum = function (a, b) { return a + b; };
+const fnSum = (a, b) => a + b;
 varName = fnSum;
-//console.log(varName(2, 3));
-var variName;
+let variName;
 variName = fnSum;
-//console.log(variName(2, 3));
