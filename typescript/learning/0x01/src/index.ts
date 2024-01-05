@@ -111,3 +111,5 @@ const getTriple = (x: number): number => x * 3;
 returned = getDouble(1);
 returned = getTriple(1);
 console.log("returned:", returned);
+
+// Tuples
