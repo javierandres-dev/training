@@ -1,0 +1,12 @@
+<p>parent works!</p>
+<p>Items: {{ items.length }}</p>
+<ul>
+  @for (item of items; track $index) {
+  <li>{{ item }}</li>
+  }
+</ul>
+<p>Count: {{ count }}</p>
+<app-child
+  (addItemEvent)="addItem($event)"
+  (incrementCountEvent)="incrementCount()"
+></app-child>

@@ -1,0 +1,28 @@
+<!-- <router-outlet></router-outlet> -->
+<p>{{ title }} works!</p>
+<p>{{ 4 * 2 }}</p>
+<app-user></app-user>
+@if (isServerRunning) {
+<p>Yes, the server is running</p>
+}@else {
+<p>No, the server is not running</p>
+} @if (isLoggedIn) {
+<p>Yes, is logged in</p>
+} @for (user of users; track user.id) {
+<p>{{ user.name }}</p>
+}
+<input type="text" placeholder="username" [readOnly]="!isEditable" />
+<p [contentEditable]="isEditable"></p>
+<button (click)="logGreet()">Click me</button>
+<div class="circle" (mouseover)="logGreet()"></div>
+<div
+  [class]="message ? 'square bg-gy' : 'square bg-yg'"
+  (mouseenter)="showMessage()"
+  (mouseout)="resetMesage()"
+>
+  {{ message }}
+</div>
+<app-user name="John"></app-user>
+<app-user [nickname]="nicknameOne"></app-user>
+<app-user name="Anne" nickname="ann"></app-user>
+<app-parent></app-parent>
