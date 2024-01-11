@@ -2,6 +2,7 @@
 Angular tutorial
 
 - global styles
+
 - components
   - styles
   - properties
@@ -20,5 +21,12 @@ Angular tutorial
     - output
     - event emmiter
   - deferrable views
+  - optimizing images
+
+* routing
+  - define route
 
 - interfaces
+
+* directives
+  - NgOptimizedImage

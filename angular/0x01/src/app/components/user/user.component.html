@@ -6,3 +6,40 @@
 }@if(name && nickname){
 <p>The user's name is {{ name }} and the user's nickname is {{ nickname }}</p>
 }
+<p>Username: {{ username }}</p>
+<p>Preferred Framework:</p>
+<ul>
+  <!-- <li>
+    Static Image:
+    <img src="/assets/logo.png" alt="javi helmet logo" />
+  </li>
+  <li>
+    Dynamic Image:
+    <img [src]="logoUrl" [alt]="logoAlt" />
+  </li> -->
+  <li>
+    Static Image:
+    <img
+      ngSrc="/assets/logo.png"
+      alt="javi helmet logo"
+      width="32"
+      height="32"
+    />
+  </li>
+  <li>
+    Dynamic Image:
+    <img [ngSrc]="logoUrl" [alt]="logoAlt" width="32" height="32" />
+  </li>
+  <!-- https://github.com/javierandres-dev.png -->
+  <!-- <li>
+    <img src="https://github.com/javierandres-dev.png" alt="javi helmet logo" />
+  </li> -->
+  <li>
+    <img
+      ngSrc="https://github.com/javierandres-dev.png"
+      height="64"
+      width="64"
+      priority
+    />
+  </li>
+</ul>
