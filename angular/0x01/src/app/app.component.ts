@@ -3,11 +3,18 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { UserComponent } from './components/user/user.component';
 import { ParentComponent } from './components/parent/parent.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, ParentComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    UserComponent,
+    ParentComponent,
+    CommentsComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

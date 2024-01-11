@@ -19,3 +19,6 @@ Angular tutorial
     - input
     - output
     - event emmiter
+  - deferrable views
+
+- interfaces
