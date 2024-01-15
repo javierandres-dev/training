@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>0x00</title>
+  </head>
+  <body>
+    <h1>Employees</h1>
+    <main>
+      <section>
+        <form id="mainForm">
+          <fieldset>
+            <legend>name</legend>
+            <label
+              >first name
+              <input type="text" name="firstName" />
+            </label>
+            <label
+              >last name
+              <input type="text" name="lastName" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>age</legend>
+            <label
+              >date of birth
+              <input type="date" name="dateBirth" />
+            </label>
+            <label>current age</label>
+            <input type="text" name="age" readonly disabled />
+          </fieldset>
+          <fieldset>
+            <legend>genre</legend>
+            <label>
+              <input type="radio" name="genre" value="male" />
+              male
+            </label>
+            <label>
+              <input type="radio" name="genre" value="female" />
+              female
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>contact</legend>
+            <label>
+              phone
+              <input
+                type="tel"
+                name="phone"
+                pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+              />
+            </label>
+            <label>
+              email
+              <input type="email" name="email" />
+            </label>
+            <label>web<input type="url" name="web" /></label>
+          </fieldset>
+          <fieldset>
+            <legend>family</legend>
+            <label
+              >civil status
+              <select name="civilStatus">
+                <option value="" selected disabled>choose...</option>
+                <option value="married">married</option>
+                <option value="widowed">widowed</option>
+                <option value="separated">separated</option>
+                <option value="divorced">divorced</option>
+                <option value="single">single</option>
+              </select>
+            </label>
+            <label
+              >children
+              <input list="children" name="sons" />
+              <datalist id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </datalist>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Properties</legend>
+            <label>
+              <input type="checkbox" name="house" />
+              house
+            </label>
+            <label>
+              <input type="checkbox" name="vehicle" />
+              vehicle
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>preferences</legend>
+            <div>
+              <label>cold weather</label>
+              <input type="range" name="weather" min="0" max="2" />
+              <label>warn weather</label>
+            </div>
+            <div>
+              <label
+                >lunch time
+                <input type="time" name="lunchTime" min="09:00" max="18:00" />
+              </label>
+            </div>
+            <div>
+              <label>
+                favorite color
+                <input type="color" name="color" value="#ffffff" />
+              </label>
+            </div>
+            <label>
+              hobbies
+              <textarea name="hobbies"></textarea>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>salary</legend>
+            <label>
+              base USD
+              <input type="number" name="salary" />
+            </label>
+          </fieldset>
+          <input type="reset" value="reset" />
+          <input type="submit" value="add new employee" />
+        </form>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>full name</th>
+              <th>age</th>
+              <th>genre</th>
+              <th>phone</th>
+              <th>email</th>
+              <th>web</th>
+              <th>civil status</th>
+              <th>children</th>
+              <th>has house</th>
+              <th>has vehicle</th>
+              <th>weather</th>
+              <th>lunch time</th>
+              <th>color</th>
+              <th>hobbies</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
