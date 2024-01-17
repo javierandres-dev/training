@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { User } from '../../interfaces/user';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, FormsModule],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
 })
@@ -16,4 +16,9 @@ export class UserComponent {
   logoUrl = '/assets/logo.png';
   logoAlt = 'javi helmet logo';
   username = 'youngTech';
+  favoriteFramework = '';
+
+  showFramework() {
+    alert(this.favoriteFramework);
+  }
 }

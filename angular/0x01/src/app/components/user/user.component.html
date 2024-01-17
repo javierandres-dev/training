@@ -43,3 +43,22 @@
     />
   </li>
 </ul>
+<section>
+  <h2>template-driven form</h2>
+  <p>{{ username }}'s favorite framework: {{ favoriteFramework }}</p>
+  <form>
+    <label for="framework"></label>
+    Favorite Framework:
+    <input
+      type="text"
+      id="framework"
+      name="framework"
+      [ngModelOptions]="{ standalone: true }"
+      [(ngModel)]="favoriteFramework"
+    />
+    <button (click)="showFramework()">Show Framework</button>
+  </form>
+</section>
+<section>
+  <h2>reactive form</h2>
+</section>

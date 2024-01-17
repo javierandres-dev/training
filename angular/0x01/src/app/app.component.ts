@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { NavigationComponent } from './components/navigation/navigation.component';
 import { UserComponent } from './components/user/user.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { CommentsComponent } from './components/comments/comments.component';
@@ -11,6 +12,7 @@ import { CommentsComponent } from './components/comments/comments.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    NavigationComponent,
     UserComponent,
     ParentComponent,
     CommentsComponent,

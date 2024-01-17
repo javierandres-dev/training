@@ -1,28 +1,16 @@
 import { Routes } from '@angular/router';
-import { UserComponent } from './components/user/user.component';
-import { ChildComponent } from './components/child/child.component';
-import { CommentsComponent } from './components/comments/comments.component';
-import { ParentComponent } from './components/parent/parent.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { TasksPageComponent } from './components/tasks-page/tasks-page.component';
 
 export const routes: Routes = [
   {
-    path: '/child',
-    title: 'App Child Page',
-    component: ChildComponent,
+    path: 'home',
+    title: 'App Home Page',
+    component: HomePageComponent,
   },
   {
-    path: '/comments',
-    title: 'App Comments Page',
-    component: CommentsComponent,
-  },
-  {
-    path: '/parent',
-    title: 'App Parent Page',
-    component: ParentComponent,
-  },
-  {
-    path: '/user',
-    title: 'App User Page',
-    component: UserComponent,
+    path: 'tasks',
+    title: 'App Tasks Page',
+    component: TasksPageComponent,
   },
 ];
