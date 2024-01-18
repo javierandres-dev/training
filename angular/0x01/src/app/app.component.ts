@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { UserComponent } from './components/user/user.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { CarService } from './services/car.service';
 
 @Component({
   selector: 'app-root',
@@ -45,5 +46,13 @@ export class AppComponent {
 
   resetMesage() {
     this.message = '';
+  }
+
+  display = '';
+
+  carService = inject(CarService);
+
+  constructor() {
+    this.display = this.carService.getCars().join('⭐');
   }
 }
