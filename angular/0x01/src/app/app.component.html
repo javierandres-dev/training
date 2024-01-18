@@ -3,6 +3,21 @@
 <p>{{ title }} works!</p>
 <p>{{ 4 * 2 }}</p>
 <p>Car listing: {{ display }}</p>
+<section>
+  <h2>pipes</h2>
+  <p>{{ loudMessage | uppercase }}</p>
+  <h3>formatting data with pipes</h3>
+  <ul>
+    <li>Number with "decimal" {{ num }}</li>
+    <li>Number with "decimal" {{ num | number : "3.2-2" }}</li>
+    <li>Date with "date" {{ birthday }}</li>
+    <li>Date with "date" {{ birthday | date : "medium" }}</li>
+    <li>Currency with "currency" {{ cost }}</li>
+    <li>Currency with "currency" {{ cost | currency }}</li>
+  </ul>
+  <h3>create a custom pipe</h3>
+  <p>Reverse Machine: {{ word | reverse }}</p>
+</section>
 <app-user></app-user>
 @if (isServerRunning) {
 <p>Yes, the server is running</p>
