@@ -80,7 +80,39 @@
             (click)="handleCloseModal()"
           ></button>
         </div>
-        <div class="modal-body">{{ modalBody }}</div>
+        <div class="modal-body d-flex flex-column gap-2">
+          @if (modalButton === "Create") {
+          <input
+            type="text"
+            placeholder="Recipient..."
+            [(ngModel)]="gift.destinatario"
+          />
+          <input type="text" placeholder="Gift..." [(ngModel)]="gift.nombre" />
+          } @if (modalButton === "View") {
+          <div>
+            The gift to <span>{{ gift.destinatario }}</span> is a/an
+            <span>{{ gift.nombre }}</span
+            >, <span>{{ gift.entregado ? "It was" : "not" }}</span> delivered
+          </div>
+          } @if (modalButton === "Update") {
+          <input
+            type="text"
+            placeholder="Recipient..."
+            [(ngModel)]="gift.destinatario"
+          />
+          <input type="text" placeholder="Gift..." [(ngModel)]="gift.nombre" />
+          <label
+            >Delivered
+            <input
+              type="checkbox"
+              [checked]="gift.entregado"
+              [(ngModel)]="gift.entregado"
+            />
+          </label>
+          } @if (modalButton === "Delete") {
+          <div>Are you sure you want to delete this record?</div>
+          }
+        </div>
         <div class="modal-footer">
           <button
             type="button"
@@ -93,7 +125,7 @@
           <button
             type="button"
             class="btn btn-{{ modalBtnColor }}"
-            [disabled]="modalButton === ''"
+            [disabled]="modalButton === 'View'"
             (click)="handleCtaModal()"
             data-bs-dismiss="modal"
           >

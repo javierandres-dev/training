@@ -1,10 +1,22 @@
-interface Gift {
+export interface Gift {
+  id?: string;
   destinatario: string;
   nombre: string;
   entregado: boolean;
 }
 
-interface GiftRes {
+interface Item {
+  id: string;
+  destinatario: string;
+}
+
+interface GetAllRes {
+  resultado: string;
+  mensaje: string;
+  datos: Item[];
+}
+
+interface GetRes {
   resultado: string;
   mensaje: string;
   datos: {
@@ -15,18 +27,7 @@ interface GiftRes {
   };
 }
 
-interface BasicGift {
-  id: string;
-  destinatario: string;
-}
-
-interface GiftsRes {
-  resultado: string;
-  mensaje: string;
-  datos: BasicGift[];
-}
-
-interface GiftPutDelRes {
+interface BasicRes {
   resultado: string;
   mensaje: string;
   datos: string;
