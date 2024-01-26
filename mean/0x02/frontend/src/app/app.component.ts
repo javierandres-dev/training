@@ -7,7 +7,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavigationComponent],
-  template: `<app-navigation></app-navigation><router-outlet></router-outlet>`,
+  template: `<app-navigation></app-navigation>
+    <main class="container"><router-outlet></router-outlet></main>`,
   styles: ``,
 })
 export class AppComponent {}
