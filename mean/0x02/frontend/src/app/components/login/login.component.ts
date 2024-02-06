@@ -10,7 +10,7 @@ import { Credential } from '../../interfaces/credential';
 import { LoginService } from '../../services/login.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
-export const jwtHelperService = new JwtHelperService();
+const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-login',
