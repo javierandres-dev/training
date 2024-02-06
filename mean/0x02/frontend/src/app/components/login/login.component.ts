@@ -5,9 +5,12 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { Credential } from '../../interfaces/credential';
 import { LoginService } from '../../services/login.service';
-import { ToastrService } from 'ngx-toastr';
+import { JwtHelperService } from '@auth0/angular-jwt';
+
+export const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-login',
@@ -19,6 +22,7 @@ import { ToastrService } from 'ngx-toastr';
 export class LoginComponent {
   httpService: LoginService = inject(LoginService);
   toastrService = inject(ToastrService);
+
   /* credentialsForm = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
@@ -52,6 +56,8 @@ export class LoginComponent {
         this.httpService.login(credential).subscribe((res: any) => {
           console.log('res:', res);
           if (res.resultado === 'bien') {
+            const decoded = jwtHelperService.decodeToken(res.datos.token);
+            console.log('decoded:', decoded);
             this.toastrService.success(res.mensaje);
           } else {
             this.toastrService.error(res.mensaje);
