@@ -25,3 +25,6 @@ p {
 .bg-gy {
   background-color: greenyellow;
 }
+.b-blue {
+  border: 1px solid blue;
+}

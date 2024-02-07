@@ -7,6 +7,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { CarService } from './services/car.service';
 import { ReversePipe } from './pipes/reverse.pipe';
+import { CounterParentComponent } from './components/counter-parent/counter-parent.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { ReversePipe } from './pipes/reverse.pipe';
     CommentsComponent,
     UpperCasePipe,
     ReversePipe,
+    CounterParentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

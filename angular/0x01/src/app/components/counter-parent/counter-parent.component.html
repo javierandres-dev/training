@@ -1,0 +1,19 @@
+<p>counter-parent works!</p>
+<!-- <app-counter-child></app-counter-child> -->
+<!-- <app-counter-child
+  [messageParentToChild]="'Hello from parent'"
+  (messageChildToParent)="receiveMessageFromChild($event)"
+></app-counter-child>
+<p>{{ messageFromChild }}</p>
+<app-counter-child
+  [counter]="0"
+  (newEventEmitter)="receiveEmit($event)"
+></app-counter-child> -->
+<app-counter-child
+  [messageParentToChild]="'Hello from parent'"
+  (messageChildToParent)="receiveMessageFromChild($event)"
+  [counter]="0"
+  (newEventEmitter)="receiveEmit($event)"
+></app-counter-child>
+<p>{{ messageFromChild }}</p>
+<p>{{ amount }}</p>
