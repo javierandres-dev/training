@@ -58,13 +58,13 @@ export class LoginComponent {
         this.httpService.login(credential).subscribe((res: any) => {
           //console.log('res:', res);
           if (res.resultado === 'bien') {
-            const decoded = jwtHelperService.decodeToken(res.datos.token);
-            console.log('decoded:', decoded);
+            /* const decoded = jwtHelperService.decodeToken(res.datos.token);
+            console.log('decoded:', decoded); */
             localStorage.setItem('token', res.datos.token);
-            localStorage.setItem('data', JSON.stringify(decoded));
+            //localStorage.setItem('data', JSON.stringify(decoded));
             //this.router.navigate(['/gifts']);
             this.router.navigateByUrl('/gifts');
-            this.toastrService.success(res.mensaje);
+            //this.toastrService.success(res.mensaje);
           } else {
             this.toastrService.error(res.mensaje);
           }

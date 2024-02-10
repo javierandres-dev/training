@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LoginService } from '../../services/login.service';
 import { GiftsService } from '../../services/gifts.service';
 import { Gift } from '../../interfaces/gifts';
 import { ToastrService } from 'ngx-toastr';
@@ -12,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrl: './gifts.component.css',
 })
 export class GiftsComponent {
+  loginService = inject(LoginService);
   httpService: GiftsService = inject(GiftsService);
   toastrService = inject(ToastrService);
 
@@ -28,6 +30,8 @@ export class GiftsComponent {
   modalTitle: string = '';
   modalButton: string = '';
   modalBtnColor: string = '';
+
+  username: string = '';
 
   handleCloseModal() {
     this.gift = this.initialGift;
@@ -116,7 +120,7 @@ export class GiftsComponent {
     this.httpService.getAllGifts().subscribe((res: any) => {
       if (res.resultado === 'bien') {
         this.allGifts = res.datos;
-        this.toastrService.info(res.mensaje);
+        //this.toastrService.info(res.mensaje);
       } else {
         this.toastrService.error(res.mensaje);
       }
@@ -124,6 +128,19 @@ export class GiftsComponent {
   }
 
   ngOnInit() {
-    this.getAllGifts();
+    const token = localStorage.getItem('token');
+    if (token) {
+      this.loginService.validateToken(token).subscribe((respuesta: any) => {
+        if (respuesta.resultado === 'bien') {
+          this.username = respuesta.datos.nombre;
+          this.toastrService.success(`Hello, ${this.username}!`);
+          this.getAllGifts();
+        } else {
+          this.loginService.logout();
+        }
+      });
+    } else {
+      this.loginService.logout();
+    }
   }
 }

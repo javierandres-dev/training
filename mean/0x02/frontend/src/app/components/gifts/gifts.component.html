@@ -1,4 +1,5 @@
 <!-- <p>gifts works!</p> -->
+<section>{{ username }} logged.</section>
 <section>
   <button
     type="button"
@@ -11,7 +12,7 @@
   </button>
 </section>
 <section>
-  @if (allGifts.length > 0) {
+  @defer { @if (allGifts.length > 0) {
   <div class="table-responsive">
     <table class="table">
       <thead>
@@ -56,6 +57,26 @@
         }
       </tbody>
     </table>
+  </div>
+  } } @placeholder (minimum 1s){
+  <div class="text-center">
+    <div
+      class="spinner-border text-info"
+      role="status"
+      style="width: 4rem; height: 4rem"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  } @loading (minimum 2s) {
+  <div class="text-center">
+    <div
+      class="spinner-border text-primary"
+      role="status"
+      style="width: 4rem; height: 4rem"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
   }
 </section>

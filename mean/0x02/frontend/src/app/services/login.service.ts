@@ -17,6 +17,10 @@ export class LoginService {
     return this.httpClient.post(this.URL, credential);
   }
 
+  validateToken(token: string) {
+    return this.httpClient.get(`${this.URL}/${token}`);
+  }
+
   isLogged() {
     if (localStorage.getItem('token')) return true;
     else return false;

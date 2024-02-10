@@ -1,10 +1,10 @@
 <nav>
-  <a href="home">home</a> | @if (loginService.isLogged()) {
-  <a href="gifts">gifts</a> |
+  <a routerLink="home">home</a> | @if (loginService.isLogged()) {
+  <a routerLink="gifts">gifts</a> |
   <button type="button" class="btn btn-link" (click)="loginService.logout()">
     logout
   </button>
   }@else {
-  <a href="login">login</a>
+  <a routerLink="login">login</a>
   }
 </nav>
