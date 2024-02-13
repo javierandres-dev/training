@@ -33,6 +33,12 @@ export class GiftsComponent {
 
   username: string = '';
 
+  search = {
+    term: '',
+  };
+
+  searchResult: any[] = [];
+
   handleCloseModal() {
     this.gift = this.initialGift;
     this.giftId = '';
@@ -125,6 +131,24 @@ export class GiftsComponent {
         this.toastrService.error(res.mensaje);
       }
     });
+  }
+
+  handleSubmitSearch() {
+    console.log(this.search.term);
+    this.searchResult = this.allGifts.filter(
+      (g) => g.destinatario === this.search.term
+    );
+    console.log(this.searchResult);
+  }
+
+  handleKeyupSearch() {
+    console.log(this.search.term);
+    const term = this.search.term.toLowerCase();
+    console.log(term);
+    const result = this.allGifts.filter(
+      (g) => g.destinatario.toLowerCase().indexOf(term) > -1
+    );
+    console.log(result);
   }
 
   ngOnInit() {

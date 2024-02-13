@@ -12,6 +12,67 @@
   </button>
 </section>
 <section>
+  <form class="d-flex" role="search" (ngSubmit)="handleSubmitSearch()">
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+      name="term"
+      [(ngModel)]="search.term"
+      (keyup)="handleKeyupSearch()"
+    />
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  @if (searchResult.length>0) {
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (gift of searchResult; track gift.id) {
+        <tr>
+          <td>{{ gift.destinatario }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+              (click)="handleView(gift.id)"
+            >
+              View
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+              (click)="handleEdit(gift.id)"
+            >
+              Edit</button
+            ><button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+              (click)="handleDelete(gift.id)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  }
+</section>
+<section>
   @defer { @if (allGifts.length > 0) {
   <div class="table-responsive">
     <table class="table">
