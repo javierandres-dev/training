@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const usersRouter = require("./routers/users.router");
 const loginRouter = require("./routers/loginRouter");
 const tasksRouter = require("./routers/tasks.router");
+const uploadRouter = require("./routers/uploadsRouter");
 
 const server = express();
 const port = process.env.PORT;
@@ -18,6 +19,7 @@ server.use(morgan("dev"));
 server.use("/users/", usersRouter);
 server.use("/login/", loginRouter);
 server.use("/tasks/", tasksRouter);
+server.use("/uploads/", uploadRouter);
 
 server.get("/", (req, res) => {
   //console.log("root works!");
