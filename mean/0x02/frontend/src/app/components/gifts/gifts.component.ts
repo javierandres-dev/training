@@ -5,6 +5,8 @@ import { GiftsService } from '../../services/gifts.service';
 import { Gift } from '../../interfaces/gifts';
 import { ToastrService } from 'ngx-toastr';
 
+import { HttpClient } from '@angular/common/http';
+
 @Component({
   selector: 'app-gifts',
   standalone: true,
@@ -13,6 +15,8 @@ import { ToastrService } from 'ngx-toastr';
   styleUrl: './gifts.component.css',
 })
 export class GiftsComponent {
+  constructor(private http: HttpClient) {}
+
   loginService = inject(LoginService);
   httpService: GiftsService = inject(GiftsService);
   toastrService = inject(ToastrService);
@@ -165,6 +169,29 @@ export class GiftsComponent {
       });
     } else {
       this.loginService.logout();
+    }
+  }
+
+  //uploadedFileNames: string[] = [];
+
+  uploadImage(event: any) {
+    //console.log(event);
+    //const file = event.currentTarget.files[0];
+    const file = event.target.files[0];
+    console.log(file);
+    if (file.type === 'image/png') {
+      const formData = new FormData();
+      formData.append('archivo_subido', file);
+      console.log(formData);
+      this.http
+        .post('http://localhost:4100/imagenes', formData)
+        .subscribe((res: any) => {
+          console.log('res:', res);
+          //this.uploadedFileNames.push(res);
+          //console.log(this.uploadedFileNames);
+        });
+    } else {
+      this.toastrService.error("Only 'png' files are allowed");
     }
   }
 }

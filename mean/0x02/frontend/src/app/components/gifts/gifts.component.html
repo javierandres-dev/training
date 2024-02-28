@@ -218,3 +218,20 @@
     </div>
   </div>
 </aside>
+<section>
+  <h6>Imágenes</h6>
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Cargar imagen</label>
+    <input
+      class="form-control"
+      type="file"
+      id="formFile"
+      (change)="uploadImage($event)"
+    />
+  </div>
+  <!-- <div>
+    @for (item of uploadedFileNames; track $index) {
+    <img src="" alt="" />
+    }
+  </div> -->
+</section>
