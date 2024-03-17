@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth-child</title>
+    <style>
+      .parent {
+        background-color: yellow;
+      }
+      .parent div {
+        width: 50px;
+        height: 50px;
+        background-color: yellowgreen;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+      }
+      .parent div:first-child {
+        background-color: blue;
+      }
+      .parent div:last-child {
+        background-color: red;
+      }
+      .parent div:nth-child(2) {
+        background-color: green;
+      }
+      .parent div:nth-child(3n) {
+        background-color: white;
+      }
+      .parent div:nth-child(odd) {
+        background-color: orange;
+      }
+      .parent div:nth-child(even) {
+        background-color: pink;
+      }
+      .parent div:nth-child(n + 4) {
+        background-color: red;
+      }
+      .parent div:nth-child(3n + 1) {
+        background-color: orange;
+      }
+      .parent div:nth-child(-n + 3) {
+        background-color: red;
+      }
+      .parent div:nth-last-child(2) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Font Size</title>
+    <style>
+      h1 {
+        font-size: clamp(12px, 4vw, 32px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Font Size</h1>
+    <script>
+      window.addEventListener("resize", (event) => {
+        const $h1 = document.querySelector("h1");
+        //console.log($h1);
+        const computedFontSize = window.getComputedStyle($h1).fontSize;
+        console.log(computedFontSize);
+      });
+    </script>
+  </body>
+</html>

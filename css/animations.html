@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .parent {
+        background-color: yellow;
+      }
+      .parent div {
+        width: 50px;
+        height: 50px;
+        background-color: yellowgreen;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      .rotate {
+        animation: rotate 3s infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .pulse {
+        animation: pulse 3s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+      }
+      .slide-in {
+        animation: slideIn 3s infinite;
+      }
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-50%);
+        }
+        50% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(50%);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 3s infinite;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 5;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .bounce {
+        animation: bounce 3s infinite;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+      .h-scale:hover {
+        scale: 1.5;
+      }
+      .h-rotate:hover {
+        rotate: 90deg;
+      }
+      .h-translate:hover {
+        translate: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="rotate">1</div>
+      <div class="pulse">2</div>
+      <div class="slide-in">3</div>
+      <div class="fade-in">4</div>
+      <div class="bounce">5</div>
+      <div class="h-scale">6</div>
+      <div class="h-rotate">7</div>
+      <div class="h-translate">8</div>
+    </div>
+  </body>
+</html>
