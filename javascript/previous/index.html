@@ -3,13 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <script defer src="index.js"></script>
-    <title>Previous</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Examples</title>
   </head>
   <body>
-    <h1>Previous</h1>
-    <hr />
-    <ol id="devs"></ol>
+    <main>
+      <h1>Examples</h1>
+      <hr />
+      <section>
+        <h2>FormData Example 1</h2>
+        <form id="formDataForm1">
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" />
+          <button type="button" onclick="handleFormData1()">Submit</button>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>FormData Example 2</h2>
+        <form id="formDataForm2">
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Mailto Example 1</h2>
+        <form
+          action="mailto:account@domain.ext"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" />
+          <input type="submit" name="submit" value="Submit" />
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Mailto Example 2</h2>
+        <form id="mailtoForm">
+          <label for="text">Text:</label>
+          <input type="text" id="text" name="text" />
+          <button type="button" onclick="handleMailto()">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
