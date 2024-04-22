@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>Vanilla Example</title>
+  </head>
+  <body class="container">
+    <header><h1>Vanilla Example</h1></header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./signup.html">Sign Up</a>
+    </nav>
+    <main>
+      <section>
+        <form class="signup" id="signUp" autocomplete="off">
+          <fieldset>
+            <legend>Sign Up</legend>
+            <div class="warning" id="formWarning"></div>
+            <label for="name">Enter your name</label>
+            <input required type="text" id="name" name="name" />
+            <div id="nameWarning" class="warning"></div>
+            <label for="email">Enter your email</label>
+            <input required type="email" id="email" name="email" />
+            <div id="emailWarning" class="warning"></div>
+            <label for="password">Enter your password</label>
+            <input required type="password" id="password" name="password" />
+            <div id="passwordWarning" class="warning"></div>
+            <label for="passwordConfirm">Confirm your password</label>
+            <input
+              required
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+            />
+            <div id="passwordConfirmWarning" class="warning"></div>
+          </fieldset>
+          <button disabled type="submit" name="submitButton">Sign Up</button>
+        </form>
+      </section>
+      <script src="./signup.js"></script>
+    </main>
+  </body>
+</html>
