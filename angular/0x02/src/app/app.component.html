@@ -1,0 +1,19 @@
+<main class="container">
+  <h1 class="text-center my-5">0x02</h1>
+  <section class="d-flex flex-wrap gap-5 justify-content-center pb-5">
+    @for(item of allData; track item.id){
+    <div class="card" style="width: 18rem">
+      <img
+        src="{{ item.photo }}"
+        class="card-img-top"
+        alt="photo {{ item.name }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.charName }}</h5>
+        <p class="card-text">is {{ item.name }}</p>
+      </div>
+    </div>
+    }
+  </section>
+</main>
+<!-- <router-outlet></router-outlet> -->
