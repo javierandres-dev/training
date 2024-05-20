@@ -10,7 +10,7 @@
   (newEventEmitter)="receiveEmit($event)"
 ></app-counter-child> -->
 <app-counter-child
-  [messageParentToChild]="'Hello from parent'"
+  [messageParentToChild]="text"
   (messageChildToParent)="receiveMessageFromChild($event)"
   [counter]="0"
   (newEventEmitter)="receiveEmit($event)"

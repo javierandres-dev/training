@@ -11,6 +11,7 @@ import { CounterChildComponent } from '../counter-child/counter-child.component'
 export class CounterParentComponent {
   messageFromChild: string = '';
   amount: number = NaN;
+  text: string = 'HELLO from parent';
 
   receiveMessageFromChild($event: string) {
     this.messageFromChild = $event;
