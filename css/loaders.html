@@ -26,7 +26,7 @@
       }
       .loader1::before,
       .loader1::after {
-        content: '';
+        content: "";
         position: absolute;
         border-radius: inherit;
       }
@@ -43,6 +43,50 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      .loader3::after {
+        content: "";
+        font-weight: 600;
+        font-size: 5rem;
+        color: rgb(106, 216, 240);
+        animation-name: animatingText;
+        animation-duration: 1200ms;
+        animation-iteration-count: infinite;
+      }
+      @keyframes animatingText {
+        0% {
+          content: "L";
+        }
+        10% {
+          content: "Lo";
+        }
+        20% {
+          content: "Loa";
+        }
+        30% {
+          content: "Load";
+        }
+        40% {
+          content: "Loadi";
+        }
+        50% {
+          content: "Loadin";
+        }
+        60% {
+          content: "Loading";
+        }
+        70% {
+          content: "Loading .";
+        }
+        80% {
+          content: "Loading ..";
+        }
+        90% {
+          content: "Loading ...";
+        }
+        1000% {
+          content: "Loading ....";
+        }
+      }
     </style>
   </head>
   <body>
@@ -51,6 +95,7 @@
     <div class="loaders">
       <div class="box0 loader0"></div>
       <div class="box0 loader1"></div>
+      <div class="loader3"></div>
     </div>
     <hr />
   </body>

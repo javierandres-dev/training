@@ -27,6 +27,14 @@
           transform: rotate(360deg);
         }
       }
+      .rotate-a {
+        animation: rotateA 3s linear 0s infinite;
+      }
+      @keyframes rotateA {
+        100% {
+          rotate: 360deg;
+        }
+      }
       .pulse {
         animation: pulse 3s infinite;
       }
@@ -100,6 +108,7 @@
       <div class="bounce">5</div>
       <div class="h-scale">6</div>
       <div class="h-rotate">7</div>
+      <div class="rotate-a">7a</div>
       <div class="h-translate">8</div>
     </div>
   </body>

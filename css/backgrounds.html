@@ -20,12 +20,21 @@
         background-color: grey;
       }
       .bg-image {
-        background-image: url('https://javierandresgp.com/assets/avatar.png');
+        background-image: url("https://javierandresgp.com/assets/avatar.png");
         background-size: contain;
       }
       .bg-repeat {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfDkBx8x0dZFhFFpjqECYKK_gSfNbR6U9Kzg&usqp=CAU');
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfDkBx8x0dZFhFFpjqECYKK_gSfNbR6U9Kzg&usqp=CAU");
         background-repeat: repeat-x;
+      }
+      .bg-animation {
+        background: linear-gradient(90deg, red, yellow, green);
+        animation: bg-a 5s linear infinite;
+      }
+      @keyframes bg-a {
+        100% {
+          filter: hue-rotate(360deg);
+        }
       }
     </style>
   </head>
@@ -35,5 +44,6 @@
     <div class="box1 bg-color"></div>
     <div class="box1 bg-image"></div>
     <div class="box2 bg-repeat"></div>
+    <div class="box2 bg-animation"></div>
   </body>
 </html>
