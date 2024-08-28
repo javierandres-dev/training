@@ -5,5 +5,6 @@
 * searching_algorithms
 * sorting_algorithms
 
-## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
+## Software Developer
+Built by [javi](https://github.com/javierandres-dev/) :copyright:  
+Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).

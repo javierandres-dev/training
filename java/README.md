@@ -5,5 +5,6 @@
 * :open_file_folder: 0x00 Foundations
 * :open_file_folder: 0x01 Java Explorer
 
-## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
+## Software Developer
+Built by [javi](https://github.com/javierandres-dev/) :copyright:  
+Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
