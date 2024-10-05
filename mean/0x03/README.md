@@ -14,11 +14,15 @@ tsconfig.json
 ```
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "es5",
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
+    "alwaysStrict": true,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
     "strict": true,
+    "removeComments": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
@@ -62,19 +66,6 @@ test
 $ npm start
 ```
 
-structure
-```
-my-backend-server/
-├── src/
-│   ├── middlewares/
-│   ├── controllers/
-│   ├── routes/
-│   ├── services/
-│   ├── index.ts
-├── package.json
-├── tsconfig.json
-```
-
 nodemon
 ```
 $ npm i -D nodemon
@@ -96,4 +87,19 @@ nodemon.json
 dotenv
 ```
 $ npm i dotenv
+```
+
+structure
+```
+my-backend-server/
+├── src/
+│   ├── middlewares/
+│   ├── controllers/
+│   ├── routes/
+│   ├── services/
+│   ├── index.ts
+├── .env
+├── nodemon.json
+├── package.json
+├── tsconfig.json
 ```
