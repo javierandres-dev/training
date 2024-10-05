@@ -1,18 +1,24 @@
 import express, { Application, Request, Response } from "express";
-import userRoutes from "./routes/userRoutes";
-import errorHandler from "./middlewares/errorHandler";
+import userRouter from "./routers/userRouter";
+
 require("dotenv").config();
 
-const app: Application = express();
+const morgan = require("morgan");
+const cors = require("cors");
+
+const server: Application = express();
 const port: number = Number(process.env.PORT);
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Works!");
+server.use(morgan("dev"));
+server.use(cors());
+server.use(express.json());
+server.use(express.urlencoded({ extended: false }));
+server.use("/api", userRouter);
+
+server.get("/", (req: Request, res: Response) => {
+  res.json({ message: "Works!" });
 });
 
-app.use("/api", userRoutes);
-app.use(errorHandler);
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+server.listen(port, () => {
+  console.log(`Server is running on ${process.env.HOSTNAME}:${port}`);
 });

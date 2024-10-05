@@ -1,13 +1,12 @@
 import { Request, Response, NextFunction } from "express";
 
 const errorHandler = (
-  err: Error,
+  err: any,
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  console.error(err.stack);
-  res.status(500).send("Something broke!");
+  res.status(500).json({ message: "Something broke!", errorStack: err.stack });
 };
 
 export default errorHandler;

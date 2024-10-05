@@ -84,18 +84,14 @@ nodemon.json
 }
 ```
 
-dotenv
-```
-$ npm i dotenv
-```
-
 structure
 ```
 my-backend-server/
 ├── src/
 │   ├── middlewares/
 │   ├── controllers/
-│   ├── routes/
+│   ├── routers/
+│   ├── models/
 │   ├── services/
 │   ├── index.ts
 ├── .env
@@ -103,3 +99,7 @@ my-backend-server/
 ├── package.json
 ├── tsconfig.json
 ```
+
+- dotenv
+- morgan
+- cors
