@@ -1,24 +1,11 @@
-import express, { Application, Request, Response } from "express";
-import userRouter from "./routers/userRouter";
+//require("dotenv").config();
+import "dotenv/config";
+import "./services/databaseConnection";
+import server from "./server";
 
-require("dotenv").config();
+const HOSTNAME: string = process.env.HOSTNAME || "";
+const PORT: number = Number(process.env.PORT);
 
-const morgan = require("morgan");
-const cors = require("cors");
-
-const server: Application = express();
-const port: number = Number(process.env.PORT);
-
-server.use(morgan("dev"));
-server.use(cors());
-server.use(express.json());
-server.use(express.urlencoded({ extended: false }));
-server.use("/api", userRouter);
-
-server.get("/", (req: Request, res: Response) => {
-  res.json({ message: "Works!" });
-});
-
-server.listen(port, () => {
-  console.log(`Server is running on ${process.env.HOSTNAME}:${port}`);
+server.listen(PORT, () => {
+  console.log(`Server is running on ${HOSTNAME}:${PORT}`);
 });

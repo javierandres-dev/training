@@ -1,9 +1,19 @@
 import { Request, Response } from "express";
+import bcryptjs from "bcryptjs";
 import errorHandler from "../middlewares/errorHandler";
+import UserModel from "../models/userModel";
+import { IUser } from "../interfaces/userInterface";
 
 const UsersController = {
-  create: (req: Request, res: Response) => {
+  create: async (req: Request, res: Response) => {
     try {
+      const { password } = req.body;
+      const encryptedPassword = await bcryptjs.hash(password, 8);
+      const newUser = new UserModel({
+        ...req.body,
+        password: encryptedPassword,
+      });
+      console.log(newUser);
       res.json({ message: "Got a POST request" });
     } catch (error) {
       errorHandler(error, req, res, () => {

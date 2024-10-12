@@ -102,4 +102,6 @@ my-backend-server/
 
 - dotenv
 - morgan
+- mongoose
 - cors
+- bcryptjs / @types/bcryptjs
