@@ -5,8 +5,8 @@ class productsController {
 
   async create(req, res) {
     try {
-      const data = producsModel.create(req.body);
-      res.status(200).json({ isOK: true, data: "create works!" });
+      const data = await producsModel.create(req.body);
+      res.status(201).json({ isOK: true, message: "create works!", data });
     } catch (error) {
       res.status(500).json({ isOK: false, data: error });
     }
@@ -14,7 +14,8 @@ class productsController {
 
   async getAll(req, res) {
     try {
-      res.status(200).json({ isOK: true, data: "getAll works!" });
+      const data = await producsModel.getAll();
+      res.status(200).json({ isOK: true, message: "getAll works!", data });
     } catch (error) {
       res.status(500).json({ isOK: false, data: error });
     }
@@ -22,7 +23,8 @@ class productsController {
 
   async getOne(req, res) {
     try {
-      res.status(200).json({ isOK: true, data: "getOne works!" });
+      const data = await producsModel.getOne(req.params.id);
+      res.status(200).json({ isOK: true, message: "getOne works!", data });
     } catch (error) {
       res.status(500).json({ isOK: false, data: error });
     }
@@ -30,7 +32,8 @@ class productsController {
 
   async update(req, res) {
     try {
-      res.status(200).json({ isOK: true, data: "update works!" });
+      const data = await producsModel.update(req.params.id, req.body);
+      res.status(200).json({ isOK: true, message: "update works!", data });
     } catch (error) {
       res.status(500).json({ isOK: false, data: error });
     }
@@ -38,7 +41,8 @@ class productsController {
 
   async delete(req, res) {
     try {
-      res.status(200).json({ isOK: true, data: "delete works!" });
+      const data = await producsModel.delete(req.params.id);
+      res.status(206).json({ isOK: true, message: "delete works!", data });
     } catch (error) {
       res.status(500).json({ isOK: false, data: error });
     }

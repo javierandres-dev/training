@@ -1,5 +1,9 @@
 import { MongoClient } from "mongodb";
 /*
+Mongodb
+"mongodb+srv://<username>:<password>@<cluster>.xsyfa.mongodb.net/?retryWrites=true&w=majority&appName=<dbname>"
+
+Mongoose
 "mongodb+srv://<username>:<password>@<cluster>.krahm.mongodb.net/<dbname(optional)>?retryWrites=true&w=majority"
 */
 
@@ -27,7 +31,7 @@ class DBclient {
     console.log(result);
     try {
       await this.client.connect();
-      this.db = this.client.db("sample_training");
+      this.db = this.client.db("db_training");
       result = "... Connected to the database.";
     } catch (error) {
       result = `... Database connection error: ${error}`;

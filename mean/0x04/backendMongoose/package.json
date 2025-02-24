@@ -1,0 +1,27 @@
+{
+  "name": "backendmongoose",
+  "version": "0.0.0",
+  "keywords": [
+    "node",
+    "express",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "NO LICENCE",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  }
+}
