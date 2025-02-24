@@ -1,19 +1,15 @@
-import express from "express";
+import "dotenv/config";
+import server from "./server.js";
 
-const server = express();
-const port = 4100;
+const port = process.env.PORT;
+
+let result = "";
 
 try {
-  //console.log("works!");
-  server.get("/", (req, res) => {
-    res.json({ message: "root works!" });
-  });
-
-  server.listen(port, () => {
-    console.log(`Server is runnig and listening on port ${port}`);
-  });
+  server.listen(port);
+  result = `Server is running and listening on port: ${port}`;
 } catch (error) {
-  console.log("Server not running! Error:", error);
+  result = `Server is not running!\nError: ${error}`;
 } finally {
-  console.log("Done!");
+  console.info(result);
 }

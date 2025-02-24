@@ -15,7 +15,9 @@
     "dev": "nodemon src/main.js"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
