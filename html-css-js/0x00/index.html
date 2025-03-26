@@ -14,7 +14,7 @@
   <body id="top">
     <noscript>JavaScript is mandatory</noscript>
     <header class="container-fluid header">
-      <h1 class="logotype"><a href="index.html">Barís</a></h1>
+      <h1><a href="index.html">Barís</a></h1>
       <div>
         <label class="menu-label" for="checkMenu">
           <span class="material-symbols-outlined"> menu </span>
@@ -30,64 +30,110 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h2><span class="hero-logotype">Barís</span> Barber Shop</h2>
+      <section class="hero hero-home">
+        <div class="hero-content hero-home-content">
+          <h2><span class="hero-home-logotype">Barís</span> Barber Shop</h2>
           <p>The Best Salon For Men</p>
         </div>
       </section>
       <section id="services" class="container services">
-        <h2>Services</h2>
-        <ul>
-          <li>
-            <img src="./img/haircut.png" alt="Icon Haircut" />
+        <h2 class="title">Services</h2>
+        <ul class="services-list">
+          <li class="service">
+            <img
+              class="service-image service-image-l"
+              src="./img/haircut.png"
+              alt="Image Haircut"
+            />
             <h3>Haircut</h3>
             <p>Our barbers are trained to give you the best haircut.</p>
           </li>
-          <li>
-            <img src="./img/beard.png" alt="Icon Beard" />
+          <li class="service">
+            <img
+              class="service-image"
+              src="./img/beard.png"
+              alt="Image Beard"
+            />
             <h3>Beard</h3>
             <p>Our barbers are trained to give you the best beard.</p>
           </li>
-          <li>
-            <img src="./img/shave.png" alt="Icon Shave" />
+          <li class="service">
+            <img
+              class="service-image service-image-r"
+              src="./img/shave.png"
+              alt="Image Shave"
+            />
             <h3>Shave</h3>
             <p>Our barbers are trained to give you the best shave.</p>
           </li>
         </ul>
       </section>
       <section id="products" class="container products">
-        <h2>Products</h2>
-        <ul>
-          <li>
-            <img src="./img/pomade.png" alt="Icon Pomade" />
+        <h2 class="title">Products</h2>
+        <div class="products-cards">
+          <div class="product">
+            <img src="./img/pomade.jpg" alt="Image Pomade" />
             <h3>Pomade</h3>
             <p>Our pomade is the best for your hair.</p>
-          </li>
-          <li>
-            <img src="./img/beard-oil.png" alt="Icon Beard Oil" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              esse. Non incidunt corrupti assumenda ullam rerum sunt molestiae,
+              eum, beatae necessitatibus dolorum, ut ab. Earum tenetur tempora
+              libero reprehenderit id?
+            </p>
+          </div>
+          <div class="product">
+            <img src="./img/beard-oil.jpg" alt="Image Beard Oil" />
             <h3>Beard Oil</h3>
             <p>Our beard oil is the best for your beard.</p>
-          </li>
-          <li>
-            <img src="./img/aftershave.png" alt="Icon Aftershave" />
+            <p class="text-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              quas voluptates facere, aspernatur molestias praesentium sapiente
+              voluptatem non aliquam, delectus deleniti quam repellendus eos
+              repellat nostrum optio, minus eligendi officia.
+            </p>
+          </div>
+          <div class="product">
+            <img src="./img/aftershave.jpg" alt="Image Aftershave" />
             <h3>Aftershave</h3>
             <p>Our aftershave is the best for your skin.</p>
-          </li>
-        </ul>
+            <p class="text-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident odit repellat exercitationem error ratione vitae, nihil
+              dignissimos consequuntur. Alias libero reiciendis non similique
+              molestiae, esse laudantium quasi laboriosam cupiditate temporibus.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="aboutUs" class="container about-us">
-        <h2>About Us</h2>
-        <p>
+        <h2 class="title">About Us</h2>
+        <p class="text-left">
           We are a barber shop that has been in business for over 10 years. We
           have the best barbers in town and we are known for our quality
           services.
         </p>
+        <figure class="team">
+          <img src="./img/team.jpg" alt="Image Team" />
+          <figcaption>Our Team</figcaption>
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse
+          aspernatur, quam dolores expedita soluta hic nobis, magni, magnam
+          rerum fugiat quisquam minima doloribus sequi eveniet sed fugit iste
+          repellat!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maxime
+          consequuntur ab sed. Eveniet optio suscipit adipisci molestias ducimus
+          eius, odio iure, illum exercitationem aspernatur obcaecati atque
+          repellendus sunt quam?
+        </p>
       </section>
     </main>
-    <footer class="container-fluid">
-      <p>&copy; 2025</p>
-      <p><a href="#top">Back to top</a></p>
+    <footer class="container-fluid footer">
+      <p class="text-center">Barís &copy; 2025 All Rights Reserved.</p>
+      <p class="text-right"><a href="#top">Back to top</a></p>
     </footer>
     <script src="./js/main.js"></script>
   </body>

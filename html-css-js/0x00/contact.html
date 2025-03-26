@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>0x00 | Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Contact | 0x00</title>
   </head>
-  <body>
-    <h1>Contact</h1>
+  <body id="top">
+    <noscript>JavaScript is mandatory</noscript>
+    <header class="container-fluid header">
+      <h1 class="logotype"><a href="index.html">Barís</a></h1>
+      <div>
+        <label class="menu-label" for="checkMenu">
+          <span class="material-symbols-outlined"> menu </span>
+        </label>
+        <input class="menu-input" type="checkbox" id="checkMenu" />
+        <nav class="menu-items">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#services">Services</a>
+          <a href="./index.html#products">Products</a>
+          <a href="./index.html#aboutUs">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero hero-contact">
+        <div class="hero-content hero-contact-content">
+          <form onsubmit="handleSubmit(event)">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Ex: Jane Doe"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Ex: jane@example.com"
+              />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Ex: Congrats!"
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid footer">
+      <p class="text-center">Barís &copy; 2025 All Rights Reserved.</p>
+      <p class="text-right"><a href="#top">Back to top</a></p>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
