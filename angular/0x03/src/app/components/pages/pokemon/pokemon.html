@@ -1,0 +1,39 @@
+<app-navigation />
+@if (pokemon) { @defer {
+<div class="card mb-3" style="max-width: 540px">
+  <div class="row g-0">
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <img
+        [ngSrc]="pokemon.front_default"
+        height="128"
+        width="128"
+        class="img-fluid rounded-start"
+        alt="{{pokemon.name}} image"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{pokemon.name | titlecase }}</h5>
+        <p class="card-text">
+          <small class="text-body-secondary">ID {{pokemon.id}}</small>
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{pokemon.height}} decimetres</li>
+          <li class="list-group-item">{{pokemon.weight}} hectograms</li>
+          <li class="list-group-item">
+            {{pokemon.base_experience}} base experience
+          </li>
+          <li class="list-group-item">ability {{pokemon.abilityName}}</li>
+          <li class="list-group-item">type {{pokemon.typeName}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+}@loading (minimum 5s) {
+<div class="d-flex justify-content-center">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+} }

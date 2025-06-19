@@ -1,0 +1,24 @@
+<app-navigation />
+<div>
+  @defer {
+  <div class="list-group">
+    @for (pokemon of pokemons; track $index) {
+    <a
+      routerLink="/pokemon/{{pokemon.name}}"
+      class="list-group-item list-group-item-action"
+      >{{pokemon.name}}</a
+    >
+    }
+  </div>
+  }@loading (minimum 5s) {
+  <div class="d-flex justify-content-center">
+    <div
+      class="spinner-grow text-primary"
+      style="width: 3rem; height: 3rem"
+      role="status"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  }
+</div>
