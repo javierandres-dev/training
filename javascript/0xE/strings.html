@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>0xE</title>
+  </head>
+  <body>
+    <noscript>JavaScript is required.</noscript>
+    <h1>Strings</h1>
+    <section>
+      <h2>1. Challenge: Length of the word</h2>
+      <h3>
+        Take a word as input and returns the lenght of the word using only
+        length property.
+      </h3>
+      <form>
+        <input type="text" id="input1" placeholder="Enter a word" />
+        <button type="button" onclick="one()">Get Length</button>
+      </form>
+      <p id="output1"></p>
+    </section>
+    <section>
+      <h2>2. Challenge: Secret Letter Finder</h2>
+      <h3>
+        Takes a word and an index as input, and returns the character at that
+        position, support negative indices too using only at().
+      </h3>
+      <form>
+        <input type="text" id="input2" placeholder="Enter a word" />
+        <input type="number" id="index2" placeholder="Enter index" />
+        <button type="button" onclick="two()">Get Character</button>
+      </form>
+      <p id="output2"></p>
+    </section>
+    <section>
+      <h2>3. Challenge: Reverse Letter Builder</h2>
+      <h3>
+        Takes a word and returns a new string that is the reverse of the
+        original—but you can only use charAt().
+      </h3>
+      <form>
+        <input type="text" id="input3" placeholder="Enter a word" />
+        <button type="button" onclick="three()">Reverse Word</button>
+      </form>
+      <p id="output3"></p>
+    </section>
+    <section>
+      <h2>4. Challenge: ASCII Password Generator</h2>
+      <h3>
+        Takes a string and returns a "password" made by converting each
+        character into its ASCII code using only charCodeAt().
+      </h3>
+      <form>
+        <input type="text" id="input4" placeholder="Enter a word" />
+        <button type="button" onclick="four()">Generate Password</button>
+      </form>
+      <p id="output4"></p>
+    </section>
+    <section>
+      <h2>5. Challenge: Codepoint Signature Scanner</h2>
+      <h3>
+        Receives a string and returns the sum of the Unicode code points of all
+        characters, using only codePointAt().
+      </h3>
+      <form>
+        <input type="text" id="input5" placeholder="Enter a word" />
+        <button type="button" onclick="five()">Calculate Sum</button>
+      </form>
+      <p id="output5"></p>
+    </section>
+    <section>
+      <h2>6. Challenge: Custom Welcome Banner</h2>
+      <h3>Builds a welcome banner using only concat().</h3>
+      <form>
+        <input type="text" id="input6" placeholder="Enter your name" />
+        <button type="button" onclick="six()">Create Banner</button>
+      </form>
+      <p id="output6"></p>
+    </section>
+    <section>
+      <h2>7. Challenge: File Type Validator</h2>
+      <h3>
+        Takes a filename and checks whether it ends with .js. Use only
+        .endsWith() to determine if it's a JavaScript file.
+      </h3>
+      <form>
+        <input type="text" id="input7" placeholder="Enter filename" />
+        <button type="button" onclick="seven()">Validate File Type</button>
+      </form>
+      <p id="output7"></p>
+    </section>
+    <section>
+      <h2>Challenge: Forbidden Word Detector</h2>
+      <h3>
+        Checks if a user’s message contains any "forbidden words" and returns a
+        warning if it does—using only includes().
+      </h3>
+      <form>
+        <input type="text" id="input8" placeholder="Enter your message" />
+        <button type="button" onclick="eight()">Check Message</button>
+      </form>
+      <p id="output8"></p>
+    </section>
+    <section>
+      <h2>Challenge: Word Presence Checker</h2>
+      <h3>
+        Checks whether a keyword exists in a sentence using only indexOf().
+      </h3>
+      <form>
+        <input type="text" id="input9" placeholder="Enter a sentence" />
+        <input type="text" id="keyword9" placeholder="Enter keyword" />
+        <button type="button" onclick="nine()">Check Keyword</button>
+      </form>
+      <p id="output9"></p>
+    </section>
+    <section>
+      <h2>10. Challenge: Emoji Sanity Checker</h2>
+      <h3>
+        Checks if a string is well-formed using only isWellFormed() and returns
+        an appropriate message.
+      </h3>
+      <form>
+        <input type="text" id="input10" placeholder="Enter a string" />
+        <button type="button" onclick="ten()">Check String</button>
+      </form>
+      <p id="output10"></p>
+    </section>
+    <section>
+      <h2>11. Challenge: Last Vowel Locator</h2>
+      <h3>
+        Takes a word and returns the position of the last vowel using only
+        lastIndexOf(). Vowels to check: a, e, i, o, u (lowercase only).
+      </h3>
+      <form>
+        <input type="text" id="input11" placeholder="Enter a word" />
+        <button type="button" onclick="eleven()">Find Last Vowel</button>
+      </form>
+      <p id="output11"></p>
+    </section>
+    <section>
+      <h2>12. Challenge: Dictionary Sort Checker</h2>
+      <h3>
+        Takes two strings and tells you whether the first comes before, after,
+        or is the same as the second—based solely on .localeCompare().
+      </h3>
+      <form>
+        <input type="text" id="input12a" placeholder="Enter first string" />
+        <input type="text" id="input12b" placeholder="Enter second string" />
+        <button type="button" onclick="twelve()">Compare Strings</button>
+      </form>
+      <p id="output12"></p>
+    </section>
+    <section>
+      <h2>Challenge: Vowel Extractor</h2>
+      <h3>
+        Takes a string and returns an array of all vowels found—using only
+        match() with a regular expression.
+      </h3>
+      <form>
+        <input type="text" id="input13" placeholder="Enter a string" />
+        <button type="button" onclick="thirteen()">Extract Vowels</button>
+      </form>
+      <p id="output13"></p>
+    </section>
+    <script src="strings.js"></script>
+  </body>
+</html>
