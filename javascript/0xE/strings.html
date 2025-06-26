@@ -15,7 +15,7 @@
         Take a word as input and returns the lenght of the word using only
         length property.
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input1" placeholder="Enter a word" />
         <button type="button" onclick="one()">Get Length</button>
       </form>
@@ -27,7 +27,7 @@
         Takes a word and an index as input, and returns the character at that
         position, support negative indices too using only at().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input2" placeholder="Enter a word" />
         <input type="number" id="index2" placeholder="Enter index" />
         <button type="button" onclick="two()">Get Character</button>
@@ -40,7 +40,7 @@
         Takes a word and returns a new string that is the reverse of the
         original—but you can only use charAt().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input3" placeholder="Enter a word" />
         <button type="button" onclick="three()">Reverse Word</button>
       </form>
@@ -52,7 +52,7 @@
         Takes a string and returns a "password" made by converting each
         character into its ASCII code using only charCodeAt().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input4" placeholder="Enter a word" />
         <button type="button" onclick="four()">Generate Password</button>
       </form>
@@ -64,7 +64,7 @@
         Receives a string and returns the sum of the Unicode code points of all
         characters, using only codePointAt().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input5" placeholder="Enter a word" />
         <button type="button" onclick="five()">Calculate Sum</button>
       </form>
@@ -73,7 +73,7 @@
     <section>
       <h2>6. Challenge: Custom Welcome Banner</h2>
       <h3>Builds a welcome banner using only concat().</h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input6" placeholder="Enter your name" />
         <button type="button" onclick="six()">Create Banner</button>
       </form>
@@ -85,7 +85,7 @@
         Takes a filename and checks whether it ends with .js. Use only
         .endsWith() to determine if it's a JavaScript file.
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input7" placeholder="Enter filename" />
         <button type="button" onclick="seven()">Validate File Type</button>
       </form>
@@ -97,7 +97,7 @@
         Checks if a user’s message contains any "forbidden words" and returns a
         warning if it does—using only includes().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input8" placeholder="Enter your message" />
         <button type="button" onclick="eight()">Check Message</button>
       </form>
@@ -108,7 +108,7 @@
       <h3>
         Checks whether a keyword exists in a sentence using only indexOf().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input9" placeholder="Enter a sentence" />
         <input type="text" id="keyword9" placeholder="Enter keyword" />
         <button type="button" onclick="nine()">Check Keyword</button>
@@ -121,7 +121,7 @@
         Checks if a string is well-formed using only isWellFormed() and returns
         an appropriate message.
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input10" placeholder="Enter a string" />
         <button type="button" onclick="ten()">Check String</button>
       </form>
@@ -133,7 +133,7 @@
         Takes a word and returns the position of the last vowel using only
         lastIndexOf(). Vowels to check: a, e, i, o, u (lowercase only).
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input11" placeholder="Enter a word" />
         <button type="button" onclick="eleven()">Find Last Vowel</button>
       </form>
@@ -145,7 +145,7 @@
         Takes two strings and tells you whether the first comes before, after,
         or is the same as the second—based solely on .localeCompare().
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input12a" placeholder="Enter first string" />
         <input type="text" id="input12b" placeholder="Enter second string" />
         <button type="button" onclick="twelve()">Compare Strings</button>
@@ -153,16 +153,82 @@
       <p id="output12"></p>
     </section>
     <section>
-      <h2>Challenge: Vowel Extractor</h2>
+      <h2>13. Challenge: Vowel Extractor</h2>
       <h3>
         Takes a string and returns an array of all vowels found—using only
         match() with a regular expression.
       </h3>
-      <form>
+      <form autocomplete="off">
         <input type="text" id="input13" placeholder="Enter a string" />
         <button type="button" onclick="thirteen()">Extract Vowels</button>
       </form>
       <p id="output13"></p>
+    </section>
+    <section>
+      <h2>14. Challenge: All Occurrences Finder</h2>
+      <h3>
+        Takes a string containing several email addresses mixed in with other
+        text. Your task is to extract all the email addresses using only the
+        matchAll().
+      </h3>
+      <form autocomplete="off">
+        <input type="text" id="input14" placeholder="Enter text with emails" />
+        <button type="button" onclick="fourteen()">Find Emails</button>
+      </form>
+      <p id="output14"></p>
+    </section>
+    <section>
+      <h2>15. Challenge: strings are canonically equivalent</h2>
+      <h3>
+        Compare two strings as canonically equivalent using only normalize()
+      </h3>
+      <form autocomplete="off">
+        <input type="text" id="input15a" placeholder="Enter first string" />
+        <input type="text" id="input15b" placeholder="Enter second string" />
+        <button type="button" onclick="fifteen()">Compare Strings</button>
+      </form>
+      <p id="output15"></p>
+    </section>
+    <section>
+      <h2>16. Challenge: Pad End</h2>
+      <h3>
+        Takes a string and pads it to a specified length using only padEnd()
+        with a character of your choice.
+      </h3>
+      <form autocomplete="off">
+        <input type="text" id="input16" placeholder="Enter a string" />
+        <input type="number" id="length16" placeholder="Enter desired length" />
+        <input type="text" id="char16" placeholder="Enter padding character" />
+        <button type="button" onclick="sixteen()">Pad End</button>
+      </form>
+      <p id="output16"></p>
+    </section>
+    <section>
+      <h2>17. Challenge: Pad Start</h2>
+      <h3>
+        Takes a string and pads it to a specified length using only padStart()
+        with a character of your choice.
+      </h3>
+      <form autocomplete="off">
+        <input type="text" id="input17" placeholder="Enter a string" />
+        <input type="number" id="length17" placeholder="Enter desired length" />
+        <input type="text" id="char17" placeholder="Enter padding character" />
+        <button type="button" onclick="seventeen()">Pad Start</button>
+      </form>
+      <p id="output17"></p>
+    </section>
+    <section>
+      <h2>18. Challenge: Repeat</h2>
+      <h3>
+        Takes a string and a number, and returns the string repeated that many
+        times using only repeat().
+      </h3>
+      <form autocomplete="off">
+        <input type="text" id="input18" placeholder="Enter a string" />
+        <input type="number" id="count18" placeholder="Enter repeat count" />
+        <button type="button" onclick="eighteen()">Repeat String</button>
+      </form>
+      <p id="output18"></p>
     </section>
     <script src="strings.js"></script>
   </body>

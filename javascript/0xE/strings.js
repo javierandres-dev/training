@@ -287,3 +287,124 @@ function thirteen() {
     $output13.textContent = `Error: ${error.message}`;
   }
 }
+
+// 14. Challenge: All Occurrences Finder - Takes a string containing several email addresses mixed in with other text. Your task is to extract all the email addresses using only matchAll().
+function fourteen() {
+  const $input14 = d.getElementById("input14");
+  const $output14 = d.getElementById("output14");
+  const str = $input14.value.trim();
+  try {
+    if (str.length === 0) {
+      $output14.textContent = "The input cannot be an empty string";
+      return;
+    }
+    const emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+    const emails = Array.from(str.matchAll(emailPattern), (m) => m[0]);
+    console.log(emails);
+    if (emails.length > 0) {
+      $output14.textContent = `Email addresses found: ${emails.join(", ")}`;
+    } else {
+      $output14.textContent = "No email addresses found in the string.";
+    }
+  } catch (error) {
+    $output14.textContent = `Error: ${error.message}`;
+  }
+}
+
+// 15. Challenge: strings are canonically equivalent - Compare two strings as canonically equivalent using only normalize() Ex: 'café', 'cafe\u0301'
+function fifteen() {
+  const $input15a = d.getElementById("input15a");
+  const $input15b = d.getElementById("input15b");
+  const $output15 = d.getElementById("output15");
+  const str1 = $input15a.value.trim();
+  const str2 = $input15b.value.trim();
+  try {
+    if (str1.length === 0 || str2.length === 0) {
+      $output15.textContent = "Both inputs cannot be empty strings.";
+      return;
+    }
+    const normalizedStr1 = str1.normalize();
+    const normalizedStr2 = str2.normalize();
+    if (normalizedStr1 === normalizedStr2) {
+      $output15.textContent = `"${str1}" and "${str2}" are canonically equivalent.`;
+    } else {
+      $output15.textContent = `"${str1}" and "${str2}" are not canonically equivalent.`;
+    }
+  } catch (error) {
+    $output15.textContent = `Error: ${error.message}`;
+  }
+}
+
+// 16. Challenge: Pad End - Takes a string and pads it to a specified length using only padEnd() with a character of your choice.
+function sixteen() {
+  const $input16 = d.getElementById("input16");
+  const $length16 = d.getElementById("length16");
+  const $char16 = d.getElementById("char16");
+  const $output16 = d.getElementById("output16");
+  const str = $input16.value.trim();
+  const length = parseInt($length16.value.trim());
+  const char = $char16.value.trim();
+  try {
+    if (str.length === 0 || isNaN(length) || char.length === 0) {
+      $output16.textContent =
+        "Invalid input. Please provide a valid string, length, and character.";
+      return;
+    }
+    if (length < str.length) {
+      $output16.textContent =
+        "The specified length is less than the string length.";
+      return;
+    }
+    const paddedStr = str.padEnd(length, char);
+    $output16.textContent = `Padded string: "${paddedStr}"`;
+  } catch (error) {
+    $output16.textContent = `Error: ${error.message}`;
+  }
+}
+
+// 17. Challenge: Pad start - Takes a string and pads it to a specified length using only padStart() with a character of your choice.
+function seventeen() {
+  const $input17 = d.getElementById("input17");
+  const $length17 = d.getElementById("length17");
+  const $char17 = d.getElementById("char17");
+  const $output17 = d.getElementById("output17");
+  const str = $input17.value.trim();
+  const length = parseInt($length17.value.trim());
+  const char = $char17.value.trim();
+  try {
+    if (str.length === 0 || isNaN(length) || char.length === 0) {
+      $output17.textContent =
+        "Invalid input. Please provide a valid string, length, and character.";
+      return;
+    }
+    if (length < str.length) {
+      $output17.textContent =
+        "The specified length is less than the string length.";
+      return;
+    }
+    const paddedStr = str.padStart(length, char);
+    $output17.textContent = `Padded string: "${paddedStr}"`;
+  } catch (error) {
+    $output17.textContent = `Error: ${error.message}`;
+  }
+}
+
+// 18. Challenge: Repeat - Takes a string and a number, and returns the string repeated that many times using only repeat().
+function eighteen() {
+  const $input18 = d.getElementById("input18");
+  const $count18 = d.getElementById("count18");
+  const $output18 = d.getElementById("output18");
+  const str = $input18.value.trim();
+  const count = parseInt($count18.value.trim());
+  try {
+    if (str.length === 0 || isNaN(count) || count < 0) {
+      $output18.textContent =
+        "Invalid input. Please provide a valid string and a non-negative number.";
+      return;
+    }
+    const repeatedStr = str.repeat(count);
+    $output18.textContent = `Repeated string: "${repeatedStr}"`;
+  } catch (error) {
+    $output18.textContent = `Error: ${error.message}`;
+  }
+}
