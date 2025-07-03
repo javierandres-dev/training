@@ -4,9 +4,23 @@ import morgan from "morgan";
 const server = express();
 const PORT = 4100;
 
+// This is the middleware function
+const myLogger = function (req, res, next) {
+  console.log("myLogger - A request came in at: " + new Date());
+  next(); // <-- Super important! This says "I'm done, pass it on."
+};
+/*
+When a request comes in for /:
+1. Express first runs myLogger.
+2. myLogger prints the date and time to the console.
+3. myLogger calls next().
+4. Express then runs the final app.get('/') handler.
+*/
+
 // Middleware
 server.use(express.json()); // Parse JSON bodies
 server.use(morgan("dev")); // Log HTTP requests
+server.use(myLogger); // Custom logger middleware
 
 server.get("/", (req, res) => {
   res.json({
